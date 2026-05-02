@@ -21,5 +21,26 @@
 	- Main
 	- Footer
 ******************************************************** */
-
+/* --------------------------- HTML Elements --------------------------- */
+/* Basic */
+html {
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	font-size: 100%;
+}
+body {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+/* Non-Semantic */
+div {
+	box-sizing: border-box;
+}
+span {
+	box-sizing: border-box;
+}
+/* --------------------------- Root ------------------------------------ */
 /* --------------------------------------------------------------------- */
