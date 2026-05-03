@@ -42,5 +42,32 @@ div {
 span {
 	box-sizing: border-box;
 }
-/* --------------------------- Root ------------------------------------ */
+/* Sections */
+header {
+	box-sizing: border-box;
+}
+search {
+	box-sizing: border-box;
+}
+nav {
+	box-sizing: border-box;
+}
+aside {
+	box-sizing: border-box;
+}
+main {
+	box-sizing: border-box;
+}
+article {
+	box-sizing: border-box;
+}
+section {
+	box-sizing: border-box;
+}
+footer {
+	box-sizing: border-box;
+}
+address {
+	box-sizing: border-box;
+}
 /* --------------------------------------------------------------------- */
