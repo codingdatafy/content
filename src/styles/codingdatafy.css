@@ -105,4 +105,94 @@ h4 {
 	background-color: rgb(50 205 50);
 	text-indent: 3%;
 }
+/* Text Semantics */
+p {
+	box-sizing: border-box;
+}
+a {
+	box-sizing: border-box;
+	text-decoration: none;
+}
+dfn {
+	box-sizing: border-box;
+}
+abbr {
+	box-sizing: border-box;
+	cursor: help;
+}
+em {
+	box-sizing: border-box;
+}
+strong {
+	box-sizing: border-box;
+}
+mark {
+	box-sizing: border-box;
+}
+i {
+	box-sizing: border-box;
+}
+b {
+	box-sizing: border-box;
+}
+s {
+	box-sizing: border-box;
+}
+u {
+	box-sizing: border-box;
+}
+sub {
+	box-sizing: border-box;
+}
+sup {
+	box-sizing: border-box;
+}
+var {
+	box-sizing: border-box;
+}
+small {
+	box-sizing: border-box;
+}
+ins {
+	box-sizing: border-box;
+}
+del {
+	box-sizing: border-box;
+}
+time {
+	box-sizing: border-box;
+}
+data {
+	box-sizing: border-box;
+}
+q {
+	box-sizing: border-box;
+}
+blockquote {
+	box-sizing: border-box;
+}
+cite {
+	box-sizing: border-box;
+}
+bdo {
+	box-sizing: border-box;
+}
+bdi {
+	box-sizing: border-box;
+}
+ruby {
+	box-sizing: border-box;
+}
+rp {
+	box-sizing: border-box;
+}
+rt {
+	box-sizing: border-box;
+}
+wbr {
+	box-sizing: border-box;
+}
+hr {
+	box-sizing: border-box;
+}
 /* --------------------------------------------------------------------- */
