@@ -195,4 +195,57 @@ wbr {
 hr {
 	box-sizing: border-box;
 }
+/* Figures */
+figure {
+	box-sizing: border-box;
+}
+figcaption {
+	box-sizing: border-box;
+}
+pre {
+	box-sizing: border-box;
+}
+code {
+	box-sizing: border-box;
+}
+samp {
+	box-sizing: border-box;
+}
+kbd {
+	box-sizing: border-box;
+}
+meter {
+	box-sizing: border-box;
+}
+progress {
+	box-sizing: border-box;
+}
+details {
+	box-sizing: border-box;
+}
+summary {
+	box-sizing: border-box;
+}
+/* Lists */
+menu {
+	box-sizing: border-box;
+}
+ul {
+	box-sizing: border-box;
+}
+ol {
+	box-sizing: border-box;
+}
+li {
+	box-sizing: border-box;
+}
+dl {
+	box-sizing: border-box;
+}
+dt {
+	box-sizing: border-box;
+}
+dd {
+	box-sizing: border-box;
+}
 /* --------------------------------------------------------------------- */
