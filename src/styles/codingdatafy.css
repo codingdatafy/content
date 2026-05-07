@@ -248,4 +248,38 @@ dt {
 dd {
 	box-sizing: border-box;
 }
+/* Tables */
+table {
+	box-sizing: border-box;
+	border-collapse: collapse;
+}
+caption {
+	box-sizing: border-box;
+}
+colgroup {
+	box-sizing: border-box;
+}
+col {
+	box-sizing: border-box;
+}
+thead {
+	box-sizing: border-box;
+}
+tbody {
+	box-sizing: border-box;
+}
+tfoot {
+	box-sizing: border-box;
+}
+tr {
+	box-sizing: border-box;
+}
+th {
+	box-sizing: border-box;
+	border: solid 1px rgb(0 0 0);
+}
+td {
+	box-sizing: border-box;
+	border: solid 1px rgb(0 0 0);
+}
 /* --------------------------------------------------------------------- */
