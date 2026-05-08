@@ -282,4 +282,25 @@ td {
 	box-sizing: border-box;
 	border: solid 1px rgb(0 0 0);
 }
+/* Multimedia */
+img {
+	box-sizing: border-box;
+	max-width: 100%;
+	height: auto;
+}
+map {
+	box-sizing: border-box;
+}
+area {
+	box-sizing: border-box;
+}
+audio {
+	box-sizing: border-box;
+}
+video {
+	box-sizing: border-box;
+}
+picture {
+	box-sizing: border-box;
+}
 /* --------------------------------------------------------------------- */
