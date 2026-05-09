@@ -303,4 +303,75 @@ video {
 picture {
 	box-sizing: border-box;
 }
+/* Forms */
+form {
+	box-sizing: border-box;
+	margin: 1px 1px 1px 0;
+}
+fieldset {
+	box-sizing: border-box;
+	margin: 1px 1px 1px 0;
+}
+legend {
+	box-sizing: border-box;
+	margin: 1px 1px 1px 0;
+}
+label {
+	box-sizing: border-box;
+	margin: 1px 1px 1px 0;
+}
+input {
+	box-sizing: border-box;
+	margin: 1px 1px 1px 0;
+}
+textarea {
+	box-sizing: border-box;
+	margin: 1px 1px 1px 0;
+}
+select {
+	box-sizing: border-box;
+	margin: 1px 1px 1px 0;
+}
+datalist {
+	box-sizing: border-box;
+	margin: 1px 1px 1px 0;
+}
+optgroup {
+	box-sizing: border-box;
+	margin: 1px 1px 1px 0;
+}
+option {
+	box-sizing: border-box;
+	margin: 1px 1px 1px 0;
+}
+output {
+	box-sizing: border-box;
+	margin: 1px 1px 1px 0;
+}
+button {
+	box-sizing: border-box;
+	margin: 1px 1px 1px 0;
+}
+selectedcontent {
+	box-sizing: border-box;
+	margin: 1px 1px 1px 0;
+}
+/* Embedded Content */
+embed {
+	box-sizing: border-box;
+}
+object {
+	box-sizing: border-box;
+}
+iframe {
+	box-sizing: border-box;
+}
+/* Scripts */
+dialog {
+	box-sizing: border-box;
+}
+canvas {
+	box-sizing: border-box;
+}
+/* No Styles for :[head - base - meta - title - link - style - h5 - h6 - br - track - source - script - noscript - template - slot - autonomousCustomElements] */
 /* --------------------------------------------------------------------- */
