@@ -60,7 +60,7 @@ description: "A brief professional description for SEO purposes"
  ```
 
 ### Content Structure
-- Markdown files must be placed in the appropriate subdirectory within the 'content/' directory.
+- Markdown files must be placed in the appropriate subdirectory within the 'data/' directory.
 - Follow the existing document structure to ensure visual and functional consistency across the platform.
 
 ### Technical Integrity

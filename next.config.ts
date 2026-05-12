@@ -12,7 +12,6 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
   reactCompiler: false,
-  cacheComponents: true,
 
   // 2. TURBOPACK CONFIGURATION
   turbopack: {
@@ -22,7 +21,7 @@ const nextConfig: NextConfig = {
 
   // 3. ASSET TRACING
   outputFileTracingIncludes: {
-    '/[[...slug]]': ['./content/**/*'],
+    '/[[...slug]]': ['./data/**/*'],
   },
 
   // 4. IMAGE OPTIMIZATION

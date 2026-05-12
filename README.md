@@ -25,8 +25,8 @@ CodingDatafy is built for the global developer community. We follow a profession
 This project is licensed under a dual-licensing model:
 
 - **Software/Source Code:** Licensed under the [MIT License](LICENSE).
-- **Documentation & Content:** All content within the `content/` directory is licensed under the [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) license.
+- **Documentation & Content:** All content within the `/data` directory is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/) license.
 
-Under this model, you are free to share and adapt the material for any purpose, even commercially, provided that you give **appropriate credit** to CodingDatafy Organization and provide a link to the original source.
+Under this model, you are free to share and adapt the material for any purpose, even commercially, provided that you give **appropriate credit** to CodingDatafy Organization and distribute your contributions under the same license.
 
 Copyright (c) 2026 CodingDatafy Organization.
