@@ -107,7 +107,7 @@ export default async function Page({ params }: PageProps) {
                   </small>
                 </p>
                 <p>
-                  <small>© 2026 CodingDatafy Organization | Licensed under MIT</small>
+                  <small>© 2026 CodingDatafy | Content licensed under <strong>CC BY-SA 4.0</strong>
                 </p>
               </div>
             </footer>

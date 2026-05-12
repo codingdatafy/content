@@ -10,7 +10,6 @@ import type { NextRequest } from 'next/server';
 
 /**
  * CODINGDATAFY PROXY
- * This handles network boundaries, security, and IP synchronization.
  */
 export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
@@ -19,7 +18,7 @@ export function proxy(request: NextRequest) {
   // 1. DIRECTORY & CONTENT PRIVACY SHIELD
   if (
     pathname.endsWith('.md') || 
-    pathname.startsWith('/content/') || 
+    pathname.startsWith('/data/') || 
     pathname.includes('/_sidebar')
   ) {
     return new NextResponse(null, { status: 404 });

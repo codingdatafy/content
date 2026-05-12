@@ -14,7 +14,7 @@ import html from 'remark-html';
 /**
  * PATH CONFIGURATION
  */
-const CONTENT_DIRECTORY = path.join(process.cwd(), 'content');
+const CONTENT_DIRECTORY = path.join(process.cwd(), 'data');
 
 /**
  * PAGE METADATA INTERFACE
@@ -49,10 +49,10 @@ export async function getPageData(slugArray: string[] | undefined): Promise<Page
   /**
    * RESOLUTION LOGIC
    */
-  let fullPath = path.join(CONTENT_DIRECTORY, relativePath, 'index.md');
+  let fullPath = path.join(DATA_DIRECTORY, relativePath, 'index.md');
 
   if (!fs.existsSync(fullPath)) {
-    fullPath = path.join(CONTENT_DIRECTORY, `${relativePath}.md`);
+    fullPath = path.join(DATA_DIRECTORY, `${relativePath}.md`);
   }
 
   if (!fs.existsSync(fullPath)) return null;
@@ -117,7 +117,7 @@ export function getAllPostSlugs() {
       if (fs.statSync(name).isDirectory()) {
         getFiles(name, allFiles);
       } else if (file.endsWith('.md') && !file.startsWith('_')) {
-        const relativePath = path.relative(CONTENT_DIRECTORY, name);
+        const relativePath = path.relative(DATA_DIRECTORY, name);
         
         const slug = relativePath
           .replace(/\.md$/, '')
@@ -130,5 +130,5 @@ export function getAllPostSlugs() {
     return allFiles;
   };
   
-  return getFiles(CONTENT_DIRECTORY);
+  return getFiles(DATA_DIRECTORY);
 }
