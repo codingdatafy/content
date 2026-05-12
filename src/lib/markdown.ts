@@ -14,7 +14,7 @@ import html from 'remark-html';
 /**
  * PATH CONFIGURATION
  */
-const CONTENT_DIRECTORY = path.join(process.cwd(), 'data');
+const DATA_DIRECTORY = path.join(process.cwd(), 'data');
 
 /**
  * PAGE METADATA INTERFACE
