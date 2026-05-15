@@ -521,4 +521,52 @@ canvas {
 	background: rgb(255 0 0 / 0.1);
 	border: solid 1px rgb(0 0 0);
 }
+/* Codes */
+.code-block {
+	padding: 0 0 0.5em 0.5em;
+	background-color: rgb(0 0 0 / 0.06);
+	border: solid 1px rgb(0 0 0);
+}
+code:not(pre > code) {
+	background-color: rgb(0 0 0 / 0.06);
+}
+/* Tables */
+.table {
+	margin: 0 0 0.1em 0;
+	width: 100%;
+}
+.table tr:hover {
+	background-color: rgb(0 0 255 / 0.2);
+}
+.table th {
+	background-color: rgb(245 222 179);
+}
+table.sortable th {
+	cursor: pointer;
+}
+.table a:visited {
+	color: rgb(0 191 255);
+}
+table.sortable th { 
+	cursor: pointer;
+}
+table.sortable th::after { 
+	content: ' ↕'; 
+	opacity: 0.3; 
+}
+table.sortable th.sort-asc::after { 
+	content: ' ↑'; 
+	opacity: 1; 
+}
+table.sortable th.sort-desc::after { 
+	content: ' ↓'; 
+	opacity: 1; 
+}
+#article-footer {
+	margin: 0 0 0.1em 0;
+	padding: 0.1em;
+	background: rgb(0 255 0 / 0.2);
+	border: solid 1px rgb(0 0 0);
+	text-align: center;
+}
 /* --------------------------------------------------------------------- */
