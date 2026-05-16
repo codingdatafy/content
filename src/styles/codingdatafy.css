@@ -569,4 +569,55 @@ table.sortable th.sort-desc::after {
 	border: solid 1px rgb(0 0 0);
 	text-align: center;
 }
+/* --------------------------- Footer ---------------------------------- */
+#footer {
+	margin: 1px;
+	padding: 1em;
+	border: solid 1px rgb(0 0 139);
+}
+#footer-links {
+	display: flex;
+    flex-flow: row wrap;
+	justify-content: center;
+	list-style: none;
+	margin-block-start: 0.8em;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+}
+#footer-links li {
+	margin: 0.3em;
+	padding: 0.3em;
+	border: solid 1px rgb(0 0 0);
+	border-radius: 9px;
+}
+#footer-links li:has(> .active) {
+}
+#footer-links li a {
+}
+#social-networks {
+	display: flex;
+    flex-flow: row wrap;
+	justify-content: center;
+	list-style: none;
+	margin-block-start: 0.8em;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+}
+#social-networks li {
+	margin-right: 0.5em;
+}
+#social-networks li a {
+}
+#social-networks li a img {
+}
+#copyright {
+	padding-top: 1em;
+	border-top: inset 1px;
+	font-weight: bold;
+	text-align: center;
+}
+#copyright small {
+}
+#copyright span {
+}
 /* --------------------------------------------------------------------- */
