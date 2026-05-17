@@ -1,6 +1,6 @@
 ---
 project: CodingDatafy
-license: CC BY 4.0
+license: CC BY-SA 4.0
 copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: Languages

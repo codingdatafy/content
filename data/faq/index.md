@@ -1,6 +1,6 @@
 ---
 project: CodingDatafy
-license: CC BY 4.0
+license: CC BY-SA 4.0
 copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: FAQ
@@ -46,7 +46,7 @@ Find quick, expert answers to common questions about the digital languages that 
 
 <details open>
   <summary>Is the content on CodingDatafy free to use?</summary>
-  <p>Yes. All educational content is licensed under <strong>CC BY 4.0</strong>, allowing for free use and adaptation with proper attribution to the CodingDatafy Organization.</p>
+  <p>Yes. All educational content is licensed under <strong>CC BY-SA 4.0</strong>, allowing for free use and adaptation with proper attribution to the CodingDatafy Organization.</p>
 </details>
 
 </div>

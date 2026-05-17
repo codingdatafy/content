@@ -1,6 +1,6 @@
 ---
 project: CodingDatafy
-license: MIT
+license: CC BY-SA 4.0
 copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: Terms of Use
@@ -17,7 +17,7 @@ Welcome to **CodingDatafy**. By accessing our website and using our resources, y
 By using the CodingDatafy platform, you acknowledge that you have read, understood, and agreed to be bound by these terms. If you do not agree, please refrain from using our services.
 
 ### 2. Intellectual Property & Licensing
-* **Educational Content**: All Coding(Programming) language documentation, guides, and articles are licensed under **Creative Commons Attribution 4.0 International (CC BY 4.0)** unless otherwise stated.
+* **Educational Content**: All Coding(Programming) language documentation, guides, and articles are licensed under **Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)** unless otherwise stated.
 * **Code Snippets**: Any software code or scripts provided on this site are licensed under the **MIT License**.
 * **Organization Identity**: The name "CodingDatafy" and its official logos are the property of the CodingDatafy Organization and may not be used for commercial purposes without prior written consent.
 

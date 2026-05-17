@@ -1,6 +1,6 @@
 ---
 project: CodingDatafy
-license: MIT
+license: CC BY-SA 4.0
 copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: Privacy Policy

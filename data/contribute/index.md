@@ -1,6 +1,6 @@
 ---
 project: CodingDatafy
-license: MIT
+license: CC BY-SA 4.0
 copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: Contribute
@@ -63,7 +63,7 @@ To maintain the integrity of our reference, all contributions must adhere to the
 ```markdown
 ---
 project: CodingDatafy
-license: CC BY 4.0
+license: CC BY-SA 4.0
 copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: "Page Title Here"
