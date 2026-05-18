@@ -5,7 +5,7 @@ copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: Homepage
 style: rootpage.css
-description: "Explore CodingDatafy, the world's largest reference for coding languages. Access expert documentation, insights, and professional developer resources."
+description: "Welcome to CodingDatafy, an AI-first open-source reference for coding languages. Access structured markdown and JSON data for global development."
 ---
 
 <div id="homepage-rootpage">
