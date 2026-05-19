@@ -5,7 +5,7 @@ copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: Languages
 style: rootpage.css
-description: "Browse the world's most used coding languages. A comprehensive guide to market share, types, and primary applications of the top 25 coding technologies."
+description: "Explore the global index of top 25 coding languages ranked by 2026 market share. Access structured documentation, types, and primary applications."
 ---
 
 <div id="languages-rootpage">
