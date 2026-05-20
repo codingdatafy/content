@@ -5,7 +5,7 @@ copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: FAQ
 style: rootpage.css
-description: "Find quick answers to common questions about CodingDatafy, our documentation standards, and how to navigate our coding resources effectively."
+description: "Get expert answers to common programming questions. Learn about CodingDatafy's AI-first data structures, licensing, and open-source documentation rules."
 ---
 
 <div id="faq-rootpage">
