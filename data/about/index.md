@@ -5,7 +5,7 @@ copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: About
 style: rootpage.css
-description: "Discover the mission behind CodingDatafy Organization, our Content-as-Code philosophy, and our journey to build the world's most comprehensive programming reference."
+description: "Discover the CodingDatafy vision: building the world's largest, fast, and database-free programming reference using a structured AI-first approach."
 ---
 
 <div id="about-rootpage">
