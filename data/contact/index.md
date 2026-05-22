@@ -5,7 +5,7 @@ copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: Contact
 style: rootpage.css
-description: "Have questions or suggestions? Reach out to the CodingDatafy team for technical support, partnerships, or general inquiries."
+description: "Get in touch with CodingDatafy Team. Submit technical inquiries via GitHub issues or connect with our global developer community on social media."
 ---
 
 <div id="contact-rootpage">
@@ -16,8 +16,8 @@ We value your feedback and inquiries. As a global open-source organization, we p
 ## Technical Inquiries & Bug Reports
 If you encounter a technical issue with the website or find an error in our language documentation, please use our official GitHub repository. This ensures that your report is tracked by our engineering team and remains accessible to the developer community.
 
-* **GitHub Issues**: [Open a New Issue](https://github.com/CodingDatafy/CodingDatafy/issues)
-* **Feature Requests**: [Submit a Proposal](https://github.com/CodingDatafy/CodingDatafy/discussions)
+* **GitHub Issues**: [Open a New Issue](https://github.com/CodingDatafy/content/issues)
+* **Feature Requests**: [Submit a Proposal](https://github.com/CodingDatafy/content/discussions)
 
 ## Social & Community
 Stay updated with the latest additions to the world's largest coding reference and join our growing community of developers:
