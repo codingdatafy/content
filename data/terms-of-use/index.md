@@ -5,7 +5,7 @@ copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: Terms of Use
 style: rootpage.css
-description: "Review the terms and conditions for using CodingDatafy. Understand your rights and our guidelines for accessing our professional coding content."
+description: "Review the official terms of use for CodingDatafy. Understand our CC BY-SA 4.0 and MIT licensing rules for open-source programming documentation."
 ---
 
 <div id="terms-of-use-rootpage">
