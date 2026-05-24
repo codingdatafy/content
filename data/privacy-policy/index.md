@@ -5,7 +5,7 @@ copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: Privacy Policy
 style: rootpage.css
-description: "Learn how CodingDatafy Organization protects your data and privacy. Transparent information on our data handling and security practices."
+description: "Read the CodingDatafy privacy policy. Learn how our database-free, static architecture ensures data security alongside Vercel and Cloudflare networks."
 ---
 
 <div id="privacy-policy-rootpage">
