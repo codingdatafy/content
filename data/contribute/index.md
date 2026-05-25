@@ -5,7 +5,7 @@ copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: Contribute
 style: rootpage.css
-description: "Join the CodingDatafy Organization. Learn how you can contribute to the world's largest coding reference and share your expertise with the community."
+description: "Join CodingDatafy as a contributor. Learn our Next.js workflow, strict content standards, and how to submit structured markdown and JSON coding data."
 ---
 
 <div id="contribute-rootpage">
