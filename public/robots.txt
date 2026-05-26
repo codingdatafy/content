@@ -31,9 +31,6 @@ Disallow: /
 User-agent: Omgili
 Disallow: /
 
-User-agent: PerplexityBot
-Disallow: /
-
 User-agent: MistralAI-User
 Disallow: /
 
@@ -79,7 +76,7 @@ Disallow: /
 
 
 # -----------------------------------------------------------------
-# 🟢 GROUP 2: ALLOWED BOT PARTNERS (Search & Real-time Indexing Only)
+# GROUP 2: ALLOWED BOT PARTNERS (Search & Real-time Indexing Only)
 # -----------------------------------------------------------------
 # OpenAI: Allows real-time search in ChatGPT (ChatGPT-User / Search)
 User-agent: OAI-SearchBot
@@ -100,6 +97,13 @@ User-agent: Claude-SearchBot
 Allow: /
 
 User-agent: Claude-User
+Allow: /
+
+# Perplexity: Allows real-time AI Answer engine search
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
 Allow: /
 
 # Standard Search & Infrastructure Bots
