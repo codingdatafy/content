@@ -41,7 +41,7 @@ Find quick, expert answers to common questions about the digital languages that 
 
 <details open>
   <summary>How can I contribute to CodingDatafy?</summary>
-  <p>We are currently in the foundation phase of building the world's largest reference. Soon, we will open paths for community contributions via GitHub Pull Requests. Please visit our <a href="/contribute">Contribute</a> page for updates.</p>
+  <p>Please visit our <a href="/contribute">Contribute</a> page for updates.</p>
 </details>
 
 <details open>
