@@ -1,0 +1,26 @@
+# @project CodingDatafy
+# @license MIT
+# @copyright 2026 CodingDatafy Organization
+# @author CodingDatafy Team
+
+name: Trigger Engine Build
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+    paths:
+      - 'data/**'
+
+jobs:
+  ping-engine:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Pinging Centroidium Repository via GitHub API
+        run: |
+          curl -X POST \
+            -H "Accept: application/vnd.github.v3+json" \
+            -H "Authorization: token ${{ secrets.CENTROIDIUM_PAT }}" \
+            https://api.github.com/repos/CodingDatafy/centroidium/dispatches \
+            -d '{"event_type": "content_updated", "client_payload": {"branch": "${{ github.ref_name }}"}}'
