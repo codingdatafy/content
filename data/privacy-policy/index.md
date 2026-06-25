@@ -3,12 +3,11 @@ project: CodingDatafy
 license: CC BY-SA 4.0
 copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
-title: Privacy Policy
-style: rootpage.css
+title: "Privacy Policy"
+style: "rootpage.css"
+id: "privacy-policy-rootpage"
 description: "Read the CodingDatafy privacy policy. Learn how our database-free, static architecture ensures data security alongside Vercel and Cloudflare networks."
 ---
-
-<div id="privacy-policy-rootpage">
 
 ## Privacy Policy
 
@@ -19,9 +18,9 @@ As a database-free, static-site organization, CodingDatafy **does not** collect 
 
 ### 2. Technical Infrastructure (Vercel & Cloudflare)
 To ensure high performance and security, our website is hosted on **Vercel** and protected by **Cloudflare**. These services may collect technical metadata (such as IP addresses, browser types, and access times) for the purpose of:
-* Preventing DDoS attacks and malicious activity.
-* Optimizing content delivery through Global Edge Networks.
-* Analyzing basic traffic analytics to improve our content.
+- Preventing DDoS attacks and malicious activity.
+- Optimizing content delivery through Global Edge Networks.
+- Analyzing basic traffic analytics to improve our content.
 
 ### 3. Cookies
 CodingDatafy does not use tracking cookies for advertising or profiling. Any cookies used by our infrastructure providers (Cloudflare/Vercel) are strictly for security and performance purposes.
@@ -37,5 +36,3 @@ CodingDatafy is an educational resource. We do not knowingly collect any persona
 
 ### 7. Consent
 By using our website, you hereby consent to our Privacy Policy and agree to its terms.
-
-</div>

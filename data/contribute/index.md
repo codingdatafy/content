@@ -3,15 +3,15 @@ project: CodingDatafy
 license: CC BY-SA 4.0
 copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
-title: Contribute
-style: rootpage.css
+title: "Contribute"
+style: "rootpage.css"
+id: "contribute-rootpage"
 description: "Join CodingDatafy as a contributor. Learn our Next.js workflow, strict content standards, and how to submit structured markdown and JSON coding data."
 ---
 
-<div id="contribute-rootpage">
-
 ## Contribution Guide
-Thank you for your interest in **CodingDatafy**! To build the world's largest reference of coding languages, we rely on the collective expertise of the global developer community. 
+
+Thank you for your interest in **CodingDatafy**! On a mission to build the world's largest reference and knowledge base for coding languages., we rely on the collective expertise of the global developer community. 
 
 As a professional engineering organization, we follow a structured workflow to maintain the highest standards of speed, security, and accuracy.
 
@@ -49,27 +49,6 @@ To maintain the integrity of our reference, all contributions must adhere to the
 - **Language**: All technical documentation must be in English.
 - **Verifiability**: Every technical claim or market share statistic must be accompanied by a link to the official source.
 
- ### Documentation Standards
-- **Source Code (TS/TSX/CSS):** Every file must include the standard `@project` header as a comment at the beginning of the file:
-```typescript
-/**
- * @project CodingDatafy
- * @license MIT
- * @copyright 2026 CodingDatafy Organization
- * @author CodingDatafy Team
- */
- ```
-- **Content Files (MD):** Every Markdown file must include a standardized **Frontmatter** block at the very top to ensure metadata integrity and copyright protection:
-```markdown
----
-project: CodingDatafy
-license: CC BY-SA 4.0
-copyright: 2026 CodingDatafy Organization
-author: CodingDatafy Team
-title: "Page Title Here"
-style: "CSS-Style Here"
-description: "A brief professional description for SEO purposes"
----
- ```
- 
-</div>
+### Documentation Standards
+- **Source Code (TS/TSX/CSS):** Every file must include the standard `@project` header as a comment at the beginning of the file.
+- **Content Files (MD):** Every Markdown file must include a standardized **Frontmatter** block at the very top to ensure metadata integrity and copyright protection.

@@ -3,12 +3,11 @@ project: CodingDatafy
 license: CC BY-SA 4.0
 copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
-title: Languages
-style: rootpage.css
+title: "Languages"
+style: "rootpage.css"
+id: "languages-rootpage"
 description: "Explore the global index of top 25 coding languages ranked by 2026 market share. Access structured documentation, types, and primary applications."
 ---
-
-<div id="languages-rootpage">
 
 ## Global Coding Languages Index
 
@@ -211,5 +210,3 @@ Each language in the table above will be linked to a dedicated documentation pag
 - **Syntax Guides**: Comprehensive code examples and grammar.
 - **Environment Setup**: How to get started locally.
 - **Best Practices**: Professional coding standards and patterns.
-
-</div>
