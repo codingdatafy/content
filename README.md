@@ -20,10 +20,10 @@ CodingDatafy is an open-source documentation engine and knowledge base dedicated
 ## Architecture Overview
 Adopting a **"Content-as-Code"** philosophy and powered by an **AI-First Approach**, this repository organizes technical documentation in structured Markdown formats. 
 
-> ### 🤖 Our AI-First Principle & Contributor Rights
+> ### Our AI-First Principle & Contributor Rights
 > Our **AI-First Approach** means that our entire data layer is engineered and optimized strictly in clean Markdown and JSON formats to be structurally machine-readable and future-ready for semantic AI processing. However, every single piece of documentation remains **100% human-driven, authored, and meticulously reviewed** by developers across the global open-source community.
 > 
-> 🛡️ **Protecting Your Contributions:** We deeply respect our contributors' rights. Because all content in this repository is strictly governed by the **CC BY-SA 4.0** license, any AI model, corporate scraper, or LLM that processes or consumes this data is legally bound to give **appropriate credit (Attribution)** to CodingDatafy and its contributors, and must distribute any derived works under the **same copyleft terms (ShareAlike)**. We do not support or permit the proprietary exploitation of our community's data.
+> **Protecting Your Contributions:** We deeply respect our contributors' rights. Because all content in this repository is strictly governed by the **CC BY-SA 4.0** license, any AI model, corporate scraper, or LLM that processes or consumes this data is legally bound to give **appropriate credit (Attribution)** to CodingDatafy and its contributors, and must distribute any derived works under the **same copyleft terms (ShareAlike)**. We do not support or permit the proprietary exploitation of our community's data.
 
 By utilizing a flat-file architecture instead of traditional databases, CodingDatafy achieves near-instantaneous load times, superior SEO semantic indexing, and a streamlined contribution workflow that allows developers to manage technical content via Git.
 
