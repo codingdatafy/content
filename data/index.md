@@ -6,7 +6,7 @@ author: CodingDatafy Team
 title: "Homepage"
 style: "rootpage.css"
 id: "homepage-rootpage"
-description: "Welcome to CodingDatafy, an AI-first open-source reference for coding languages. Access structured markdown and JSON data for global development."
+description: "Explore CodingDatafy: An AI-first, open-source reference for coding languages. Access structured Markdown and JSON datasets designed for global development."
 ---
 
 ## CodingDatafy
