@@ -6,7 +6,7 @@ author: CodingDatafy Team
 title: "Languages"
 style: "rootpage.css"
 id: "languages-rootpage"
-description: "Explore the global index of top 25 coding languages ranked by 2026 market share. Access structured documentation, types, and primary applications."
+description: "Your ultimate 2026 reference for the top 25 coding languages. Access structured Markdown and JSON datasets optimized for developer and AI integration"
 ---
 
 ## Global Coding Languages Index
