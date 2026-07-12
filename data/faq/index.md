@@ -6,7 +6,7 @@ author: CodingDatafy Team
 title: "FAQ"
 style: "rootpage.css"
 id: "faq-rootpage"
-description: "Get expert answers to common programming questions. Learn about CodingDatafy's AI-first data structures, licensing, and open-source documentation rules."
+description: "Quickly resolve programming doubts with CodingDatafy's technical FAQ. Explore details on AI-first structures, CC BY-SA licensing, and our open-source rules"
 ---
 
 ## Frequently Asked Questions
