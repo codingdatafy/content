@@ -6,7 +6,7 @@ author: CodingDatafy Team
 title: "About"
 style: "rootpage.css"
 id: "about-rootpage"
-description: "Discover the CodingDatafy vision: building the world's largest, fast, and database-free programming reference using a structured AI-first approach."
+description: "Discover CodingDatafy's mission: building the world's largest, ultra-fast, and database-free coding reference powered by a structured, AI-first architecture"
 ---
 
 ## About CodingDatafy
