@@ -6,7 +6,7 @@ author: CodingDatafy Team
 title: "Contact"
 style: "rootpage.css"
 id: "contact-rootpage"
-description: "Get in touch with CodingDatafy Team. Submit technical inquiries via GitHub issues or connect with our global developer community on social media."
+description: "Get in touch with the CodingDatafy Team. Submit technical inquiries via GitHub issues or connect with our global developer community today."
 ---
 
 ## Contact Us
