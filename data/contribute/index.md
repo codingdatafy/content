@@ -6,7 +6,7 @@ author: CodingDatafy Team
 title: "Contribute"
 style: "rootpage.css"
 id: "contribute-rootpage"
-description: ""Join CodingDatafy's global open-source mission. Learn our Next.js workflow to contribute structured Markdown and JSON reference data directly via GitHub."
+description: "Join CodingDatafy's global open-source mission. Learn our Next.js workflow to contribute structured Markdown and JSON reference data directly via GitHub."
 ---
 
 ## Contribution Guide
