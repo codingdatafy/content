@@ -6,7 +6,7 @@ author: CodingDatafy Team
 title: "Privacy Policy"
 style: "rootpage.css"
 id: "privacy-policy-rootpage"
-description: "Read the CodingDatafy privacy policy. Learn how our database-free, static architecture ensures data security alongside Vercel and Cloudflare networks."
+description: ""Read CodingDatafy's privacy policy. Learn how our static, database-free architecture natively secures user privacy across Cloudflare and Vercel networks."
 ---
 
 ## Privacy Policy

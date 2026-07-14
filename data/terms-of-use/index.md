@@ -6,7 +6,7 @@ author: CodingDatafy Team
 title: "Terms of Use"
 style: "rootpage.css"
 id: "terms-of-use-rootpage"
-description: "Review CodingDatafy's terms of use. Learn how our MIT and CC BY-SA 4.0 dual-license model protects open-source code and community programming documentation"
+description: "Review CodingDatafy's terms of use. Learn how our MIT and CC BY-SA 4.0 dual-license model protects open-source code and community programming documentation."
 ---
 
 ## Terms of Use
