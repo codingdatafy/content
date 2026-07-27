@@ -6,25 +6,26 @@ author: CodingDatafy Team
 title: "Homepage"
 style: "rootpage.css"
 id: "homepage-rootpage"
-description: "Explore CodingDatafy: An AI-first, open-source reference for coding languages. Access structured Markdown and JSON datasets designed for global development."
+description: "The definitive open-source reference for modern coding languages. Access production-grounded Markdown & JSON datasets engineered for developers and AI engines."
 ---
 
 ## CodingDatafy
 **On a mission to build the world's largest reference and knowledge base for coding languages.**
 
-## The Universal Gateway to Programming Knowledge
-Welcome to **CodingDatafy**, the most ambitious open-source project dedicated to documenting every coding language in existence. Designed for high performance and engineered for clarity, we provide a centralized repository for the global developer community.
+## The Universal Gateway to Architectural Knowledge
+Welcome to **CodingDatafy**, the open-source engineering reference engineered to map the full spectrum of modern coding languages. From foundational programming and declarative query specs to markup, data serialization, and hardware description formats, we provide a unified, production-grounded data ecosystem for developers, system architects, and AI models worldwide.
 
-## Mapping the Ecosystem
-The world of software development is vast and constantly evolving. CodingDatafy serves as your technical map, tracking over **99% of the coding languages** used in the industry today—from the foundations of the web to high-performance systems and AI.
+## Production-Grounded Architecture Roadmap
+Software engineering is no longer limited to traditional programming languages. **CodingDatafy** operates as an architectural map, auditing technologies against real-world enterprise adoption, open-source activity, and high-performance infrastructure footprints—filtering out academic noise to deliver precise technical clarity.
 
 ## Explore the Global Index
-We have meticulously organized the top 25 coding languages by market share, type, and application. Whether you are analyzing industry trends or looking for your next language to master, our comprehensive index is the ultimate starting point.
+Our curated index tracks 62 essential coding languages categorized into 11 distinct technical domains, providing structured datasets optimized for modern engineering workflows and machine-readable integrations.
 
-### Top Categories:
-- **Web Technologies**: HTML, CSS, JavaScript, and TypeScript.
-- **Data & AI**: Python, R, and SQL.
-- **System Engineering**: C, C++, Rust, and Go.
-- **Mobile Development**: Swift, Kotlin, and Dart.
+### Key Technical Domains:
+- **Web & Full-Stack Architecture:** HTML, CSS, JavaScript, TypeScript, JSON, WebAssembly.
+- **Enterprise & Cloud Backends:** Java, C#, Go, Rust, Python, Scala.
+- **Systems & Kernel Engineering:** C, C++, Rust, Zig, Assembly.
+- **AI, Machine Learning & Analytics:** Python, Mojo, Julia, SQL, MATLAB.
+- **DevOps, Infrastructure & Hardware:** YAML, Bash, HCL, SystemVerilog, VHDL.
 
 [View Full Language Index →](/languages)

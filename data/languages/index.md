@@ -6,207 +6,581 @@ author: CodingDatafy Team
 title: "Languages"
 style: "rootpage.css"
 id: "languages-rootpage"
-description: "Your ultimate 2026 reference for the top 25 coding languages. Access structured Markdown and JSON datasets optimized for developer and AI integration"
+description: "The definitive 2026 coding and programming languages index. A production-grounded architecture roadmap engineered for modern software engineers."
 ---
 
-## Global Coding Languages Index
+## Coding Languages Index 2026
 
-Welcome to the definitive reference for modern coding technologies. This index provides a detailed breakdown of the most influential languages in the industry, representing over 99% of the global development ecosystem.
+This is not a traditional programming popularity index. This is a production-grounded, system-wide architecture roadmap encompassing the full spectrum of modern coding languages—from core programming and query languages to markup, hardware description, and data serialization specs. Designed for every programmer on Earth, obsolete and purely academic syntax have been completely omitted to keep your technical path precise, efficient, and highly marketable.
 
-## Industry Snapshot (2026 Stats)
-*Languages are ranked by market share and real-world industrial impact.*
+---
+
+## Production Standards & Career Domains
+
+Before diving into the career domains, use this system architecture tracking key to build your personalized learning path:
+
+*   **Mandatory (Core):** The absolute foundational layer. You **cannot** operate or find a job in this domain without mastering these. *Beginners must start here.*
+*   **Industry Standard:** The production-grade stack driving mid-to-large scale global enterprise systems. *Essential for Professionals aiming for employment.*
+*   **Specialized / Optional:** High-efficiency, niche, legacy, or bleeding-edge additions. *Perfect for Hobbyists searching for performance, or Senior Engineers optimizing architecture.*
+
+---
+
+### 1. Web Architecture, Full-Stack Frontend/Backend & Modern Formats
 
 <table class="table sortable">
 	<thead>
 		<tr>
-			<th>#</th>
 			<th>Language</th>
 			<th>Type</th>
-			<th>Main Applications</th>
-			<th>Market Share</th>
+			<th>Requirement Level</th>
+			<th>Primary Job Market Role</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td>1</td>
-			<td>HTML</td>
-			<td>Markup Language</td>
-			<td>Web Structure & Content</td>
-			<td>14.5%</td>
+			<td><strong>HTML</strong></td>
+			<td>Hypertext Markup Language</td>
+			<td><span class="badge badge-mandatory">Mandatory (Core)</span></td>
+			<td>Web Layout & Semantic Structures</td>
 		</tr>
 		<tr>
-			<td>2</td>
-			<td>CSS</td>
+			<td><strong>CSS</strong></td>
 			<td>Style Sheet Language</td>
-			<td>Web Styling & Layout</td>
-			<td>13.0%</td>
+			<td><span class="badge badge-mandatory">Mandatory (Core)</span></td>
+			<td>User Interface Styling & Responsiveness</td>
 		</tr>
 		<tr>
-			<td>3</td>
-			<td>JavaScript</td>
+			<td><strong>JavaScript</strong></td>
 			<td>Programming Language</td>
-			<td>Web Dev, Servers, Mobile</td>
-			<td>12.5%</td>
+			<td><span class="badge badge-mandatory">Mandatory (Core)</span></td>
+			<td>Full-Stack Web App Behavior & Execution</td>
 		</tr>
 		<tr>
-			<td>4</td>
-			<td>Python</td>
+			<td><strong>TypeScript</strong></td>
 			<td>Programming Language</td>
-			<td>AI, Data Science, Scripting</td>
-			<td>10.0%</td>
+			<td><span class="badge badge-standard">Industry Standard</span></td>
+			<td>Type-Safe Scalable Enterprise Web Architectures</td>
 		</tr>
 		<tr>
-			<td>5</td>
-			<td>SQL</td>
+			<td><strong>JSON</strong></td>
+			<td>Data Interchange Format</td>
+			<td><span class="badge badge-mandatory">Mandatory (Core)</span></td>
+			<td>Lightweight Structured Language-Agnostic Interoperability</td>
+		</tr>
+		<tr>
+			<td><strong>GraphQL</strong></td>
 			<td>Query Language</td>
-			<td>Database Management</td>
-			<td>9.5%</td>
+			<td><span class="badge badge-optional">Specialized / Optional</span></td>
+			<td>Decoupled API Data Fetching & Declarative Routing</td>
 		</tr>
 		<tr>
-			<td>6</td>
-			<td>TypeScript</td>
-			<td>Programming Language</td>
-			<td>Scalable Web Development</td>
-			<td>7.0%</td>
+			<td><strong>WebAssembly</strong></td>
+			<td>Binary Format</td>
+			<td><span class="badge badge-optional">Specialized / Optional</span></td>
+			<td>High-Performance Sandbox Native Web Modules</td>
 		</tr>
 		<tr>
-			<td>7</td>
-			<td>Java</td>
-			<td>Programming Language</td>
-			<td>Enterprise, Android, Backend</td>
-			<td>6.0%</td>
-		</tr>
-		<tr>
-			<td>8</td>
-			<td>C</td>
-			<td>Programming Language</td>
-			<td>Operating Systems, Embedded</td>
-			<td>4.5%</td>
-		</tr>
-		<tr>
-			<td>9</td>
-			<td>C++</td>
-			<td>Programming Language</td>
-			<td>Games, Performance Software</td>
-			<td>4.5%</td>
-		</tr>
-		<tr>
-			<td>10</td>
-			<td>C#</td>
-			<td>Programming Language</td>
-			<td>Game Dev (Unity), Enterprise</td>
-			<td>4.0%</td>
-		</tr>
-		<tr>
-			<td>11</td>
-			<td>PHP</td>
-			<td>Programming Language</td>
-			<td>Web Backend, WordPress</td>
-			<td>3.5%</td>
-		</tr>
-		<tr>
-			<td>12</td>
-			<td>Go</td>
-			<td>Programming Language</td>
-			<td>Cloud Services, Microservices</td>
-			<td>2.5%</td>
-		</tr>
-		<tr>
-			<td>13</td>
-			<td>Rust</td>
-			<td>Programming Language</td>
-			<td>System Safety & Performance</td>
-			<td>2.0%</td>
-		</tr>
-		<tr>
-			<td>14</td>
-			<td>Kotlin</td>
-			<td>Programming Language</td>
-			<td>Modern Android Development</td>
-			<td>1.5%</td>
-		</tr>
-		<tr>
-			<td>15</td>
-			<td>Swift</td>
-			<td>Programming Language</td>
-			<td>iOS & macOS Applications</td>
-			<td>1.5%</td>
-		</tr>
-		<tr>
-			<td>16</td>
-			<td>Bash</td>
-			<td>Scripting Language</td>
-			<td>Shell Scripting, Linux Admin</td>
-			<td>1.2%</td>
-		</tr>
-		<tr>
-			<td>17</td>
-			<td>Ruby</td>
-			<td>Programming Language</td>
-			<td>Rapid Web Prototyping</td>
-			<td>1.0%</td>
-		</tr>
-		<tr>
-			<td>18</td>
-			<td>R</td>
-			<td>Programming Language</td>
-			<td>Statistical Computing</td>
-			<td>1.0%</td>
-		</tr>
-		<tr>
-			<td>19</td>
-			<td>Dart</td>
-			<td>Programming Language</td>
-			<td>Cross-platform (Flutter)</td>
-			<td>1.0%</td>
-		</tr>
-		<tr>
-			<td>20</td>
-			<td>PowerShell</td>
-			<td>Scripting Language</td>
-			<td>Windows Automation & Task</td>
-			<td>0.8%</td>
-		</tr>
-		<tr>
-			<td>21</td>
-			<td>WebAssembly</td>
-			<td>Binary Instruction Format</td>
-			<td>High-speed Web Performance</td>
-			<td>0.7%</td>
-		</tr>
-		<tr>
-			<td>22</td>
-			<td>Lua</td>
-			<td>Programming Language</td>
-			<td>Embedded Scripts (Games)</td>
-			<td>0.5%</td>
-		</tr>
-		<tr>
-			<td>23</td>
-			<td>Scala</td>
-			<td>Programming Language</td>
-			<td>Big Data Processing</td>
-			<td>0.5%</td>
-		</tr>
-		<tr>
-			<td>24</td>
-			<td>Elixir</td>
-			<td>Programming Language</td>
-			<td>Distributed Systems, Chat</td>
-			<td>0.5%</td>
-		</tr>
-		<tr>
-			<td>25</td>
-			<td>Markdown</td>
-			<td>Markup Language</td>
-			<td>Documentation & Readme</td>
-			<td>0.5%</td>
+			<td><strong>Markdown</strong></td>
+			<td>Lightweight Markup Language</td>
+			<td><span class="badge badge-mandatory">Mandatory (Core)</span></td>
+			<td>Structured Text Formatting, Technical Documentation & Content Datasets</td>
 		</tr>
 	</tbody>
 </table>
 
-### How to Use This Index
-Each language in the table above will be linked to a dedicated documentation page. There, you can explore:
-- **Syntax Guides**: Comprehensive code examples and grammar.
-- **Environment Setup**: How to get started locally.
-- **Best Practices**: Professional coding standards and patterns.
+### 2. Data Science, Engineering & Database Infrastructure
+
+<table class="table sortable">
+	<thead>
+		<tr>
+			<th>Language</th>
+			<th>Type</th>
+			<th>Requirement Level</th>
+			<th>Primary Job Market Role</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><strong>SQL</strong></td>
+			<td>Declarative Query Language</td>
+			<td><span class="badge badge-mandatory">Mandatory (Core)</span></td>
+			<td>Universal Relational Database Querying & Manipulation</td>
+		</tr>
+		<tr>
+			<td><strong>Scala</strong></td>
+			<td>Programming Language</td>
+			<td><span class="badge badge-standard">Industry Standard</span></td>
+			<td>Big Data Streaming Pipelines via the Apache Spark Engine</td>
+		</tr>
+		<tr>
+			<td><strong>R</strong></td>
+			<td>Programming Language</td>
+			<td><span class="badge badge-optional">Specialized / Optional</span></td>
+			<td>Academic Statistical Inference & Dedicated Data Graphics Visuals</td>
+		</tr>
+	</tbody>
+</table>
+
+### 3. Enterprise Cloud Backends, Microservices & Middleware
+
+<table class="table sortable">
+	<thead>
+		<tr>
+			<th>Language</th>
+			<th>Type</th>
+			<th>Requirement Level</th>
+			<th>Primary Job Market Role</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><strong>Java</strong></td>
+			<td>Programming Language</td>
+			<td><span class="badge badge-standard">Industry Standard</span></td>
+			<td>Enterprise Corporate Architectures, Middleware & Server Backends</td>
+		</tr>
+		<tr>
+			<td><strong>C#</strong></td>
+			<td>Programming Language</td>
+			<td><span class="badge badge-standard">Industry Standard</span></td>
+			<td>Cross-Platform Enterprise Software & High-Speed Microservices (.NET)</td>
+		</tr>
+		<tr>
+			<td><strong>Go</strong></td>
+			<td>Programming Language</td>
+			<td><span class="badge badge-standard">Industry Standard</span></td>
+			<td>Cloud-Native Infrastructure Development & Concurrency Services</td>
+		</tr>
+		<tr>
+			<td><strong>PHP</strong></td>
+			<td>Programming Language</td>
+			<td><span class="badge badge-optional">Specialized / Optional</span></td>
+			<td>Server-Side Traditional Web Platforms & Content Management Monoliths</td>
+		</tr>
+		<tr>
+			<td><strong>Ruby</strong></td>
+			<td>Programming Language</td>
+			<td><span class="badge badge-optional">Specialized / Optional</span></td>
+			<td>Rapid Web Startup MVP Prototyping (Ruby on Rails Architecture)</td>
+		</tr>
+		<tr>
+			<td><strong>Crystal</strong></td>
+			<td>Programming Language</td>
+			<td><span class="badge badge-optional">Specialized / Optional</span></td>
+			<td>High-Performance Bare-Metal Web Services with Ruby-like Syntax Type-Safety</td>
+		</tr>
+		<tr>
+			<td><strong>Apex</strong></td>
+			<td>Programming Language</td>
+			<td><span class="badge badge-optional">Specialized / Optional</span></td>
+			<td>Proprietary Salesforce Enterprise CRM Automation Routing</td>
+		</tr>
+		<tr>
+			<td><strong>ABAP</strong></td>
+			<td>Programming Language</td>
+			<td><span class="badge badge-optional">Specialized / Optional</span></td>
+			<td>Proprietary SAP Enterprise Resource Planning ERP Business Customization</td>
+		</tr>
+	</tbody>
+</table>
+
+### 4. Artificial Intelligence, Machine Learning & Advanced Analytics
+
+<table class="table sortable">
+	<thead>
+		<tr>
+			<th>Language</th>
+			<th>Type</th>
+			<th>Requirement Level</th>
+			<th>Primary Job Market Role</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><strong>Python</strong></td>
+			<td>Programming Language</td>
+			<td><span class="badge badge-mandatory">Mandatory (Core)</span></td>
+			<td>AI Ecosystem, Deep Learning Pipelines, and Automation</td>
+		</tr>
+		<tr>
+			<td><strong>Mojo</strong></td>
+			<td>Programming Language</td>
+			<td><span class="badge badge-optional">Specialized / Optional</span></td>
+			<td>High-Performance Hardware-Accelerated AI Compute & Modeling</td>
+		</tr>
+		<tr>
+			<td><strong>Julia</strong></td>
+			<td>Programming Language</td>
+			<td><span class="badge badge-optional">Specialized / Optional</span></td>
+			<td>High-Speed Numerical Computing & Data Analytics Execution</td>
+		</tr>
+		<tr>
+			<td><strong>MATLAB</strong></td>
+			<td>Programming Language</td>
+			<td><span class="badge badge-optional">Specialized / Optional</span></td>
+			<td>Advanced Control Systems, Signal Processing & Academic Modeling</td>
+		</tr>
+		<tr>
+			<td><strong>Q#</strong></td>
+			<td>Programming Language</td>
+			<td><span class="badge badge-optional">Specialized / Optional</span></td>
+			<td>Quantum Algorithm Development, Azure Quantum Workloads & Qubit Logic Simulation</td>
+		</tr>
+	</tbody>
+</table>
+
+### 5. High-Performance, Kernel & Systems Engineering
+
+<table class="table sortable">
+	<thead>
+		<tr>
+			<th>Language</th>
+			<th>Type</th>
+			<th>Requirement Level</th>
+			<th>Primary Job Market Role</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><strong>C</strong></td>
+			<td>Programming Language</td>
+			<td><span class="badge badge-mandatory">Mandatory (Core)</span></td>
+			<td>Operating System Kernels, Bare-Metal Frameworks, and Core Drivers</td>
+		</tr>
+		<tr>
+			<td><strong>C++</strong></td>
+			<td>Programming Language</td>
+			<td><span class="badge badge-mandatory">Mandatory (Core)</span></td>
+			<td>Triple-A Game Development Engines, Browsers, and High-Speed Real-Time Logic</td>
+		</tr>
+		<tr>
+			<td><strong>Rust</strong></td>
+			<td>Programming Language</td>
+			<td><span class="badge badge-standard">Industry Standard</span></td>
+			<td>Memory-Safe Systems Programming & Cloud Infrastructure Tooling Architecture</td>
+		</tr>
+		<tr>
+			<td><strong>Zig</strong></td>
+			<td>Programming Language</td>
+			<td><span class="badge badge-optional">Specialized / Optional</span></td>
+			<td>Modern Low-Level Hardware Control & Lightweight Robust Compiler Engine Tools</td>
+		</tr>
+		<tr>
+			<td><strong>Nim</strong></td>
+			<td>Programming Language</td>
+			<td><span class="badge badge-optional">Specialized / Optional</span></td>
+			<td>Expressive Fast-Compiled High-Performance Native Utility Applications</td>
+		</tr>
+		<tr>
+			<td><strong>D</strong></td>
+			<td>Programming Language</td>
+			<td><span class="badge badge-optional">Specialized / Optional</span></td>
+			<td>Pragmatic Systems Programming & High-Performance Native App Architecture</td>
+		</tr>
+		<tr>
+			<td><strong>Lua</strong></td>
+			<td>Scripting Language</td>
+			<td><span class="badge badge-optional">Specialized / Optional</span></td>
+			<td>Lightweight Embedded Scripting, Game Engines Modding & In-Memory Redis Automation</td>
+		</tr>
+		<tr>
+			<td><strong>Assembly</strong></td>
+			<td>Low-Level Language</td>
+			<td><span class="badge badge-optional">Specialized / Optional</span></td>
+			<td>Hardware Architecture Optimization, Reverse Engineering & Core Exploit Audits</td>
+		</tr>
+		<tr>
+			<td><strong>Ada</strong></td>
+			<td>Programming Language</td>
+			<td><span class="badge badge-optional">Specialized / Optional</span></td>
+			<td>Safety-Critical Embedded Systems, High-Reliability Avionics & Transport Control</td>
+		</tr>
+	</tbody>
+</table>
+
+### 6. Distributed Networks, Fault-Tolerance & Functional Systems
+
+<table class="table sortable">
+	<thead>
+		<tr>
+			<th>Language</th>
+			<th>Type</th>
+			<th>Requirement Level</th>
+			<th>Primary Job Market Role</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><strong>Elixir</strong></td>
+			<td>Programming Language</td>
+			<td><span class="badge badge-standard">Industry Standard</span></td>
+			<td>High-Concurrency Real-Time Communication Systems & Modern Web Services</td>
+		</tr>
+		<tr>
+			<td><strong>Erlang</strong></td>
+			<td>Programming Language</td>
+			<td><span class="badge badge-standard">Industry Standard</span></td>
+			<td>Massively Distributed Global Telecoms & Fault-Tolerant Infrastructure Routing</td>
+		</tr>
+		<tr>
+			<td><strong>Clojure</strong></td>
+			<td>Programming Language</td>
+			<td><span class="badge badge-optional">Specialized / Optional</span></td>
+			<td>Data-Driven Functional Concurrent Data Flow Pipelines Hosted on the JVM</td>
+		</tr>
+		<tr>
+			<td><strong>Haskell</strong></td>
+			<td>Programming Language</td>
+			<td><span class="badge badge-optional">Specialized / Optional</span></td>
+			<td>Pure Functional Academic Safety Frameworks, Specialized Cryptography, and Advanced Math</td>
+		</tr>
+		<tr>
+			<td><strong>OCaml</strong></td>
+			<td>Programming Language</td>
+			<td><span class="badge badge-optional">Specialized / Optional</span></td>
+			<td>Industrial Functional Programming, High-Frequency Trading & Compiler Infrastructure</td>
+		</tr>
+		<tr>
+			<td><strong>F#</strong></td>
+			<td>Programming Language</td>
+			<td><span class="badge badge-optional">Specialized / Optional</span></td>
+			<td>Strongly-Typed Functional Computing & Data Science on the .NET Ecosystem</td>
+		</tr>
+	</tbody>
+</table>
+
+### 7. Native Mobile Application Development
+
+<table class="table sortable">
+	<thead>
+		<tr>
+			<th>Language</th>
+			<th>Type</th>
+			<th>Requirement Level</th>
+			<th>Primary Job Market Role</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><strong>Kotlin</strong></td>
+			<td>Programming Language</td>
+			<td><span class="badge badge-mandatory">Mandatory (Core)</span></td>
+			<td>Native Android Application Architecture & Modern Server Services</td>
+		</tr>
+		<tr>
+			<td><strong>Swift</strong></td>
+			<td>Programming Language</td>
+			<td><span class="badge badge-mandatory">Mandatory (Core)</span></td>
+			<td>Native Apple OS Ecosystem Engineering (iOS, macOS, VisionOS)</td>
+		</tr>
+		<tr>
+			<td><strong>Dart</strong></td>
+			<td>Programming Language</td>
+			<td><span class="badge badge-standard">Industry Standard</span></td>
+			<td>Cross-Platform High-Performance Native App Generation via the Flutter Engine</td>
+		</tr>
+	</tbody>
+</table>
+
+### 8. Cloud DevOps, Declarative Infrastructure & System Automation
+
+<table class="table sortable">
+	<thead>
+		<tr>
+			<th>Language</th>
+			<th>Type</th>
+			<th>Requirement Level</th>
+			<th>Primary Job Market Role</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><strong>YAML</strong></td>
+			<td>Data Serialization Language</td>
+			<td><span class="badge badge-mandatory">Mandatory (Core)</span></td>
+			<td>Kubernetes Orchestration Controls, GitHub Actions Definitions, and Configuration Specs</td>
+		</tr>
+		<tr>
+			<td><strong>Bash</strong></td>
+			<td>Scripting Language</td>
+			<td><span class="badge badge-mandatory">Mandatory (Core)</span></td>
+			<td>Linux Environments Orchestration, Modern CI/CD DevOps Pipelines & Shell Controls</td>
+		</tr>
+		<tr>
+			<td><strong>HCL</strong></td>
+			<td>Configuration Language</td>
+			<td><span class="badge badge-standard">Industry Standard</span></td>
+			<td>Declarative Infrastructure as Code Architecture Automation via HashiCorp Terraform</td>
+		</tr>
+		<tr>
+			<td><strong>PowerShell</strong></td>
+			<td>Scripting Language</td>
+			<td><span class="badge badge-standard">Industry Standard</span></td>
+			<td>Windows Cloud Domains Automation, Administrative Task Management & Security Controls</td>
+		</tr>
+		<tr>
+			<td><strong>Groovy</strong></td>
+			<td>Programming Language</td>
+			<td><span class="badge badge-standard">Industry Standard</span></td>
+			<td>CI/CD Pipeline Automation (Jenkinsfiles) & Gradle Build Systems Configuration</td>
+		</tr>
+		<tr>
+			<td><strong>OpenCL</strong></td>
+			<td>Programming Language</td>
+			<td><span class="badge badge-optional">Specialized / Optional</span></td>
+			<td>Cross-Platform Heterogeneous Parallel Computing Pipelines (CPU/GPU/FPGA)</td>
+		</tr>
+		<tr>
+			<td><strong>AWK</strong></td>
+			<td>Scripting Language</td>
+			<td><span class="badge badge-optional">Specialized / Optional</span></td>
+			<td>Unix Text Streams Processing, Modern Log Parsers & Data Extractions</td>
+		</tr>
+	</tbody>
+</table>
+
+### 9. Web3, Blockchain & Decentralized Ledgers
+
+<table class="table sortable">
+	<thead>
+		<tr>
+			<th>Language</th>
+			<th>Type</th>
+			<th>Requirement Level</th>
+			<th>Primary Job Market Role</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><strong>Solidity</strong></td>
+			<td>Programming Language</td>
+			<td><span class="badge badge-mandatory">Mandatory (Core)</span></td>
+			<td>Ethereum Virtual Machine Decentralized Smart Contracts, Web3 Apps & DeFi Routing</td>
+		</tr>
+	</tbody>
+</table>
+
+### 10. Hardware Description & Semiconductor Engineering
+
+<table class="table sortable">
+	<thead>
+		<tr>
+			<th>Language</th>
+			<th>Type</th>
+			<th>Requirement Level</th>
+			<th>Primary Job Market Role</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><strong>SystemVerilog</strong></td>
+			<td>Hardware Description</td>
+			<td><span class="badge badge-mandatory">Mandatory (Core)</span></td>
+			<td>Integrated Circuit Architecture Simulation Verification & Complex Semiconductor Design</td>
+		</tr>
+		<tr>
+			<td><strong>Verilog</strong></td>
+			<td>Hardware Description</td>
+			<td><span class="badge badge-standard">Industry Standard</span></td>
+			<td>Digital System Chips Modeling & Modern Semiconductor Structural Circuit Tests</td>
+		</tr>
+		<tr>
+			<td><strong>VHDL</strong></td>
+			<td>Hardware Description</td>
+			<td><span class="badge badge-standard">Industry Standard</span></td>
+			<td>FPGA Circuit Processing & Secure High-Speed Electronic System Modeling Designs</td>
+		</tr>
+	</tbody>
+</table>
+
+### 11. Other Languages and Legacy, Mainframe & Enterprise Maintenance Infrastructure
+
+<table class="table sortable">
+	<thead>
+		<tr>
+			<th>Language</th>
+			<th>Type</th>
+			<th>Requirement Level</th>
+			<th>Primary Job Market Role</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><strong>PL/SQL</strong></td>
+			<td>Procedural Language</td>
+			<td><span class="badge badge-optional">Specialized / Optional</span></td>
+			<td>Oracle Database Specialized Server-Side Logic Automation</td>
+		</tr>
+		<tr>
+			<td><strong>Transact-SQL</strong></td>
+			<td>Procedural Language</td>
+			<td><span class="badge badge-optional">Specialized / Optional</span></td>
+			<td>Microsoft SQL Server Advanced Transactional Systems Execution</td>
+		</tr>
+		<tr>
+			<td><strong>COBOL</strong></td>
+			<td>Programming Language</td>
+			<td><span class="badge badge-optional">Specialized / Optional</span></td>
+			<td>Core Banking Mainframes, Global Transactional Ledgers & Legacy Financial Rails</td>
+		</tr>
+		<tr>
+			<td><strong>Visual Basic (.NET)</strong></td>
+			<td>Programming Language</td>
+			<td><span class="badge badge-optional">Specialized / Optional</span></td>
+			<td>Legacy Windows Desktop Applications Maintenance & Enterprise .NET Line-of-Business Systems</td>
+		</tr>
+		<tr>
+			<td><strong>Fortran</strong></td>
+			<td>Programming Language</td>
+			<td><span class="badge badge-optional">Specialized / Optional</span></td>
+			<td>Supercomputing, Aerospace Aerodynamics & Advanced Weather Simulation Modeling</td>
+		</tr>
+		<tr>
+			<td><strong>Objective-C</strong></td>
+			<td>Programming Language</td>
+			<td><span class="badge badge-optional">Specialized / Optional</span></td>
+			<td>Legacy iOS Apple Infrastructures Maintenance & High-Value Enterprise Adaptations</td>
+		</tr>
+		<tr>
+			<td><strong>Perl</strong></td>
+			<td>Scripting Language</td>
+			<td><span class="badge badge-optional">Specialized / Optional</span></td>
+			<td>Legacy Server Automation Routing, Complex String Tokens & Telecom Text Parsers</td>
+		</tr>
+		<tr>
+			<td><strong>XML</strong></td>
+			<td>Markup Language</td>
+			<td><span class="badge badge-optional">Specialized / Optional</span></td>
+			<td>Legacy Enterprise Configuration & Serialization Pipelines</td>
+		</tr>
+		<tr>
+			<td><strong>SAS</strong></td>
+			<td>Programming Language</td>
+			<td><span class="badge badge-optional">Specialized / Optional</span></td>
+			<td>Legacy Clinical Research Analytics & Corporate Financial Statistics</td>
+		</tr>
+	</tbody>
+</table>
+
+---
+
+## Roadmap Methodology & Data Integrity
+
+To eliminate the "popularity noise" found in traditional indices (which often rank languages based on search engine spam or homework queries), **CodingDatafy** utilizes a cross-referenced architectural vetting framework. Every language listed is audited against real-world production data and classified into strict **Requirement Levels** using four foundational pillars:
+
+### 1. Open-Source Traction & Ecosystem Velocity (Source: GitHub Octoverse)
+*   **Metric Analyzed:** Active repository volume, annual pull request growth, and code contributor velocity.
+*   **Roadmap Alignment:** Languages with explosive open-source frameworks or standard language tooling (e.g., *TypeScript*, *Rust*) are mapped to ensure developers learn technologies backed by massive community support.
+
+### 2. Industry Employment Demand & Capital Allocation (Sources: LinkedIn Jobs & Indeed)
+*   **Metric Analyzed:** Global active job postings, core backend requirement patterns, and enterprise hiring mandates.
+*   **Roadmap Alignment:** Defines the **Mandatory (Core)** and **Industry Standard** badges. If Fortune 500 infrastructures and modern tech stacks require a language for entry-level or senior hiring (e.g., *Java*, *Go*, *SQL*), it is locked into the core roadmap.
+
+### 3. Tier-1 Enterprise Production Footprint (Big Tech Core Stack Auditing)
+*   **Metric Analyzed:** Active production infrastructure deployment patterns verified through official engineering disclosures from global technology leaders, including **Google, Meta, Microsoft, Amazon, Apple, X (formerly Twitter), and Wikimedia**.
+*   **Roadmap Alignment:** Ensures the curation filters out experimental or unstable languages by auditing if a technology is heavily fortified, actively maintained, or natively deployed within multi-billion dollar hyperscale architectures.
+
+### 4. Architectural Isolation: Pure Coding Languages vs. Ecosystem Frameworks
+*   **The Vetting Rule:** This roadmap monitors **Pure Coding Languages and Standard Formats only** (Programming, Scripting, Low-Level, Query, Markup, Hardware Description, Binary Formats, and Data Serialization). 
+*   **Framework Integration:** To maintain strict architectural taxonomy, modern frameworks, runtimes, and libraries (e.g., *React, Next.js, Node.js, NestJS, Bun, Spring Boot, .NET, Laravel, Django, Flutter, or FastAPI*) are **not** listed as separate entities. Instead, their market capitalization, job demand, and ecosystem weight are strictly consolidated and credited directly under their foundational mother languages (e.g., *JavaScript, TypeScript, Java, C#, PHP, Python, or Dart*). If a framework is demanded in the market, its weight is inherently reflected in the **Requirement Level** of its native language.
+---
