@@ -10,7 +10,7 @@ description: "The definitive open-source reference for modern coding languages. 
 ---
 
 ## CodingDatafy
-**On a mission to build the world's largest reference and knowledge base for coding languages.**
+**On a mission to build the world's largest reference and knowledge base for coding**
 
 ## The Universal Gateway to Architectural Knowledge
 Welcome to **CodingDatafy**, the open-source engineering reference engineered to map the full spectrum of modern coding languages. From foundational programming and declarative query specs to markup, data serialization, and hardware description formats, we provide a unified, production-grounded data ecosystem for developers, system architects, and AI models worldwide.
