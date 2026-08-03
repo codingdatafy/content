@@ -6,7 +6,7 @@ author: CodingDatafy Team
 title: "Homepage"
 style: "rootpage.css"
 id: "homepage-rootpage"
-description: "The definitive open-source reference for modern coding languages. Access production-grounded Markdown & JSON datasets engineered for developers and AI engines."
+description: "CodingDatafy is on a mission to build the world's largest reference and knowledge base for coding. Explore specs for languages, frameworks, APIs, databases, protocols, and CS fundamentals."
 ---
 
 ## CodingDatafy
