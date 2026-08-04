@@ -1,13 +1,3 @@
----
-project: CodingDatafy
-license: CC BY-SA 4.0
-copyright: 2026 CodingDatafy Organization
-author: CodingDatafy Team
-title: "Repository Overview and Contribution Guide"
-style: "markdown-standard"
-description: "Centralized flat-file dataset for CodingDatafy documentation engine"
----
-
 # Project Overview
 CodingDatafy is an open-source documentation engine and knowledge base dedicated to coding languages. This specific repository hosts the centralized, flat-file dataset of technical data. The platform is engineered to solve the challenge of fragmented coding references by providing a centralized, high-performance, and scalable repository of content.
 
