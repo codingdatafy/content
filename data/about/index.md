@@ -11,9 +11,9 @@ description: "Discover CodingDatafy's global mission: building the world's large
 
 ## About CodingDatafy
 
-**CodingDatafy** is an open-source technical organization established in 2026 to build the world's definitive reference for modern coding languages. In an era shaped by rapid AI advancement and evolving software stacks, engineers, architects, and automated agents require clean, version-controlled, and production-grounded knowledge—free from marketing hype and academic noise.
+**CodingDatafy** is an open-source technical organization founded in 2026 to build the world's largest reference and knowledge base for coding. In an ecosystem increasingly driven by AI capabilities and complex system architecture, developers, software architects, and autonomous agents need deterministic, version-controlled, and production-tested technical standards.
 
-Our mission is clear: to build the world's most comprehensive, ultra-fast, and open-source encyclopedia for coding languages—encompassing everything from foundational programming and system kernels to markup, query, serialization specs, and hardware description formats.
+Our mission is to establish the definitive open-source reference engine for software engineering—indexing everything from low-level systems and language syntax to high-performance frameworks, database architecture, network protocols, and core CS foundations.
 
 ## Production Roadmap
 
