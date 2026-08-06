@@ -6,7 +6,7 @@ author: CodingDatafy Team
 title: "About Us"
 style: "rootpage.css"
 id: "about-rootpage"
-description: "Discover CodingDatafy's global mission: building the world's largest, production-grounded coding languages reference powered by an open-source, AI-first architecture."
+description: "Discover CodingDatafy's mission: building the world's largest reference for coding and software engineering, powered by an open-source."
 ---
 
 ## About CodingDatafy
