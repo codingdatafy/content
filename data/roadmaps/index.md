@@ -41,7 +41,7 @@ To navigate these engineering roadmaps effectively, technical competencies are c
 	<tbody>
 		<tr>
 			<td><strong>Frontend Engineering</strong></td>
-			<td>HTML5, CSS3, JavaScript (ESNext), TypeScript</td>
+			<td><a href="/languages/html">HTML5</a>, CSS3, JavaScript (ESNext), TypeScript</td>
 			<td>React, Next.js, State Management, Tailwind CSS</td>
 			<td>Micro-Frontends, WebAssembly, WebGL, Performance Budgeting</td>
 		</tr>

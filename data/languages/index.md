@@ -38,7 +38,7 @@ Before diving into the career domains, use this system architecture tracking key
 	</thead>
 	<tbody>
 		<tr>
-			<td><strong>HTML</strong></td>
+			<td><strong><a href="/languages/html">HTML</a></strong></td>
 			<td>Hypertext Markup Language</td>
 			<td><span class="badge badge-mandatory">Mandatory (Core)</span></td>
 			<td>Web Layout & Semantic Structures</td>
