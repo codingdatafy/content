@@ -12,13 +12,13 @@ description: "Comprehensive reference and overview of HyperText Markup Language 
 
 <dl class="information-card">
 	<dt>Language Name</dt><dd>HyperText Markup Language (HTML)</dd>
+	<dt>Type</dt><dd>Declarative Language</dd>
 	<dt>Designer</dt><dd>Tim Berners-Lee</dd>
 	<dt>First Appeared</dt><dd>1993</dd>
-	<dt>Current Developer</dt><dd>WHATWG (Web Hypertext Application Technology Working Group)</dd>
-	<dt>Paradigm</dt><dd>Declarative / Document-oriented Markup</dd>
-	<dt>Filename Extension</dt><dd>.html, .htm</dd>
-	<dt>Current Release</dt><dd>HTML Living Standard</dd>
-	<dt>Website</dt><dd><a href="https://html.spec.whatwg.org/">html.spec.whatwg.org</a></dd>
+	<dt>Current Developer</dt><dd><abbr title="Web Hypertext Application Technology Working Group">WHATWG</abbr></dd>
+	<dt>Filename Extension</dt><dd>(<code>.html</code>) (<code>.htm</code>)</dd>
+	<dt>Current Release</dt><dd><a href="https://html.spec.whatwg.org/multipage">Living Standard</a> (2026)</dd>
+	<dt>Website</dt><dd><a href="https://html.spec.whatwg.org/multipage">html.spec.whatwg.org</a></dd>
 </dl>
 
 ## Overview
@@ -105,5 +105,3 @@ While HTML is a declarative markup language and does not execute code directly, 
    * Use native lazy loading for images and iframes below the fold (`loading="lazy"`).
 4. **Valid Document Structure:** Declare `<meta charset="UTF-8">` as early as possible inside `<head>` to avoid character encoding issues, and set `lang="..."` on the root `<html>` element.
 5. **Separate Concerns:** Keep styling in external CSS files and logic in separate JavaScript scripts rather than using inline styles (`style="..."`) or inline event handlers (`onclick="..."`).
-HTML_Reference.md
-Displaying HTML_Reference.md.
