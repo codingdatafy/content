@@ -242,7 +242,7 @@ Before automating infrastructure pipelines or configuring local build environmen
 			<td><strong>Pulumi</strong></td>
 			<td>General-Purpose Programming Language IaC</td>
 			<td><span class="badge badge-optional">Specialized / Optional</span></td>
-			<td>Real Programming Language (TypeScript, Python, Go) Cloud Orchestration</td>
+			<td>Real Programming Language (<a href="/languages/typescript">TypeScript</a>, Python, Go) Cloud Orchestration</td>
 		</tr>
 	</tbody>
 </table>
@@ -291,7 +291,7 @@ Before automating infrastructure pipelines or configuring local build environmen
 		</tr>
 		<tr>
 			<td><strong>Webpack</strong></td>
-			<td>Static Module Bundler for JavaScript</td>
+			<td>Static Module Bundler for <a href="/languages/javascript">JavaScript</a></td>
 			<td><span class="badge badge-standard">Industry Standard</span></td>
 			<td>Enterprise Front-End Asset Compilation, Code Splitting & Dependency Tree Management</td>
 		</tr>

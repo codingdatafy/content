@@ -39,49 +39,49 @@ Before exploring the technology stacks, use this system architecture tracking ke
 	<tbody>
 		<tr>
 			<td><strong>React</strong></td>
-			<td>JavaScript / TypeScript</td>
+			<td><a href="/languages/javascript">JavaScript</a> / <a href="/languages/typescript">TypeScript</a></td>
 			<td><span class="badge badge-mandatory">Mandatory (Core)</span></td>
 			<td>Declarative Component-Based User Interface Development</td>
 		</tr>
 		<tr>
 			<td><strong>Next.js</strong></td>
-			<td>JavaScript / TypeScript</td>
+			<td><a href="/languages/javascript">JavaScript</a> / <a href="/languages/typescript">TypeScript</a></td>
 			<td><span class="badge badge-standard">Industry Standard</span></td>
 			<td>Full-Stack React App Router, Hybrid SSG/SSR Architecture</td>
 		</tr>
 		<tr>
 			<td><strong>Vue.js</strong></td>
-			<td>JavaScript / TypeScript</td>
+			<td><a href="/languages/javascript">JavaScript</a> / <a href="/languages/typescript">TypeScript</a></td>
 			<td><span class="badge badge-standard">Industry Standard</span></td>
 			<td>Progressive Front-End User Interface Architecture</td>
 		</tr>
 		<tr>
 			<td><strong>Nuxt</strong></td>
-			<td>JavaScript / TypeScript</td>
+			<td><a href="/languages/javascript">JavaScript</a> / <a href="/languages/typescript">TypeScript</a></td>
 			<td><span class="badge badge-standard">Industry Standard</span></td>
 			<td>Intuitive Vue Meta-Framework for SSR & Static Site Generation</td>
 		</tr>
 		<tr>
 			<td><strong>Angular</strong></td>
-			<td>TypeScript</td>
+			<td><a href="/languages/typescript">TypeScript</a></td>
 			<td><span class="badge badge-standard">Industry Standard</span></td>
 			<td>Enterprise-Grade Full-Featured Frontend Web Platform</td>
 		</tr>
 		<tr>
 			<td><strong>Svelte / SvelteKit</strong></td>
-			<td>JavaScript / TypeScript</td>
+			<td><a href="/languages/javascript">JavaScript</a> / <a href="/languages/typescript">TypeScript</a></td>
 			<td><span class="badge badge-optional">Specialized / Optional</span></td>
 			<td>Compiler-Driven Zero-Runtime Front-End Web Applications</td>
 		</tr>
 		<tr>
 			<td><strong>SolidJS / SolidStart</strong></td>
-			<td>JavaScript / TypeScript</td>
+			<td><a href="/languages/javascript">JavaScript</a> / <a href="/languages/typescript">TypeScript</a></td>
 			<td><span class="badge badge-optional">Specialized / Optional</span></td>
 			<td>Ultra-Fast Fine-Grained Reactive Web Components</td>
 		</tr>
 		<tr>
 			<td><strong>Astro</strong></td>
-			<td>Cross-Language / TypeScript</td>
+			<td>Cross-Language / <a href="/languages/typescript">TypeScript</a></td>
 			<td><span class="badge badge-optional">Specialized / Optional</span></td>
 			<td>Content-Driven Fast Static Sites & Island Architecture Engine</td>
 		</tr>
@@ -102,43 +102,43 @@ Before exploring the technology stacks, use this system architecture tracking ke
 	<tbody>
 		<tr>
 			<td><strong>Node.js</strong></td>
-			<td>JavaScript / TypeScript</td>
+			<td><a href="/languages/javascript">JavaScript</a> / <a href="/languages/typescript">TypeScript</a></td>
 			<td><span class="badge badge-mandatory">Mandatory (Core)</span></td>
 			<td>Asynchronous Event-Driven Backend Server Runtime Environment</td>
 		</tr>
 		<tr>
 			<td><strong>Express.js</strong></td>
-			<td>JavaScript / TypeScript</td>
+			<td><a href="/languages/javascript">JavaScript</a> / <a href="/languages/typescript">TypeScript</a></td>
 			<td><span class="badge badge-mandatory">Mandatory (Core)</span></td>
 			<td>Minimalist HTTP Server Micro-Services & RESTful APIs</td>
 		</tr>
 		<tr>
 			<td><strong>NestJS</strong></td>
-			<td>TypeScript</td>
+			<td><a href="/languages/typescript">TypeScript</a></td>
 			<td><span class="badge badge-standard">Industry Standard</span></td>
 			<td>Scalable Enterprise Backend Server Systems (Angular-Inspired Architecture)</td>
 		</tr>
 		<tr>
 			<td><strong>Fastify</strong></td>
-			<td>JavaScript / TypeScript</td>
+			<td><a href="/languages/javascript">JavaScript</a> / <a href="/languages/typescript">TypeScript</a></td>
 			<td><span class="badge badge-standard">Industry Standard</span></td>
 			<td>Ultra-Low Overhead High-Performance HTTP Backend Services</td>
 		</tr>
 		<tr>
 			<td><strong>Bun</strong></td>
-			<td>JavaScript / TypeScript</td>
+			<td><a href="/languages/javascript">JavaScript</a> / <a href="/languages/typescript">TypeScript</a></td>
 			<td><span class="badge badge-optional">Specialized / Optional</span></td>
 			<td>All-in-One High-Speed Runtime, Bundler & Package Execution Engine</td>
 		</tr>
 		<tr>
 			<td><strong>Deno</strong></td>
-			<td>JavaScript / TypeScript</td>
+			<td><a href="/languages/javascript">JavaScript</a> / <a href="/languages/typescript">TypeScript</a></td>
 			<td><span class="badge badge-optional">Specialized / Optional</span></td>
 			<td>Secure Modern V8 Runtime with Native Web APIs & Tooling</td>
 		</tr>
 		<tr>
 			<td><strong>Hono</strong></td>
-			<td>TypeScript</td>
+			<td><a href="/languages/typescript">TypeScript</a></td>
 			<td><span class="badge badge-optional">Specialized / Optional</span></td>
 			<td>Ultrafast Lightweight Cloudflare Edge-Native Web Framework</td>
 		</tr>
@@ -246,7 +246,7 @@ Before exploring the technology stacks, use this system architecture tracking ke
 		</tr>
 		<tr>
 			<td><strong>LangChain / LlamaIndex</strong></td>
-			<td>Python / TypeScript</td>
+			<td>Python / <a href="/languages/typescript">TypeScript</a></td>
 			<td><span class="badge badge-standard">Industry Standard</span></td>
 			<td>Orchestrating LLM Workflows, RAG Architecture & AI Agent Applications</td>
 		</tr>
@@ -285,7 +285,7 @@ Before exploring the technology stacks, use this system architecture tracking ke
 		</tr>
 		<tr>
 			<td><strong>React Native</strong></td>
-			<td>JavaScript / TypeScript</td>
+			<td><a href="/languages/javascript">JavaScript</a> / <a href="/languages/typescript">TypeScript</a></td>
 			<td><span class="badge badge-standard">Industry Standard</span></td>
 			<td>Native Mobile UI Development with React Architecture</td>
 		</tr>
@@ -324,7 +324,7 @@ Before exploring the technology stacks, use this system architecture tracking ke
 	<tbody>
 		<tr>
 			<td><strong>Electron</strong></td>
-			<td>JavaScript / TypeScript</td>
+			<td><a href="/languages/javascript">JavaScript</a> / <a href="/languages/typescript">TypeScript</a></td>
 			<td><span class="badge badge-standard">Industry Standard</span></td>
 			<td>Cross-Platform Desktop Apps Powered by Web Tech (Chromium/Node.js)</td>
 		</tr>
@@ -426,5 +426,5 @@ To eliminate market noise, **CodingDatafy** utilizes a cross-referenced architec
 
 ### 4. Ecosystem Boundaries: Mother Languages vs. Layered Tooling
 *   **The Vetting Rule:** This index focuses exclusively on **Frameworks, Runtimes, and Engines**.
-*   **Taxonomy Policy:** Foundational programming syntax (e.g., *JavaScript, Java, Python, C#*) is listed on the **Languages Index**. The **Frameworks Index** maps the powerful execution layers built on top of those underlying languages.
+*   **Taxonomy Policy:** Foundational programming syntax (e.g., *<a href="/languages/javascript">JavaScript</a>, Java, Python, C#*) is listed on the **Languages Index**. The **Frameworks Index** maps the powerful execution layers built on top of those underlying languages.
 ---

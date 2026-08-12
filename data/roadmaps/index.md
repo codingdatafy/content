@@ -41,7 +41,7 @@ To navigate these engineering roadmaps effectively, technical competencies are c
 	<tbody>
 		<tr>
 			<td><strong>Frontend Engineering</strong></td>
-			<td><a href="/languages/html">HTML5</a>, CSS3, JavaScript (ESNext), TypeScript</td>
+			<td><a href="/languages/html">HTML5</a>, <a href="/languages/css">CSS3</a>, <a href="/languages/javascript">JavaScript</a> (ESNext), <a href="/languages/typescript">TypeScript</a></td>
 			<td>React, Next.js, State Management, Tailwind CSS</td>
 			<td>Micro-Frontends, WebAssembly, WebGL, Performance Budgeting</td>
 		</tr>
@@ -54,7 +54,7 @@ To navigate these engineering roadmaps effectively, technical competencies are c
 		<tr>
 			<td><strong>Full-Stack Architecture</strong></td>
 			<td>Web Fundamentals, Version Control, RESTful APIs</td>
-			<td>TypeScript, Next.js / Remix, Serverless, Prisma/ORMs</td>
+			<td><a href="/languages/typescript">TypeScript</a>, Next.js / Remix, Serverless, Prisma/ORMs</td>
 			<td>System Design, Cloud Deployments, End-to-End Security, CI/CD</td>
 		</tr>
 		<tr>
@@ -156,7 +156,7 @@ To ensure learning paths remain aligned with real-world production expectations,
 
 ### 1. Industry Demand & Tech Stack Currency
 *   **Metric Analyzed:** Enterprise adoption rates, hiring statistics, and production technology shifts for 2026.
-*   **Roadmap Alignment:** Prioritizes modern standards (*TypeScript, Rust, Kubernetes, PyTorch*) over deprecated tools to keep learning focused on high-impact skills.
+*   **Roadmap Alignment:** Prioritizes modern standards (*<a href="/languages/typescript">TypeScript</a>, Rust, Kubernetes, PyTorch*) over deprecated tools to keep learning focused on high-impact skills.
 
 ### 2. Practical Sequence & Prerequisite Verification
 *   **Metric Analyzed:** Cognitive dependency ordering, ensuring complex topics builds logically on foundational prerequisites.

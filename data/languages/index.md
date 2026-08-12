@@ -44,19 +44,19 @@ Before diving into the career domains, use this system architecture tracking key
 			<td>Web Layout & Semantic Structures</td>
 		</tr>
 		<tr>
-			<td><strong>CSS</strong></td>
+			<td><strong><a href="/languages/css">CSS</a></strong></td>
 			<td>Style Sheet Language</td>
 			<td><span class="badge badge-mandatory">Mandatory (Core)</span></td>
 			<td>User Interface Styling & Responsiveness</td>
 		</tr>
 		<tr>
-			<td><strong>JavaScript</strong></td>
+			<td><strong><a href="/languages/javascript">JavaScript</a></strong></td>
 			<td>Programming Language</td>
 			<td><span class="badge badge-mandatory">Mandatory (Core)</span></td>
 			<td>Full-Stack Web App Behavior & Execution</td>
 		</tr>
 		<tr>
-			<td><strong>TypeScript</strong></td>
+			<td><strong><a href="/languages/typescript">TypeScript</a></strong></td>
 			<td>Programming Language</td>
 			<td><span class="badge badge-standard">Industry Standard</span></td>
 			<td>Type-Safe Scalable Enterprise Web Architectures</td>
@@ -570,7 +570,7 @@ To eliminate the "popularity noise" found in traditional indices (which often ra
 
 ### 1. Open-Source Traction & Ecosystem Velocity (Source: GitHub Octoverse)
 *   **Metric Analyzed:** Active repository volume, annual pull request growth, and code contributor velocity.
-*   **Roadmap Alignment:** Languages with explosive open-source frameworks or standard language tooling (e.g., *TypeScript*, *Rust*) are mapped to ensure developers learn technologies backed by massive community support.
+*   **Roadmap Alignment:** Languages with explosive open-source frameworks or standard language tooling (e.g., *<a href="/languages/typescript">TypeScript</a>*, *Rust*) are mapped to ensure developers learn technologies backed by massive community support.
 
 ### 2. Industry Employment Demand & Capital Allocation (Sources: LinkedIn Jobs & Indeed)
 *   **Metric Analyzed:** Global active job postings, core backend requirement patterns, and enterprise hiring mandates.
@@ -582,5 +582,5 @@ To eliminate the "popularity noise" found in traditional indices (which often ra
 
 ### 4. Architectural Isolation: Pure Coding Languages vs. Ecosystem Frameworks
 *   **The Vetting Rule:** This roadmap monitors **Pure Coding Languages and Standard Formats only** (Programming, Scripting, Low-Level, Query, Markup, Hardware Description, Binary Formats, and Data Serialization). 
-*   **Framework Integration:** To maintain strict architectural taxonomy, modern frameworks, runtimes, and libraries (e.g., *React, Next.js, Node.js, NestJS, Bun, Spring Boot, .NET, Laravel, Django, Flutter, or FastAPI*) are **not** listed as separate entities. Instead, their market capitalization, job demand, and ecosystem weight are strictly consolidated and credited directly under their foundational mother languages (e.g., *JavaScript, TypeScript, Java, C#, PHP, Python, or Dart*). If a framework is demanded in the market, its weight is inherently reflected in the **Requirement Level** of its native language.
+*   **Framework Integration:** To maintain strict architectural taxonomy, modern frameworks, runtimes, and libraries (e.g., *React, Next.js, Node.js, NestJS, Bun, Spring Boot, .NET, Laravel, Django, Flutter, or FastAPI*) are **not** listed as separate entities. Instead, their market capitalization, job demand, and ecosystem weight are strictly consolidated and credited directly under their foundational mother languages (e.g., *<a href="/languages/javascript">JavaScript</a>, <a href="/languages/typescript">TypeScript</a>, Java, C#, PHP, Python, or Dart*). If a framework is demanded in the market, its weight is inherently reflected in the **Requirement Level** of its native language.
 ---

@@ -18,7 +18,7 @@ description: "Comprehensive reference and overview of Cascading Style Sheets (CS
 	<dt>Current Developer</dt><dd>World Wide Web Consortium (W3C)</dd>
 	<dt>Filename Extension</dt><dd>(<code>.css</code>)</dd>
 	<dt>Current Release</dt><dd><a href="https://drafts.csswg.org/">CSS Specifications</a> (2026)</dd>
-	<dt>Website</dt><dd><a href="https://www.w3.org/Style/CSS">w3.org/Style/CSS</a></dd>
+	<dt>Website</dt><dd><a href="https://www.w3.org/Style/CSS">www.w3.org/Style/CSS</a></dd>
 </dl>
 
 ## Overview
