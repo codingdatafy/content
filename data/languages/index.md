@@ -80,7 +80,7 @@ Before diving into the career domains, use this system architecture tracking key
 			<td>High-Performance Sandbox Native Web Modules</td>
 		</tr>
 		<tr>
-			<td><strong>Markdown</strong></td>
+			<td><strong><a href="/languages/markdown">Markdown</a></strong></td>
 			<td>Lightweight Markup Language</td>
 			<td><span class="badge badge-mandatory">Mandatory (Core)</span></td>
 			<td>Structured Text Formatting, Technical Documentation & Content Datasets</td>
