@@ -62,7 +62,7 @@ Before diving into the career domains, use this system architecture tracking key
 			<td>Type-Safe Scalable Enterprise Web Architectures</td>
 		</tr>
 		<tr>
-			<td><strong>JSON</strong></td>
+			<td><strong><a href="/languages/json">JSON</a></strong></td>
 			<td>Data Interchange Format</td>
 			<td><span class="badge badge-mandatory">Mandatory (Core)</span></td>
 			<td>Lightweight Structured Language-Agnostic Interoperability</td>
