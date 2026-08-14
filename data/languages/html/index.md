@@ -4,7 +4,7 @@ license: CC BY-SA 4.0
 copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: "HTML"
-style: "html.css"
+id: "html-languages"
 description: "Comprehensive reference and overview of HyperText Markup Language (HTML), covering its syntax, standards, security considerations, and modern best practices."
 ---
 

@@ -4,7 +4,7 @@ license: CC BY-SA 4.0
 copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: "TypeScript"
-style: "typescript.css"
+id: "typescript-languages"
 description: "Comprehensive reference and overview of TypeScript (TS), covering static type systems, compiler architecture, ECMAScript compatibility, and modern type-safe development practices."
 ---
 

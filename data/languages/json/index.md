@@ -4,7 +4,7 @@ license: CC BY-SA 4.0
 copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: "JSON"
-style: "json.css"
+id: "json-languages"
 description: "Comprehensive reference and overview of JSON (JavaScript Object Notation), covering data structures, syntax specification, parsing performance, and modern web data exchange standards."
 ---
 

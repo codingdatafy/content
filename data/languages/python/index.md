@@ -4,7 +4,7 @@ license: CC BY-SA 4.0
 copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: "Python"
-style: "python.css"
+id: "python-languages"
 description: "Comprehensive reference and overview of Python, covering general-purpose programming, object-oriented design, dynamic typing, and modern software development standards."
 ---
 

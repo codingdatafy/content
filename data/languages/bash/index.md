@@ -4,7 +4,7 @@ license: CC BY-SA 4.0
 copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: "Bash"
-style: "bash.css"
+id: "bash-languages"
 description: "Comprehensive reference and overview of Bash (Bourne Again SHell), covering command-line interfaces, shell scripting syntax, process automation, and POSIX standards."
 ---
 

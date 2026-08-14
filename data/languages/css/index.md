@@ -4,7 +4,7 @@ license: CC BY-SA 4.0
 copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: "CSS"
-style: "css.css"
+id: "css-languages"
 description: "Comprehensive reference and overview of Cascading Style Sheets (CSS), covering selectors, layout engines, security, and modern styling practices."
 ---
 

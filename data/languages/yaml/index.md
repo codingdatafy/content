@@ -4,7 +4,7 @@ license: CC BY-SA 4.0
 copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: "YAML"
-style: "yaml.css"
+id: "yaml-languages"
 description: "Comprehensive reference and overview of YAML (YAML Ain't Markup Language), covering data serialization, syntax specification, human-readable structure, and configuration standards."
 ---
 
