@@ -177,13 +177,13 @@ Before exploring the technology stacks, use this system architecture tracking ke
 		</tr>
 		<tr>
 			<td><strong>Django</strong></td>
-			<td>Python</td>
+			<td><a href="/languages/python">Python</a></td>
 			<td><span class="badge badge-standard">Industry Standard</span></td>
 			<td>Batteries-Included Secure Python Web Infrastructure</td>
 		</tr>
 		<tr>
 			<td><strong>FastAPI</strong></td>
-			<td>Python</td>
+			<td><a href="/languages/python">Python</a></td>
 			<td><span class="badge badge-standard">Industry Standard</span></td>
 			<td>High-Performance Asynchronous Python Microservices & ML Endpoints</td>
 		</tr>
@@ -222,43 +222,43 @@ Before exploring the technology stacks, use this system architecture tracking ke
 	<tbody>
 		<tr>
 			<td><strong>PyTorch</strong></td>
-			<td>Python / C++</td>
+			<td><a href="/languages/python">Python</a> / C++</td>
 			<td><span class="badge badge-mandatory">Mandatory (Core)</span></td>
 			<td>Deep Learning Research, Large Language Models (LLMs) & Production AI</td>
 		</tr>
 		<tr>
 			<td><strong>TensorFlow / Keras</strong></td>
-			<td>Python / C++</td>
+			<td><a href="/languages/python">Python</a> / C++</td>
 			<td><span class="badge badge-standard">Industry Standard</span></td>
 			<td>End-to-End Enterprise ML Pipelines & Edge Device Inference Deployment</td>
 		</tr>
 		<tr>
 			<td><strong>Scikit-Learn</strong></td>
-			<td>Python</td>
+			<td><a href="/languages/python">Python</a></td>
 			<td><span class="badge badge-mandatory">Mandatory (Core)</span></td>
 			<td>Classical Machine Learning, Predictive Modeling & Data Mining</td>
 		</tr>
 		<tr>
 			<td><strong>Pandas & NumPy</strong></td>
-			<td>Python / C</td>
+			<td><a href="/languages/python">Python</a> / C</td>
 			<td><span class="badge badge-mandatory">Mandatory (Core)</span></td>
 			<td>High-Performance Data Manipulation & Numerical Array Computation</td>
 		</tr>
 		<tr>
 			<td><strong>LangChain / LlamaIndex</strong></td>
-			<td>Python / <a href="/languages/typescript">TypeScript</a></td>
+			<td><a href="/languages/python">Python</a> / <a href="/languages/typescript">TypeScript</a></td>
 			<td><span class="badge badge-standard">Industry Standard</span></td>
 			<td>Orchestrating LLM Workflows, RAG Architecture & AI Agent Applications</td>
 		</tr>
 		<tr>
 			<td><strong>Apache Spark</strong></td>
-			<td>Scala / Python / Java</td>
+			<td>Scala / <a href="/languages/python">Python</a> / Java</td>
 			<td><span class="badge badge-standard">Industry Standard</span></td>
 			<td>Distributed Big Data Processing, Analytics & Streaming Pipelines</td>
 		</tr>
 		<tr>
 			<td><strong>Hugging Face Transformers</strong></td>
-			<td>Python</td>
+			<td><a href="/languages/python">Python</a></td>
 			<td><span class="badge badge-standard">Industry Standard</span></td>
 			<td>Pre-trained Natural Language Processing (NLP) & Multimodal Model Hub</td>
 		</tr>
@@ -336,7 +336,7 @@ Before exploring the technology stacks, use this system architecture tracking ke
 		</tr>
 		<tr>
 			<td><strong>Qt</strong></td>
-			<td>C++ / Python</td>
+			<td>C++ / <a href="/languages/python">Python</a></td>
 			<td><span class="badge badge-standard">Industry Standard</span></td>
 			<td>High-Performance Native GUI, Embedded Systems & Automotive Dashboards</td>
 		</tr>

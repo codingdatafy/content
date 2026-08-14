@@ -101,7 +101,7 @@ Before diving into the career domains, use this system architecture tracking key
 	</thead>
 	<tbody>
 		<tr>
-			<td><strong>SQL</strong></td>
+			<td><strong><a href="/languages/sql">SQL</a></strong></td>
 			<td>Declarative Query Language</td>
 			<td><span class="badge badge-mandatory">Mandatory (Core)</span></td>
 			<td>Universal Relational Database Querying & Manipulation</td>
@@ -197,7 +197,7 @@ Before diving into the career domains, use this system architecture tracking key
 	</thead>
 	<tbody>
 		<tr>
-			<td><strong>Python</strong></td>
+			<td><strong><a href="/languages/python">Python</a></strong></td>
 			<td>Programming Language</td>
 			<td><span class="badge badge-mandatory">Mandatory (Core)</span></td>
 			<td>AI Ecosystem, Deep Learning Pipelines, and Automation</td>
@@ -395,13 +395,13 @@ Before diving into the career domains, use this system architecture tracking key
 	</thead>
 	<tbody>
 		<tr>
-			<td><strong>YAML</strong></td>
+			<td><strong><a href="/languages/yaml">YAML</a></strong></td>
 			<td>Data Serialization Language</td>
 			<td><span class="badge badge-mandatory">Mandatory (Core)</span></td>
 			<td>Kubernetes Orchestration Controls, GitHub Actions Definitions, and Configuration Specs</td>
 		</tr>
 		<tr>
-			<td><strong>Bash</strong></td>
+			<td><strong><a href="/languages/bash">Bash</a></strong></td>
 			<td>Scripting Language</td>
 			<td><span class="badge badge-mandatory">Mandatory (Core)</span></td>
 			<td>Linux Environments Orchestration, Modern CI/CD DevOps Pipelines & Shell Controls</td>
