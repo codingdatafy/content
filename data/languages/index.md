@@ -134,7 +134,7 @@ Before diving into the career domains, use this system architecture tracking key
 	</thead>
 	<tbody>
 		<tr>
-			<td><strong>Java</strong></td>
+			<td><strong><a href="/languages/java">Java</a></strong></td>
 			<td>Programming Language</td>
 			<td><span class="badge badge-standard">Industry Standard</span></td>
 			<td>Enterprise Corporate Architectures, Middleware & Server Backends</td>
