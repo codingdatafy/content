@@ -242,7 +242,7 @@ Before diving into the career domains, use this system architecture tracking key
 	</thead>
 	<tbody>
 		<tr>
-			<td><strong>C</strong></td>
+			<td><strong><a href="/languages/c">C</a></strong></td>
 			<td>Programming Language</td>
 			<td><span class="badge badge-mandatory">Mandatory (Core)</span></td>
 			<td>Operating System Kernels, Bare-Metal Frameworks, and Core Drivers</td>

@@ -17,8 +17,8 @@ description: "Comprehensive reference and overview of Markdown, covering text fo
 	<dt>First Appeared</dt><dd>2004</dd>
 	<dt>Current Developer</dt><dd>Community / CommonMark Initiative</dd>
 	<dt>Filename Extension</dt><dd><code>.md</code>, <code>.markdown</code></dd>
-	<dt>Current Release</dt><dd><a href="[https://spec.commonmark.org/0.31.2/](https://spec.commonmark.org/0.31.2/)">CommonMark 0.31.2</a></dd>
-	<dt>Website</dt><dd><a href="[https://commonmark.org/](https://commonmark.org/)">www.commonmark.org</a></dd>
+	<dt>Current Release</dt><dd><a href="https://spec.commonmark.org/0.31.2/">CommonMark 0.31.2</a></dd>
+	<dt>Website</dt><dd><a href="https://commonmark.org/">www.commonmark.org</a></dd>
 </dl>
 
 ## Overview
