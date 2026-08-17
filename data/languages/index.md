@@ -248,7 +248,7 @@ Before diving into the career domains, use this system architecture tracking key
 			<td>Operating System Kernels, Bare-Metal Frameworks, and Core Drivers</td>
 		</tr>
 		<tr>
-			<td><strong><a href="/languages/c++">C++</a></strong></td>
+			<td><strong><a href="/languages/cpp">C++</a></strong></td>
 			<td>Programming Language</td>
 			<td><span class="badge badge-mandatory">Mandatory (Core)</span></td>
 			<td>Triple-A Game Development Engines, Browsers, and High-Speed Real-Time Logic</td>
