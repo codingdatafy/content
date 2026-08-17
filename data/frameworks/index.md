@@ -222,13 +222,13 @@ Before exploring the technology stacks, use this system architecture tracking ke
 	<tbody>
 		<tr>
 			<td><strong>PyTorch</strong></td>
-			<td><a href="/languages/python">Python</a> / C++</td>
+			<td><a href="/languages/python">Python</a> / <strong><a href="/languages/c++">C++</a></td>
 			<td><span class="badge badge-mandatory">Mandatory (Core)</span></td>
 			<td>Deep Learning Research, Large Language Models (LLMs) & Production AI</td>
 		</tr>
 		<tr>
 			<td><strong>TensorFlow / Keras</strong></td>
-			<td><a href="/languages/python">Python</a> / C++</td>
+			<td><a href="/languages/python">Python</a> / <strong><a href="/languages/c++">C++</a></td>
 			<td><span class="badge badge-standard">Industry Standard</span></td>
 			<td>End-to-End Enterprise ML Pipelines & Edge Device Inference Deployment</td>
 		</tr>
@@ -336,13 +336,13 @@ Before exploring the technology stacks, use this system architecture tracking ke
 		</tr>
 		<tr>
 			<td><strong>Qt</strong></td>
-			<td>C++ / <a href="/languages/python">Python</a></td>
+			<td><strong><a href="/languages/c++">C++</a> / <a href="/languages/python">Python</a></td>
 			<td><span class="badge badge-standard">Industry Standard</span></td>
 			<td>High-Performance Native GUI, Embedded Systems & Automotive Dashboards</td>
 		</tr>
 		<tr>
 			<td><strong>Unreal Engine</strong></td>
-			<td>C++</td>
+			<td><strong><a href="/languages/c++">C++</a></td>
 			<td><span class="badge badge-mandatory">Mandatory (Core)</span></td>
 			<td>Triple-A High-End Game Graphics, Simulations & Real-Time Rendering</td>
 		</tr>
@@ -354,7 +354,7 @@ Before exploring the technology stacks, use this system architecture tracking ke
 		</tr>
 		<tr>
 			<td><strong>Godot</strong></td>
-			<td>GDScript / C# / C++</td>
+			<td>GDScript / C# / <strong><a href="/languages/c++">C++</a></td>
 			<td><span class="badge badge-optional">Specialized / Optional</span></td>
 			<td>Lightweight Open-Source 2D & 3D Interactive Game Engine Architecture</td>
 		</tr>
@@ -399,7 +399,7 @@ Before exploring the technology stacks, use this system architecture tracking ke
 		</tr>
 		<tr>
 			<td><strong>CUDA</strong></td>
-			<td>C / C++ / NVIDIA Platform</td>
+			<td>C / <strong><a href="/languages/c++">C++</a> / NVIDIA Platform</td>
 			<td><span class="badge badge-standard">Industry Standard</span></td>
 			<td>Parallel Compute Infrastructure on NVIDIA Hardware GPUs</td>
 		</tr>
