@@ -140,7 +140,7 @@ Before diving into the career domains, use this system architecture tracking key
 			<td>Enterprise Corporate Architectures, Middleware & Server Backends</td>
 		</tr>
 		<tr>
-			<td><strong>C#</strong></td>
+			<td><strong><a href="/languages/csharp">C#</a></strong></td>
 			<td>Programming Language</td>
 			<td><span class="badge badge-standard">Industry Standard</span></td>
 			<td>Cross-Platform Enterprise Software & High-Speed Microservices (.NET)</td>
