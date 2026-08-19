@@ -1,4 +1,3 @@
-
 ---
 project: CodingDatafy
 license: CC BY-SA 4.0
@@ -153,7 +152,7 @@ Before diving into the career domains, use this system architecture tracking key
 			<td>Cloud-Native Infrastructure Development & Concurrency Services</td>
 		</tr>
 		<tr>
-			<td><strong>PHP</strong></td>
+			<td><strong><a href="/languages/php">PHP</a></strong></td>
 			<td>Programming Language</td>
 			<td><span class="badge badge-optional">Specialized / Optional</span></td>
 			<td>Server-Side Traditional Web Platforms & Content Management Monoliths</td>
