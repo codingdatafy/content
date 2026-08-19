@@ -1,3 +1,4 @@
+
 ---
 project: CodingDatafy
 license: CC BY-SA 4.0
@@ -146,7 +147,7 @@ Before diving into the career domains, use this system architecture tracking key
 			<td>Cross-Platform Enterprise Software & High-Speed Microservices (.NET)</td>
 		</tr>
 		<tr>
-			<td><strong>Go</strong></td>
+			<td><strong><a href="/languages/go">Go</a></strong></td>
 			<td>Programming Language</td>
 			<td><span class="badge badge-standard">Industry Standard</span></td>
 			<td>Cloud-Native Infrastructure Development & Concurrency Services</td>
