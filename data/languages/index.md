@@ -413,7 +413,7 @@ Before diving into the career domains, use this system architecture tracking key
 			<td>Declarative Infrastructure as Code Architecture Automation via HashiCorp Terraform</td>
 		</tr>
 		<tr>
-			<td><strong>PowerShell</strong></td>
+			<td><strong><a href="/languages/powershell">PowerShell</a></strong></td>
 			<td>Scripting Language</td>
 			<td><span class="badge badge-standard">Industry Standard</span></td>
 			<td>Windows Cloud Domains Automation, Administrative Task Management & Security Controls</td>
