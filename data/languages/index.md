@@ -68,7 +68,7 @@ Before diving into the career domains, use this system architecture tracking key
 			<td>Lightweight Structured Language-Agnostic Interoperability</td>
 		</tr>
 		<tr>
-			<td><strong>GraphQL</strong></td>
+			<td><strong><a href="/languages/graphql">GraphQL</a></strong></td>
 			<td>Query Language</td>
 			<td><span class="badge badge-optional">Specialized / Optional</span></td>
 			<td>Decoupled API Data Fetching & Declarative Routing</td>
