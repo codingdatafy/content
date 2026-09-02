@@ -74,7 +74,7 @@ Before diving into the career domains, use this system architecture tracking key
 			<td>Decoupled API Data Fetching & Declarative Routing</td>
 		</tr>
 		<tr>
-			<td><strong>WebAssembly</strong></td>
+			<td><strong><a href="/languages/webassembly">WebAssembly</a></strong></td>
 			<td>Binary Format</td>
 			<td><span class="badge badge-optional">Specialized / Optional</span></td>
 			<td>High-Performance Sandbox Native Web Modules</td>
