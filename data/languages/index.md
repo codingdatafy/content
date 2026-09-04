@@ -368,7 +368,7 @@ Before diving into the career domains, use this system architecture tracking key
 			<td>Native Android Application Architecture & Modern Server Services</td>
 		</tr>
 		<tr>
-			<td><strong>Swift</strong></td>
+			<td><strong><a href="/languages/swift">Swift</a></strong></td>
 			<td>Programming Language</td>
 			<td><span class="badge badge-mandatory">Mandatory (Core)</span></td>
 			<td>Native Apple OS Ecosystem Engineering (iOS, macOS, VisionOS)</td>
