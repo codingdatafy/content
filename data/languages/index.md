@@ -374,7 +374,7 @@ Before diving into the career domains, use this system architecture tracking key
 			<td>Native Apple OS Ecosystem Engineering (iOS, macOS, VisionOS)</td>
 		</tr>
 		<tr>
-			<td><strong>Dart</strong></td>
+			<td><strong><a href="/languages/dart">Dart</a></strong></td>
 			<td>Programming Language</td>
 			<td><span class="badge badge-standard">Industry Standard</span></td>
 			<td>Cross-Platform High-Performance Native App Generation via the Flutter Engine</td>
