@@ -5,7 +5,7 @@ copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: "JavaScript"
 id: "javascript-languages"
-description: "Comprehensive reference and overview of JavaScript (JS), covering ECMAScript standards, DOM manipulation, asynchronous runtime environments, and modern security patterns."
+description: "Comprehensive reference for JavaScript (JS), covering ECMAScript standards, DOM manipulation, asynchronous runtimes, and modern security patterns."
 ---
 
 ## Information Card
