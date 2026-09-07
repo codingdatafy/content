@@ -5,7 +5,7 @@ copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: "TypeScript"
 id: "typescript-languages"
-description: "Comprehensive reference and overview of TypeScript (TS), covering static type systems, compiler architecture, ECMAScript compatibility, and modern type-safe development practices."
+description: "Comprehensive reference for TypeScript (TS), covering static type systems, compiler options, ECMAScript compatibility, and modern type-safe practices."
 ---
 
 ## Information Card
