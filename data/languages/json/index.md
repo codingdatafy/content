@@ -5,7 +5,7 @@ copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: "JSON"
 id: "json-languages"
-description: "Comprehensive reference and overview of JSON (JavaScript Object Notation), covering data structures, syntax specification, parsing performance, and modern web data exchange standards."
+description: "Comprehensive reference for JSON, covering data structures, syntax specifications, parsing performance, and modern web data exchange standards."
 ---
 
 ## Information Card
