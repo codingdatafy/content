@@ -5,7 +5,7 @@ copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: "WebAssembly"
 id: "webassembly-languages"
-description: "Comprehensive reference and overview of WebAssembly (Wasm), covering binary instruction format, near-native sandboxed execution, component model, and cross-platform runtime environments."
+description: "Comprehensive reference for WebAssembly (Wasm), covering binary formats, near-native execution, component models, and cross-platform runtimes."
 ---
 
 ## Information Card
