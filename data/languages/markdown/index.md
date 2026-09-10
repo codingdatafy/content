@@ -5,7 +5,7 @@ copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: "Markdown"
 id: "markdown-languages"
-description: "Comprehensive reference and overview of Markdown, covering text formatting, structured document syntax, extended features, and modern content rendering engine integration."
+description: "Comprehensive reference for Markdown, covering text formatting, structured document syntax, extended features, and rendering engine integration."
 ---
 
 ## Information Card
