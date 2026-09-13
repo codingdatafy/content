@@ -5,7 +5,7 @@ copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: "PowerShell"
 id: "powershell-languages"
-description: "Comprehensive reference and overview of PowerShell, covering object-based automation, cross-platform scripting, cmdlet architecture, and enterprise configuration management."
+description: "Comprehensive PowerShell reference covering object-based automation, cross-platform scripting, cmdlet architecture, and enterprise configuration management."
 ---
 
 ## Information Card
