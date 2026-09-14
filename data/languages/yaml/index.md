@@ -5,7 +5,7 @@ copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: "YAML"
 id: "yaml-languages"
-description: "Comprehensive reference and overview of YAML (YAML Ain't Markup Language), covering data serialization, syntax specification, human-readable structure, and configuration standards."
+description: "Comprehensive YAML reference covering data serialization, syntax specification, human-readable structure, and configuration standards."
 ---
 
 ## Information Card
