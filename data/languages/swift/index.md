@@ -5,7 +5,7 @@ copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: "Swift"
 id: "swift-languages"
-description: "Comprehensive reference and overview of Swift, covering protocol-oriented programming, modern concurrency, memory management, and Apple ecosystem software development."
+description: "Comprehensive Swift reference covering protocol-oriented programming, modern concurrency, memory management, and Apple ecosystem software development."
 ---
 
 ## Information Card
