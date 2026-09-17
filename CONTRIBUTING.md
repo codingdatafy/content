@@ -45,7 +45,6 @@ project: CodingDatafy
 license: CC BY-SA 4.0
 copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
-title: "Page Title Here"
-style: "CSS-Style Here"
+id: "Page Title Here"
 description: "A brief professional description for SEO purposes"
 ---

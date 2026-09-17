@@ -1,47 +1,45 @@
-CodingDatafy License Information
-================================
+# Dual-Licensing Terms
 
-This project is licensed under a dual-licensing structure to protect both the 
-source code and the creative content.
+This repository operates under a dual-licensing model to distinguish between intellectual documentation content and technical build/automation scripts:
 
-1. SOFTWARE LICENSE (MIT)
--------------------------
-The source code, including all files in the 'src/' directory and configuration 
-files in the root, is licensed under the MIT License.
+1. **Documentation & Technical Content (`/data` directory):**  
+   Licensed under the **Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)** license.
+2. **Repository Configuration & CI/CD Scripts (`.github` directory and administrative files):**  
+   Licensed under the **MIT License**.
+
+---
+
+## Part 1: Content License (CC BY-SA 4.0)
+
+**Creative Commons Attribution-ShareAlike 4.0 International Public License**
+
+By exercising the Licensed Rights (defined below), You accept and agree to be bound by the terms and conditions of this Creative Commons Attribution-ShareAlike 4.0 International Public License ("Public License"). To the extent this Public License may be considered to be a contract, You are granted the Licensed Rights in consideration of Your acceptance of these terms and conditions, and the Licensor grants You such rights in consideration of benefits the Licensor receives from making the Licensed Material available under these terms and conditions.
+
+### Section 1 – Definitions.
+* **Adapted Material** means material subject to Copyright and Similar Rights that is derived from or based upon the Licensed Material and in which the Licensed Material is translated, altered, arranged, transformed, or otherwise modified in a manner requiring permission under the Copyright and Similar Rights held by the Licensor.
+* **Adapter's License** means the license You apply to Your Copyright and Similar Rights in Your contributions to Adapted Material in accordance with the terms and conditions of this Public License.
+* **BY-SA Compatible License** means a license listed at creativecommons.org/compatiblelicenses.
+* **Copyright and Similar Rights** means copyright and/or similar rights closely related to copyright including, without limitation, performance, broadcast, sound recording, and Sui Generis Database Rights.
+* **Licensed Material** means the artistic or literary work, database, or other material to which the Licensor applied this Public License (specifically, all content within the `/data` directory).
+* **Licensor** means **CodingDatafy Organization**.
+
+### Section 2 – Scope.
+Subject to the terms and conditions of this Public License, the Licensor hereby grants You a worldwide, royalty-free, non-sublicensable, non-exclusive, irrevocable license to exercise the Licensed Rights in the Licensed Material to:
+1. Reproduce and Share the Licensed Material, in whole or in part, for any purpose, including commercial purposes.
+2. Produce, reproduce, and Share Adapted Material.
+
+**Conditions:** You must give appropriate credit to **CodingDatafy Organization**, provide a link to the license, indicate if changes were made, and distribute any modifications under the same CC BY-SA 4.0 license.
+
+---
+
+## Part 2: Repository Software & Configuration License (MIT)
+
+**MIT License**
 
 Copyright (c) 2026 CodingDatafy Organization
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
-2. CONTENT LICENSE (CC BY-SA 4.0)
-------------------------------
-All documentation and educational content located within the '/data' directory 
-is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License.
-
-You are free to:
-- Share: Copy and redistribute the material in any medium or format.
-- Adapt: Remix, transform, and build upon the material for any purpose, even commercially.
-
-Under the following terms:
-- Attribution: You must give appropriate credit to "CodingDatafy Organization", 
-  provide a link to the license, and indicate if changes were made. 
-- ShareAlike: If you remix, transform, or build upon the material, you must 
-  distribute your contributions under the same license as the original.
-
-To view a copy of this license, visit: https://creativecommons.org/licenses/by-sa/4.0/
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
