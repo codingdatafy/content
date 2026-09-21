@@ -49,4 +49,4 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: r2 object sync ./data r2://codingdatafy-content-r2
+          command: r2 object sync ./data r2://codingdatafy-content
