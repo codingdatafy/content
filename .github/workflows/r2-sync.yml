@@ -21,6 +21,28 @@ jobs:
     steps:
       - name: Checkout Source Code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Inject Git Commit Timestamps into Frontmatter
+        run: |
+          for file in $(find data -name "*.md"); do
+            COMMIT_DATE=$(git log -1 --format="%cd" --date=format:"%Y-%m-%d" -- "$file")
+            
+            if [ -z "$COMMIT_DATE" ]; then
+              COMMIT_DATE=$(date -u +"%Y-%m-%d")
+            fi
+
+            if grep -q "^---" "$file"; then
+              if grep -q "^updatedAt:" "$file"; then
+                sed -i "s/^updatedAt:.*/updatedAt: \"$COMMIT_DATE\"/" "$file"
+              else
+                sed -i "s/^---/---\nupdatedAt: \"$COMMIT_DATE\"/" "$file"
+              fi
+            else
+              echo -e "---\nupdatedAt: \"$COMMIT_DATE\"\n---\n$(cat "$file")" > "$file"
+            fi
+          done
 
       - name: Sync Markdown Data to R2
         uses: cloudflare/wrangler-action@v3
