@@ -4,8 +4,8 @@ license: CC BY-SA 4.0
 copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: "C#"
-id: "c-sharp-languages"
-description: "Comprehensive reference and overview of C#, covering object-oriented programming, modern component-oriented architecture, garbage collection, language-integrated queries, cross-platform performance, and async execution."
+id: "csharp-languages"
+description: "Comprehensive reference for C#: master object-oriented design, async execution, LINQ, garbage collection, and modern cross-platform development."
 ---
 
 ## Information Card
