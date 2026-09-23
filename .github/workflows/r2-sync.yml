@@ -32,6 +32,7 @@ jobs:
           const { execSync } = require("child_process");
 
           function walkDir(dir) {
+            if (!fs.existsSync(dir)) return;
             const files = fs.readdirSync(dir);
             for (const file of files) {
               const fullPath = path.join(dir, file);
@@ -76,9 +77,11 @@ jobs:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: |
-          find data -type f | while read -r file; do
-            # Compute R2 object key relative to data folder (e.g., data/en/guide.md -> en/guide.md)
-            key="${file#data/}"
-            echo "Uploading $file -> codingdatafy-content/$key"
-            npx wrangler r2 object put "codingdatafy-content/$key" --file="$file"
+          set -e
+          cd data
+          find . -type f -name "*.md" | while read -r file; do
+            # Clean leading './' to produce keys like 'index.md' or 'languages/index.md'
+            key="${file#./}"
+            echo "Uploading data/$key -> codingdatafy-content/$key"
+            npx wrangler r2 object put "codingdatafy-content/$key" --file="$file" --remote
           done

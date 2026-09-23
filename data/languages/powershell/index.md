@@ -17,7 +17,7 @@ description: "Comprehensive PowerShell reference covering object-based automatio
 	<dt>First Appeared</dt><dd>2006</dd>
 	<dt>Current Developer</dt><dd>Microsoft Corporation</dd>
 	<dt>Filename Extension</dt><dd><code>.ps1</code>, <code>.psm1</code>, <code>.psd1</code></dd>
-	<dt>Current Release</dt><dd><a href="https://learn.microsoft.com/powershell/">7.6.5</a></dd>
+	<dt>Current Release</dt><dd><a href="https://learn.microsoft.com/powershell/">7.6.6</a></dd>
 	<dt>Website</dt><dd><a href="https://microsoft.com/powershell">microsoft.com/powershell</a></dd>
 </dl>
 
