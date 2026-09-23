@@ -76,4 +76,7 @@ jobs:
 
       - name: Sync Markdown Data to Cloudflare R2
         run: |
-          aws s3 sync ./data s3://codingdatafy-content/ --endpoint-url https://${{ secrets.CLOUDFLARE_ACCOUNT_ID }}.r2.cloudflarestorage.com --delete
+          aws s3 sync ./data s3://codingdatafy-content \
+            --endpoint-url https://${{ secrets.CLOUDFLARE_ACCOUNT_ID }}.r2.cloudflarestorage.com \
+            --exact-timestamps \
+            --delete
