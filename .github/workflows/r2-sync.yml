@@ -26,57 +26,59 @@ jobs:
 
       - name: Inject Git Commit Timestamps into Frontmatter
         run: |
-          python3 -c '
-          import os, subprocess, datetime
+          node -e '
+          const fs = require("fs");
+          const path = require("path");
+          const { execSync } = require("child_process");
 
-          for root, dirs, files in os.walk("data"):
-              for file in files:
-                  if file.endswith(".md"):
-                      filepath = os.path.join(root, file)
-                      try:
-                          res = subprocess.check_output(["git", "log", "-1", "--format=%cd", "--date=format:%Y-%m-%d", "--", filepath]).decode().strip()
-                      except Exception:
-                          res = ""
-                      if not res:
-                          res = datetime.datetime.utcnow().strftime("%Y-%m-%d")
+          function walkDir(dir) {
+            const files = fs.readdirSync(dir);
+            for (const file of files) {
+              const fullPath = path.join(dir, file);
+              if (fs.statSync(fullPath).isDirectory()) {
+                walkDir(fullPath);
+              } else if (file.endsWith(".md")) {
+                let commitDate = "";
+                try {
+                  commitDate = execSync(`git log -1 --format="%cd" --date=format:"%Y-%m-%d" -- "${fullPath}"`).toString().trim();
+                } catch (e) {}
 
-                      with open(filepath, "r", encoding="utf-8") as f:
-                          content = f.read()
+                if (!commitDate) {
+                  commitDate = new Date().toISOString().split("T")[0];
+                }
 
-                      if content.startswith("---"):
-                          parts = content.split("---", 2)
-                          if len(parts) >= 3:
-                              frontmatter = parts[1]
-                              lines = frontmatter.split("\n")
-                              updated = False
-                              for idx, line in enumerate(lines):
-                                  if line.startswith("updatedAt:"):
-                                      lines[idx] = f"updatedAt: \"{res}\""
-                                      updated = True
-                                      break
-                              if not updated:
-                                  lines.append(f"updatedAt: \"{res}\"")
-                              parts[1] = "\n".join(lines)
-                              new_content = "---".join(parts)
-                          else:
-                              new_content = content
-                      else:
-                          new_content = f"---\nupdatedAt: \"{res}\"\n---\n" + content
+                let content = fs.readFileSync(fullPath, "utf8");
+                if (content.startsWith("---")) {
+                  const parts = content.split("---");
+                  if (parts.length >= 3) {
+                    let frontmatter = parts[1];
+                    if (/^updatedAt:.*/m.test(frontmatter)) {
+                      frontmatter = frontmatter.replace(/^updatedAt:.*/m, `updatedAt: "${commitDate}"`);
+                    } else {
+                      frontmatter += `\nupdatedAt: "${commitDate}"`;
+                    }
+                    parts[1] = frontmatter;
+                    content = parts.join("---");
+                  }
+                } else {
+                  content = `---\nupdatedAt: "${commitDate}"\n---\n` + content;
+                }
+                fs.writeFileSync(fullPath, content, "utf8");
+              }
+            }
+          }
 
-                      with open(filepath, "w", encoding="utf-8") as f:
-                          f.write(new_content)
+          walkDir("data");
           '
 
-      - name: Configure AWS Credentials for Cloudflare R2
-        uses: aws-actions/configure-aws-credentials@v4
-        with:
-          aws-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY }}
-          aws-region: auto
-
-      - name: Sync Markdown Data to Cloudflare R2
+      - name: Sync Markdown Data to R2 via Native Wrangler
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: |
-          aws s3 sync ./data s3://codingdatafy-content \
-            --endpoint-url https://${{ secrets.CLOUDFLARE_ACCOUNT_ID }}.r2.cloudflarestorage.com \
-            --exact-timestamps \
-            --delete
+          find data -type f | while read -r file; do
+            # Compute R2 object key relative to data folder (e.g., data/en/guide.md -> en/guide.md)
+            key="${file#data/}"
+            echo "Uploading $file -> codingdatafy-content/$key"
+            npx wrangler r2 object put "codingdatafy-content/$key" --file="$file"
+          done
