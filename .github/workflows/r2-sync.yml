@@ -26,27 +26,51 @@ jobs:
 
       - name: Inject Git Commit Timestamps into Frontmatter
         run: |
-          for file in $(find data -name "*.md"); do
-            COMMIT_DATE=$(git log -1 --format="%cd" --date=format:"%Y-%m-%d" -- "$file")
-            
-            if [ -z "$COMMIT_DATE" ]; then
-              COMMIT_DATE=$(date -u +"%Y-%m-%d")
-            fi
+          python3 -c '
+          import os, subprocess
 
-            if grep -q "^---" "$file"; then
-              if grep -q "^updatedAt:" "$file"; then
-                sed -i "s/^updatedAt:.*/updatedAt: \"$COMMIT_DATE\"/" "$file"
-              else
-                sed -i "s/^---/---\nupdatedAt: \"$COMMIT_DATE\"/" "$file"
-              fi
-            else
-              echo -e "---\nupdatedAt: \"$COMMIT_DATE\"\n---\n$(cat "$file")" > "$file"
-            fi
-          done
+          for root, dirs, files in os.walk("data"):
+              for file in files:
+                  if file.endswith(".md"):
+                      filepath = os.path.join(root, file)
+                      try:
+                          res = subprocess.check_output(["git", "log", "-1", "--format=%cd", "--date=format:%Y-%m-%d", "--", filepath]).decode().strip()
+                      except Exception:
+                          res = ""
+                      if not res:
+                          import datetime
+                          res = datetime.datetime.utcnow().strftime("%Y-%m-%d")
+
+                      with open(filepath, "r", encoding="utf-8") as f:
+                          content = f.read()
+
+                      if content.startswith("---"):
+                          parts = content.split("---", 2)
+                          if len(parts) >= 3:
+                              frontmatter = parts[1]
+                              lines = frontmatter.split("\n")
+                              updated = False
+                              for idx, line in enumerate(lines):
+                                  if line.startswith("updatedAt:"):
+                                      lines[idx] = f"updatedAt: \"{res}\""
+                                      updated = True
+                                      break
+                              if not updated:
+                                  lines.append(f"updatedAt: \"{res}\"")
+                              parts[1] = "\n".join(lines)
+                              new_content = "---".join(parts)
+                          else:
+                              new_content = content
+                      else:
+                          new_content = f"---\nupdatedAt: \"{res}\"\n---\n" + content
+
+                      with open(filepath, "w", encoding="utf-8") as f:
+                          f.write(new_content)
+          '
 
       - name: Sync Markdown Data to R2
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: r2 object sync ./data r2://codingdatafy-content
+          command: r2 object sync ./data codingdatafy-content
