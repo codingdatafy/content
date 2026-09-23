@@ -17,7 +17,7 @@ description: "Master PHP with our complete reference covering modern OOP, strict
 	<dt>First Appeared</dt><dd>1995</dd>
 	<dt>Current Developer</dt><dd>The PHP Development Team & The PHP Foundation</dd>
 	<dt>Filename Extension</dt><dd><code>.php</code></dd>
-	<dt>Current Release</dt><dd><a href="https://www.php.net/downloads">PHP 8.5.9</a></dd>
+	<dt>Current Release</dt><dd><a href="https://www.php.net/downloads">PHP 8.5.10</a></dd>
 	<dt>Website</dt><dd><a href="https://www.php.net/">php.net</a></dd>
 </dl>
 
