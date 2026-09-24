@@ -17,7 +17,7 @@ description: "Comprehensive reference and overview of Go, covering structural ty
 	<dt>First Appeared</dt><dd>2009</dd>
 	<dt>Current Developer</dt><dd>Google & Open Source Community</dd>
 	<dt>Filename Extension</dt><dd><code>.go</code></dd>
-	<dt>Current Release</dt><dd><a href="https://go.dev/doc/">Go 1.26.6</a></dd>
+	<dt>Current Release</dt><dd><a href="https://go.dev/doc/">Go 1.27.1</a></dd>
 	<dt>Website</dt><dd><a href="https://go.dev/">go.dev</a></dd>
 </dl>
 

@@ -49,18 +49,17 @@ jobs:
                 }
 
                 let content = fs.readFileSync(fullPath, "utf8");
-                if (content.startsWith("---")) {
-                  const parts = content.split("---");
-                  if (parts.length >= 3) {
-                    let frontmatter = parts[1];
-                    if (/^updatedAt:.*/m.test(frontmatter)) {
-                      frontmatter = frontmatter.replace(/^updatedAt:.*/m, `updatedAt: "${commitDate}"`);
-                    } else {
-                      frontmatter += `\nupdatedAt: "${commitDate}"`;
-                    }
-                    parts[1] = frontmatter;
-                    content = parts.join("---");
+                const frontmatterRegex = /^---[\r\n]+([\s\S]*?)[\r\n]+---[\r\n]*/;
+                const match = content.match(frontmatterRegex);
+
+                if (match) {
+                  let yamlBlock = match[1];
+                  if (/^updatedAt:.*/m.test(yamlBlock)) {
+                    yamlBlock = yamlBlock.replace(/^updatedAt:.*/m, `updatedAt: "${commitDate}"`);
+                  } else {
+                    yamlBlock = yamlBlock.trimEnd() + `\nupdatedAt: "${commitDate}"`;
                   }
+                  content = content.replace(frontmatterRegex, `---\n${yamlBlock}\n---\n`);
                 } else {
                   content = `---\nupdatedAt: "${commitDate}"\n---\n` + content;
                 }
