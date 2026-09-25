@@ -6,7 +6,7 @@ author: CodingDatafy Team
 title: "Homepage"
 style: "rootpage.css"
 id: "home-rootpage"
-description: "CodingDatafy is the definitive 2026 developer platform providing exhaustive specifications for languages, frameworks, APIs, protocols, databases, tools, hardware compatibility, and computer science engineering."
+description: "On a mission to build the world's largest reference and knowledge base for coding. Fast, comprehensive documentation for developers worldwide."
 ---
 
 ## CodingDatafy
@@ -82,20 +82,3 @@ Navigate the complete software development lifecycle through our ten core struct
 		</tr>
 	</tbody>
 </table>
-
----
-
-## Architectural Principles & Platform Methodology
-
-CodingDatafy enforces strict technical evaluation standards to ensure data integrity across all documentation:
-
-### 1. Exhaustive Coverage Standard
-Every index maps core fundamentals alongside enterprise standards and emerging technological paradigms for 2026. We reject superficial summaries in favor of actionable, production-ready specifications.
-
-### 2. Modern Stack First (2026 Grounded)
-Our technical specifications prioritize modern production targets—such as **Rust, TypeScript, Next.js 16, HTTP/3, WebAssembly, ARM64, PyTorch, and Vector Databases**—while providing legacy contextual mapping for enterprise stability.
-
-### 3. Open Source & Community Automation
-Built on a high-performance static rendering engine (**Next.js SSG on Cloudflare Pages**), CodingDatafy utilizes an automated community dispatch workflow where content changes seamlessly trigger edge-optimized deployment cycles globally.
-
----
