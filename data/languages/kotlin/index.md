@@ -17,7 +17,7 @@ description: "Comprehensive reference and overview of Kotlin, covering modern co
 	<dt>First Appeared</dt><dd>2011</dd>
 	<dt>Current Developer</dt><dd>JetBrains & Kotlin Foundation</dd>
 	<dt>Filename Extension</dt><dd><code>.kt</code>, <code>.kts</code></dd>
-	<dt>Current Release</dt><dd><a href="https://kotlinlang.org/docs/releases.html">Kotlin 2.4.0</a></dd>
+	<dt>Current Release</dt><dd><a href="https://kotlinlang.org/docs/releases.html">Kotlin 2.4.20</a></dd>
 	<dt>Website</dt><dd><a href="https://kotlinlang.org">kotlinlang.org</a></dd>
 </dl>
 
