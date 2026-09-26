@@ -17,7 +17,7 @@ description: "Comprehensive reference and overview of Dart, covering client-opti
 	<dt>First Appeared</dt><dd>2011</dd>
 	<dt>Current Developer</dt><dd>Google & Open Source Community</dd>
 	<dt>Filename Extension</dt><dd><code>.dart</code></dd>
-	<dt>Current Release</dt><dd><a href="https://dart.dev/guides/language/evolution">Dart 3.13.2</a></dd>
+	<dt>Current Release</dt><dd><a href="https://dart.dev/guides/language/evolution">Dart 3.13.4</a></dd>
 	<dt>Website</dt><dd><a href="https://dart.dev">dart.dev</a></dd>
 </dl>
 
