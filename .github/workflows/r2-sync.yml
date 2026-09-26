@@ -24,63 +24,95 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Detect Changed Markdown Files
+        id: changed-files
+        run: |
+          set -e
+
+          # Determine base commit for diff comparison
+          # Fallback to HEAD~1 for initial pushes or single commit events
+          BASE_SHA="${{ github.event.before }}"
+          if [ -z "$BASE_SHA" ] \vert{}\vert{} [ "$BASE_SHA" = "0000000000000000000000000000000000000000" ]; then
+            BASE_SHA="HEAD~1"
+          fi
+
+          # Get Added (A), Copied (C), Modified (M), or Renamed (R) .md files inside data/
+          FILES=$(git diff --name-only --diff-filter=ACMR "$BASE_SHA" ${{ github.sha }} \vert{} grep '^data/.*\.md$' || true)
+
+          if [ -z "$FILES" ]; then
+            echo "No changed markdown files found."
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "Detected changed files:"
+            echo "$FILES"
+            
+            # Save files list into output file
+            echo "$FILES" > changed_files.txt
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          fi
+
       - name: Inject Git Commit Timestamps into Frontmatter
+        if: steps.changed-files.outputs.has_changes == 'true'
         run: |
           node -e '
           const fs = require("fs");
-          const path = require("path");
           const { execSync } = require("child_process");
 
-          function walkDir(dir) {
-            if (!fs.existsSync(dir)) return;
-            const files = fs.readdirSync(dir);
-            for (const file of files) {
-              const fullPath = path.join(dir, file);
-              if (fs.statSync(fullPath).isDirectory()) {
-                walkDir(fullPath);
-              } else if (file.endsWith(".md")) {
-                let commitDate = "";
-                try {
-                  commitDate = execSync(`git log -1 --format="%cd" --date=format:"%Y-%m-%d" -- "${fullPath}"`).toString().trim();
-                } catch (e) {}
+          if (!fs.existsSync("changed_files.txt")) process.exit(0);
 
-                if (!commitDate) {
-                  commitDate = new Date().toISOString().split("T")[0];
-                }
+          const changedFiles = fs.readFileSync("changed_files.txt", "utf8")
+            .split("\n")
+            .map(f => f.trim())
+            .filter(Boolean);
 
-                let content = fs.readFileSync(fullPath, "utf8");
-                const frontmatterRegex = /^---[\r\n]+([\s\S]*?)[\r\n]+---[\r\n]*/;
-                const match = content.match(frontmatterRegex);
+          for (const fullPath of changedFiles) {
+            if (!fs.existsSync(fullPath)) continue;
 
-                if (match) {
-                  let yamlBlock = match[1];
-                  if (/^updatedAt:.*/m.test(yamlBlock)) {
-                    yamlBlock = yamlBlock.replace(/^updatedAt:.*/m, `updatedAt: "${commitDate}"`);
-                  } else {
-                    yamlBlock = yamlBlock.trimEnd() + `\nupdatedAt: "${commitDate}"`;
-                  }
-                  content = content.replace(frontmatterRegex, `---\n${yamlBlock}\n---\n`);
-                } else {
-                  content = `---\nupdatedAt: "${commitDate}"\n---\n` + content;
-                }
-                fs.writeFileSync(fullPath, content, "utf8");
-              }
+            let commitDate = "";
+            try {
+              commitDate = execSync(`git log -1 --format="%cd" --date=format:"%Y-%m-%d" -- "${fullPath}"`).toString().trim();
+            } catch (e) {}
+
+            if (!commitDate) {
+              commitDate = new Date().toISOString().split("T")[0];
             }
-          }
 
-          walkDir("data");
+            let content = fs.readFileSync(fullPath, "utf8");
+            const frontmatterRegex = /^---[\r\n]+([\s\S]*?)[\r\n]+---[\r\n]*/;
+            const match = content.match(frontmatterRegex);
+
+            if (match) {
+              let yamlBlock = match[1];
+              if (/^updatedAt:.*/m.test(yamlBlock)) {
+                yamlBlock = yamlBlock.replace(/^updatedAt:.*/m, `updatedAt: "${commitDate}"`);
+              } else {
+                yamlBlock = yamlBlock.trimEnd() + `\nupdatedAt: "${commitDate}"`;
+              }
+              content = content.replace(frontmatterRegex, `---\n${yamlBlock}\n---\n`);
+            } else {
+              content = `---\nupdatedAt: "${commitDate}"\n---\n` + content;
+            }
+            fs.writeFileSync(fullPath, content, "utf8");
+          }
           '
 
-      - name: Sync Markdown Data to R2 via Native Wrangler
+      - name: Sync Modified Markdown Data to R2 via Native Wrangler
+        if: steps.changed-files.outputs.has_changes == 'true'
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: |
           set -e
-          cd data
-          find . -type f -name "*.md" | while read -r file; do
-            # Clean leading './' to produce keys like 'index.md' or 'languages/index.md'
-            key="${file#./}"
-            echo "Uploading data/$key -> codingdatafy-content/$key"
+
+          cat changed_files.txt | while read -r file; do
+            [ -z "$file" ] && continue
+            if [ ! -f "$file" ]; then
+              echo "Skipping deleted file: $file"
+              continue
+            fi
+
+            # Clean leading 'data/' to map key like 'data/languages/javascript/index.md' -> 'languages/javascript/index.md'
+            key="${file#data/}"
+            echo "Uploading $file -> codingdatafy-content/$key"
             npx wrangler r2 object put "codingdatafy-content/$key" --file="$file" --remote
           done
