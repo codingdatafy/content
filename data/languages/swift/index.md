@@ -17,7 +17,7 @@ description: "Comprehensive Swift reference covering protocol-oriented programmi
 	<dt>First Appeared</dt><dd>2014</dd>
 	<dt>Current Developer</dt><dd>Apple Inc. & Swift.org Community</dd>
 	<dt>Filename Extension</dt><dd><code>.swift</code></dd>
-	<dt>Current Release</dt><dd><a href="https://docs.swift.org/latest/documentation/">Swift 6.3.3</a></dd>
+	<dt>Current Release</dt><dd><a href="https://docs.swift.org/latest/documentation/">Swift 6.4.0</a></dd>
 	<dt>Website</dt><dd><a href="https://www.swift.org">swift.org</a></dd>
 </dl>
 
