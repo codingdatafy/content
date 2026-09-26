@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'data/**'
+      - 'data/**/*.md'
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -16,7 +16,7 @@ permissions:
 
 jobs:
   sync:
-    name: Sync R2 Bucket
+    name: Sync R2 Bucket Incremental
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Source Code
@@ -24,68 +24,101 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Get Changed Markdown Files
-        id: changed-files
-        uses: tj-actions/changed-files@v45
-        with:
-          files: |
-            data/**/*.md
-
-      - name: Inject Git Commit Timestamps into Changed Frontmatter
-        if: steps.changed-files.outputs.any_changed == 'true'
-        env:
-          ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
+      - name: Inject Git Commit Timestamps into Frontmatter
         run: |
           node -e '
           const fs = require("fs");
+          const path = require("path");
           const { execSync } = require("child_process");
 
-          const fileList = process.env.ALL_CHANGED_FILES ? process.env.ALL_CHANGED_FILES.split(" ") : [];
+          function walkDir(dir) {
+            if (!fs.existsSync(dir)) return;
+            const files = fs.readdirSync(dir);
+            for (const file of files) {
+              const fullPath = path.join(dir, file);
+              if (fs.statSync(fullPath).isDirectory()) {
+                walkDir(fullPath);
+              } else if (file.endsWith(".md")) {
+                let commitDate = "";
+                try {
+                  commitDate = execSync(`git log -1 --format="%cd" --date=format:"%Y-%m-%d" -- "${fullPath}"`).toString().trim();
+                } catch (e) {}
 
-          for (const filePath of fileList) {
-            if (!filePath || !filePath.endsWith(".md") || !fs.existsSync(filePath)) continue;
+                if (!commitDate) {
+                  commitDate = new Date().toISOString().split("T")[0];
+                }
 
-            let commitDate = "";
-            try {
-              commitDate = execSync(`git log -1 --format="%cd" --date=format:"%Y-%m-%d" -- "${filePath}"`).toString().trim();
-            } catch (e) {}
+                let content = fs.readFileSync(fullPath, "utf8");
+                const frontmatterRegex = /^---[\r\n]+([\s\S]*?)[\r\n]+---[\r\n]*/;
+                const match = content.match(frontmatterRegex);
 
-            if (!commitDate) {
-              commitDate = new Date().toISOString().split("T")[0];
-            }
-
-            let content = fs.readFileSync(filePath, "utf8");
-            const frontmatterRegex = /^---[\r\n]+([\s\S]*?)[\r\n]+---[\r\n]*/;
-            const match = content.match(frontmatterRegex);
-
-            if (match) {
-              let yamlBlock = match[1];
-              if (/^updatedAt:.*/m.test(yamlBlock)) {
-                yamlBlock = yamlBlock.replace(/^updatedAt:.*/m, `updatedAt: "${commitDate}"`);
-              } else {
-                yamlBlock = yamlBlock.trimEnd() + `\nupdatedAt: "${commitDate}"`;
+                if (match) {
+                  let yamlBlock = match[1];
+                  if (/^updatedAt:.*/m.test(yamlBlock)) {
+                    yamlBlock = yamlBlock.replace(/^updatedAt:.*/m, `updatedAt: "${commitDate}"`);
+                  } else {
+                    yamlBlock = yamlBlock.trimEnd() + `\nupdatedAt: "${commitDate}"`;
+                  }
+                  content = content.replace(frontmatterRegex, `---\n${yamlBlock}\n---\n`);
+                } else {
+                  content = `---\nupdatedAt: "${commitDate}"\n---\n` + content;
+                }
+                fs.writeFileSync(fullPath, content, "utf8");
               }
-              content = content.replace(frontmatterRegex, `---\n${yamlBlock}\n---\n`);
-            } else {
-              content = `---\nupdatedAt: "${commitDate}"\n---\n` + content;
             }
-            fs.writeFileSync(filePath, content, "utf8");
           }
+
+          walkDir("data");
           '
 
-      - name: Sync Changed Markdown Files to R2 via Native Wrangler
-        if: steps.changed-files.outputs.any_changed == 'true'
+      - name: Sync Changed, Added, Renamed, and Deleted Files to R2
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
         run: |
           set -e
-          for filePath in $ALL_CHANGED_FILES; do
-            if [ -f "$filePath" ]; then
-              # Convert 'data/languages/index.md' -> 'languages/index.md'
-              key="${filePath#data/}"
-              echo "Uploading $filePath -> codingdatafy-content/$key"
-              npx wrangler r2 object put "codingdatafy-content/$key" --file="$filePath" --remote
-            fi
-          done
+
+          # Determine commit range (fallback to previous commit if single commit push)
+          BEFORE_SHA="${{ github.event.before }}"
+          if [ "$BEFORE_SHA" = "0000000000000000000000000000000000000000" ] \vert{}\vert{} [ -z "$BEFORE_SHA" ]; then
+            BEFORE_SHA="HEAD~1"
+          fi
+
+          echo "Diffing changes between $BEFORE_SHA and HEAD..."
+
+          # Handle Deleted / Renamed-from files (Delete from R2)
+          DELETED_FILES=$(git diff --name-status --diff-filter=D "$BEFORE_SHA" HEAD \vert{} grep '^D[[:space:]]*data/.*\.md$' | awk '{print $2}' || true)
+          
+          # Handle Renamed files specifically (Old path needs deletion from R2)
+          RENAMED_OLD_FILES=$(git diff --name-status --diff-filter=R "$BEFORE_SHA" HEAD | grep '^R[0-9]*[[:space:]]*data/.*\.md' | awk '{print $2}' || true)
+
+          # Combine all keys to delete from R2
+          ALL_DELETIONS=$(echo -e "${DELETED_FILES}\n${RENAMED_OLD_FILES}" \vert{} sed '/^$/d' | sort -u)
+
+          if [ -n "$ALL_DELETIONS" ]; then
+            echo "--- Deleting deleted/renamed Markdown files from R2 ---"
+            echo "$ALL_DELETIONS" | while read -r file; do
+              # Extract key relative to data/ (e.g., 'data/languages/js.md' -> 'languages/js.md')
+              key="${file#data/}"
+              echo "Deleting R2 object: codingdatafy-content/$key"
+              npx wrangler r2 object delete "codingdatafy-content/$key" --remote || true
+            done
+          else
+            echo "No Markdown files deleted or renamed away."
+          fi
+
+          # Handle Added, Modified, or Renamed-to files (Upload to R2)
+          UPDATED_FILES=$(git diff --name-status --diff-filter=AMR "$BEFORE_SHA" HEAD | grep '^[AMR][0-9]*[[:space:]]*data/.*\.md$' \vert{} awk '{print$NF}' || true)
+
+          if [ -n "$UPDATED_FILES" ]; then
+            echo "--- Uploading added/modified/renamed Markdown files to R2 ---"
+            echo "$UPDATED_FILES" | while read -r file; do
+              if [ -f "$file" ]; then
+                key="${file#data/}"
+                echo "Uploading: $file -> codingdatafy-content/$key"
+                npx wrangler r2 object put "codingdatafy-content/$key" --file="$file" --remote
+              fi
+            done
+          else
+            echo "No added, modified, or renamed Markdown files to upload."
+          fi
