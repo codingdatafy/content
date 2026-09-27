@@ -17,7 +17,7 @@ description: "Comprehensive reference and overview of Python, covering general-p
 	<dt>First Appeared</dt><dd>1991</dd>
 	<dt>Current Developer</dt><dd>Python Software Foundation (PSF)</dd>
 	<dt>Filename Extension</dt><dd><code>.py</code>, <code>.pyi</code></dd>
-	<dt>Current Release</dt><dd><a href="https://docs.python.org/3/">Python 3.13 / 3.14</a></dd>
+	<dt>Current Release</dt><dd><a href="https://docs.python.org/3/">3.14.7</a></dd>
 	<dt>Website</dt><dd><a href="https://www.python.org">www.python.org</a></dd>
 </dl>
 
