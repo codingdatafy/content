@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - develop
     paths:
       - 'data/**'
 
@@ -75,12 +76,13 @@ jobs:
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          R2_BUCKET: ${{ github.ref == 'refs/heads/develop' && 'codingdatafy-content-dev' || 'codingdatafy-content' }}
         run: |
           set -e
           cd data
           find . -type f -name "*.md" | while read -r file; do
             # Clean leading './' to produce keys like 'index.md' or 'languages/index.md'
             key="${file#./}"
-            echo "Uploading data/$key -> codingdatafy-content/$key"
-            npx wrangler r2 object put "codingdatafy-content/$key" --file="$file" --remote
+            echo "Uploading data/$key -> ${R2_BUCKET}/$key"
+            npx wrangler r2 object put "${R2_BUCKET}/$key" --file="$file" --remote
           done
