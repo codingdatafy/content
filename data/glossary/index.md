@@ -5,6 +5,7 @@ copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: "Glossary"
 style: "rootpage.css"
+breadcrumb: Glossary
 id: "glossary-rootpage"
 description: "The definitive 2026 computer science, software engineering, cloud architecture, cybersecurity, and AI terminology glossary. An exhaustive reference dictionary for software engineers."
 ---

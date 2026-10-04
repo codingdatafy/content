@@ -4,6 +4,7 @@ license: CC BY-SA 4.0
 copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: "PHP"
+breadcrumb: Languages/PHP
 id: "php-languages"
 description: "Master PHP with our complete reference covering modern OOP, strict typing, JIT execution, major ecosystem frameworks, and fast server architectures."
 ---

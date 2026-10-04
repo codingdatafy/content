@@ -4,6 +4,7 @@ license: CC BY-SA 4.0
 copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: "JSON"
+breadcrumb: Languages/JSON
 id: "json-languages"
 description: "Comprehensive reference for JSON, covering data structures, syntax specifications, parsing performance, and modern web data exchange standards."
 ---

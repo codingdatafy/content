@@ -5,6 +5,7 @@ copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: "Languages"
 style: "rootpage.css"
+breadcrumb: Languages
 id: "languages-rootpage"
 description: "The definitive 2026 coding and programming languages index. A production-grounded architecture roadmap engineered for modern software engineers."
 ---

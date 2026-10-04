@@ -4,6 +4,7 @@ license: CC BY-SA 4.0
 copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: "GraphQL"
+breadcrumb: Languages/GraphQL
 id: "graphql-languages"
 description: "Comprehensive reference and overview of GraphQL, covering declarative data fetching, strong schema typing, query execution, and modern API architecture standards."
 ---

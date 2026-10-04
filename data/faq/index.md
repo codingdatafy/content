@@ -5,6 +5,7 @@ copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: "Frequently Asked Questions"
 style: "rootpage.css"
+breadcrumb: FAQ
 id: "faq-rootpage"
 description: "Frequently asked questions regarding CodingDatafy platform architecture, technical evaluation methodology, content contributions, and open-source infrastructure."
 ---

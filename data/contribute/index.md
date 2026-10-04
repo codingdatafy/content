@@ -5,6 +5,7 @@ copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: "Contribute"
 style: "rootpage.css"
+breadcrumb: Contribute
 id: "contribute-rootpage"
 description: "Join CodingDatafy's global open-source mission. Learn our native Cloudflare Edge workflow to contribute structured Markdown content directly via GitHub."
 ---

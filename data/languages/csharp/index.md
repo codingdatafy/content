@@ -4,6 +4,7 @@ license: CC BY-SA 4.0
 copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: "C#"
+breadcrumb: Languages/C#
 id: "csharp-languages"
 description: "Comprehensive reference for C#: master object-oriented design, async execution, LINQ, garbage collection, and modern cross-platform development."
 ---

@@ -4,6 +4,7 @@ license: CC BY-SA 4.0
 copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: "Swift"
+breadcrumb: Languages/Swift
 id: "swift-languages"
 description: "Comprehensive Swift reference covering protocol-oriented programming, modern concurrency, memory management, and Apple ecosystem software development."
 ---

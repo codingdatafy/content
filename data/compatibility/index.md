@@ -5,6 +5,7 @@ copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: "Compatibility"
 style: "rootpage.css"
+breadcrumb: Compatibility
 id: "compatibility-rootpage"
 description: "The definitive 2026 hardware architecture, operating system support, compiler targets, and browser engine compatibility index. A production-grounded roadmap for cross-platform engineering."
 ---

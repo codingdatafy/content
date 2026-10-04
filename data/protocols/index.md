@@ -5,6 +5,7 @@ copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: "Protocols"
 style: "rootpage.css"
+breadcrumb: Protocols
 id: "protocols-rootpage"
 description: "The definitive 2026 communication protocols, network transport, security standards, and IPC specifications index. A production-grounded architecture roadmap engineered for modern software engineers."
 ---

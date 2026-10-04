@@ -4,6 +4,7 @@ license: CC BY-SA 4.0
 copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: "Go"
+breadcrumb: Languages/Go
 id: "go-languages"
 description: "Comprehensive reference and overview of Go, covering structural typing, goroutine concurrency, modern memory management, fast compilation, and high-performance cloud-native microservices."
 ---

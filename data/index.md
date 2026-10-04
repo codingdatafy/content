@@ -5,6 +5,7 @@ copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: "Homepage"
 style: "rootpage.css"
+breadcrumb:
 id: "home-rootpage"
 description: "On a mission to build the world's largest reference and knowledge base for coding. Fast, comprehensive documentation for developers worldwide."
 ---

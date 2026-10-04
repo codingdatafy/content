@@ -5,6 +5,7 @@ copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: "Frameworks"
 style: "rootpage.css"
+breadcrumb: Frameworks
 id: "frameworks-rootpage"
 description: "The definitive 2026 software frameworks and runtime index. A production-grounded architecture roadmap engineered for modern software engineers."
 ---

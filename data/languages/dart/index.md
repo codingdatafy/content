@@ -4,6 +4,7 @@ license: CC BY-SA 4.0
 copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: "Dart"
+breadcrumb: Languages/Dart
 id: "dart-languages"
 description: "Comprehensive reference and overview of Dart, covering client-optimized compilation, sound null safety, reactive UI development, and Flutter integration."
 ---

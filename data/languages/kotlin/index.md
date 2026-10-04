@@ -4,6 +4,7 @@ license: CC BY-SA 4.0
 copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: "Kotlin"
+breadcrumb: Languages/Kotlin
 id: "kotlin-languages"
 description: "Comprehensive reference and overview of Kotlin, covering modern concise syntax, multiplatform capability, JVM interoperability, and null safety standards."
 ---

@@ -5,6 +5,7 @@ copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: "Development"
 style: "rootpage.css"
+breadcrumb: Development
 id: "development-rootpage"
 description: "The definitive 2026 computer science fundamentals, system design, software engineering, cybersecurity, and AI engineering index. A production-grounded architecture roadmap."
 ---

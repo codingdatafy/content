@@ -3,8 +3,9 @@ project: CodingDatafy
 license: CC BY-SA 4.0
 copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
-title: "About Us"
+title: "About"
 style: "rootpage.css"
+breadcrumb: About
 id: "about-rootpage"
 description: "Discover CodingDatafy's mission: building the world's largest reference for coding and software engineering, powered by an open-source."
 ---

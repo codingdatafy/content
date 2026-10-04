@@ -5,6 +5,7 @@ copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: "Tools"
 style: "rootpage.css"
+breadcrumb: Tools
 id: "tools-rootpage"
 description: "The definitive 2026 DevOps, infrastructure as code, build automation, and environment tools index. A production-grounded architecture roadmap engineered for modern software engineers."
 ---

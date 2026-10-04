@@ -5,6 +5,7 @@ copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: "Databases"
 style: "rootpage.css"
+breadcrumb: Databases
 id: "databases-rootpage"
 description: "The definitive 2026 database architecture, storage engines, and persistence systems index. A production-grounded architecture roadmap engineered for modern software engineers."
 ---

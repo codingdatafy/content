@@ -4,6 +4,7 @@ license: CC BY-SA 4.0
 copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: "Java"
+breadcrumb: Languages/Java
 id: "java-languages"
 description: "Comprehensive reference and overview of Java, covering object-oriented programming, write-once-run-anywhere philosophy, strong static typing, and enterprise software standards."
 ---

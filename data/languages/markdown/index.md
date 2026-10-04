@@ -4,6 +4,7 @@ license: CC BY-SA 4.0
 copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: "Markdown"
+breadcrumb: Languages/Markdown
 id: "markdown-languages"
 description: "Comprehensive reference for Markdown, covering text formatting, structured document syntax, extended features, and rendering engine integration."
 ---

@@ -4,6 +4,7 @@ license: CC BY-SA 4.0
 copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: "YAML"
+breadcrumb: Languages/YAML
 id: "yaml-languages"
 description: "Comprehensive YAML reference covering data serialization, syntax specification, human-readable structure, and configuration standards."
 ---

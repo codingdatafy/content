@@ -4,6 +4,7 @@ license: CC BY-SA 4.0
 copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: "JavaScript"
+breadcrumb: Languages/JavaScript
 id: "javascript-languages"
 description: "Comprehensive reference for JavaScript (JS), covering ECMAScript standards, DOM manipulation, asynchronous runtimes, and modern security patterns."
 ---

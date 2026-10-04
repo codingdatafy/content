@@ -4,6 +4,7 @@ license: CC BY-SA 4.0
 copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: "C++"
+breadcrumb: Languages/C++
 id: "c-plus-plus-languages"
 description: "Comprehensive reference and overview of C++, covering object-oriented programming, generic programming, modern memory management, zero-cost abstractions, and high-performance system architecture."
 ---

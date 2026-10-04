@@ -4,6 +4,7 @@ license: CC BY-SA 4.0
 copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: "WebAssembly"
+breadcrumb: Languages/WebAssembly
 id: "webassembly-languages"
 description: "Comprehensive reference for WebAssembly (Wasm), covering binary formats, near-native execution, component models, and cross-platform runtimes."
 ---

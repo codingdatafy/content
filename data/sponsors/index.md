@@ -5,6 +5,7 @@ copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: "Sponsors"
 style: "rootpage.css"
+breadcrumb: Sponsors
 id: "sponsors-rootpage"
 description: "Learn about CodingDatafy's privacy-first sponsorship philosophy, donation channels, and sustainable AI partnerships."
 ---

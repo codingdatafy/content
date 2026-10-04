@@ -4,6 +4,7 @@ license: CC BY-SA 4.0
 copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: "PowerShell"
+breadcrumb: Languages/PowerShell
 id: "powershell-languages"
 description: "Comprehensive PowerShell reference covering object-based automation, cross-platform scripting, cmdlet architecture, and enterprise configuration management."
 ---

@@ -5,6 +5,7 @@ copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: "Contact"
 style: "rootpage.css"
+breadcrumb: Contact
 id: "contact-rootpage"
 description: "Get in touch with the CodingDatafy Team. Submit technical inquiries via GitHub issues or connect with our global developer community today."
 ---

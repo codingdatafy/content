@@ -5,6 +5,7 @@ copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: "APIs"
 style: "rootpage.css"
+breadcrumb: APIs
 id: "apis-rootpage"
 description: "The definitive 2026 application programming interfaces and system execution spec index. A production-grounded architecture roadmap engineered for modern software engineers."
 ---

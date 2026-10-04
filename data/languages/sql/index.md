@@ -4,6 +4,7 @@ license: CC BY-SA 4.0
 copyright: 2026 CodingDatafy Organization
 author: CodingDatafy Team
 title: "SQL"
+breadcrumb: Languages/SQL
 id: "sql-languages"
 description: "Comprehensive reference and overview of SQL (Structured Query Language), covering relational database management, query optimization, ACID compliance, and ANSI/ISO standards."
 ---
