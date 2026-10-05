@@ -122,7 +122,7 @@ Before diving into the career domains, use this system architecture tracking key
 	</tbody>
 </table>
 
-### 3. Enterprise Cloud Backends, Microservices & Middleware
+### Enterprise Cloud Backends, Microservices & Middleware
 
 <table class="table sortable">
 	<thead>
@@ -185,7 +185,7 @@ Before diving into the career domains, use this system architecture tracking key
 	</tbody>
 </table>
 
-### 4. Artificial Intelligence, Machine Learning & Advanced Analytics
+### Artificial Intelligence, Machine Learning & Advanced Analytics
 
 <table class="table sortable">
 	<thead>
