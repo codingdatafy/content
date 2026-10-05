@@ -1,4 +1,4 @@
-name: Sync R2 Content Bucket
+name: Sync Content to Cloudflare R2
 
 on:
   push:
@@ -7,11 +7,7 @@ on:
       - develop
     paths:
       - 'data/**'
-    paths-ignore:
-      - 'README.md'
-      - 'LICENSE'
-      - 'CODE_OF_CONDUCT.md'
-      - 'CONTRIBUTING.md'
+  workflow_dispatch:
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -22,20 +18,21 @@ permissions:
 
 jobs:
   sync:
-    name: Sync R2 Content
+    name: Sync Markdown Content to R2
     runs-on: ubuntu-26.04
     steps:
       - name: Checkout Source Code
         uses: actions/checkout@v5
-        with:
-          fetch-depth: 2
 
       - name: Setup Node.js Environment
         uses: actions/setup-node@v5
         with:
           node-version: 24
 
-      - name: Sync Markdown Data to R2 via Wrangler
+      - name: Install Wrangler CLI
+        run: npm install -g wrangler
+
+      - name: Sync Edited Markdown Data to R2 via Native Wrangler
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
@@ -87,7 +84,7 @@ jobs:
               const status = parts[0];
               const filePath = parts[parts.length - 1];
 
-              if (filePath && filePath.startsWith("data/") && filePath.endsWith(".md")) {
+              if (filePath.startsWith("data/") && filePath.endsWith(".md")) {
                 if (status.startsWith("D")) {
                   deleted.add(filePath);
                 } else {
@@ -121,35 +118,41 @@ jobs:
             try {
               commitDate = execSync(`git log -1 --format="%cd" --date=format:"%Y-%m-%d" -- "${filePath}"`).toString().trim();
             } catch (e) {}
+
             if (!commitDate) {
               commitDate = new Date().toISOString().split("T")[0];
             }
 
-            const relPath = path.relative("data", filePath).replace(/\\/g, "/");
-            const r2Key = relPath;
+            let content = fs.readFileSync(filePath, "utf8");
+            const frontmatterRegex = /^---[\r\n]+([\s\S]*?)[\r\n]+---[\r\n]*/;
+            const match = content.match(frontmatterRegex);
 
-            console.log(`Uploading ${filePath} -> r2://${r2Bucket}/${r2Key} (updatedAt: ${commitDate})`);
-            
-            try {
-              execSync(`npx wrangler r2 object put "${r2Bucket}/${r2Key}" --file="${filePath}" --remote`, { stdio: "inherit" });
-            } catch (err) {
-              console.error(`Failed to upload ${filePath}:`, err.message);
-              process.exit(1);
+            if (match) {
+              let yamlBlock = match[1];
+              if (/^updatedAt:.*/m.test(yamlBlock)) {
+                yamlBlock = yamlBlock.replace(/^updatedAt:.*/m, `updatedAt: "${commitDate}"`);
+              } else {
+                yamlBlock = yamlBlock.trimEnd() + `\nupdatedAt: "${commitDate}"`;
+              }
+              content = content.replace(frontmatterRegex, `---\n${yamlBlock}\n---\n`);
+            } else {
+              content = `---\nupdatedAt: "${commitDate}"\n---\n` + content;
             }
+            fs.writeFileSync(filePath, content, "utf8");
+
+            const r2Key = filePath.replace(/^data\//, "");
+            console.log(`[UPLOAD] ${filePath} -> ${r2Bucket}/${r2Key}`);
+            execSync(`npx wrangler r2 object put "${r2Bucket}/${r2Key}" --file="${filePath}" --remote`, { stdio: "inherit" });
           }
 
-          // 2. Delete removed files
+          // 2. Remove deleted files from R2
           for (const filePath of deleted) {
-            const relPath = path.relative("data", filePath).replace(/\\/g, "/");
-            const r2Key = relPath;
-
-            console.log(`Deleting r2://${r2Bucket}/${r2Key}...`);
+            const r2Key = filePath.replace(/^data\//, "");
+            console.log(`[DELETE] ${r2Bucket}/${r2Key}`);
             try {
               execSync(`npx wrangler r2 object delete "${r2Bucket}/${r2Key}" --remote`, { stdio: "inherit" });
-            } catch (err) {
-              console.warn(`Warning: Failed to delete ${r2Key} from R2:`, err.message);
+            } catch (e) {
+              console.warn(`[DELETE SKIPPED] Could not delete ${r2Key} from R2.`);
             }
           }
-
-          console.log("R2 content sync completed successfully.");
           '
