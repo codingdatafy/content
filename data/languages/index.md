@@ -26,7 +26,7 @@ Before diving into the career domains, use this system architecture tracking key
 
 ---
 
-### 1. Web Architecture, Full-Stack Frontend/Backend & Modern Formats
+### Web Architecture, Full-Stack Frontend/Backend & Modern Formats
 
 <table class="table sortable">
 	<thead>
@@ -89,7 +89,7 @@ Before diving into the career domains, use this system architecture tracking key
 	</tbody>
 </table>
 
-### 2. Data Science, Engineering & Database Infrastructure
+### Data Science, Engineering & Database Infrastructure
 
 <table class="table sortable">
 	<thead>
