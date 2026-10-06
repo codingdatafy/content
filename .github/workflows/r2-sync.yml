@@ -1,4 +1,4 @@
-name: Sync Content to R2 Bucket
+name: Sync Content to Cloudflare R2
 
 on:
   push:
@@ -7,7 +7,6 @@ on:
       - develop
     paths:
       - 'data/**'
-  workflow_dispatch:
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -22,23 +21,27 @@ jobs:
     runs-on: ubuntu-26.04
     steps:
       - name: Checkout Source Code
-        uses: actions/checkout@v5
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Node.js Environment
-        uses: actions/setup-node@v5
+        uses: actions/setup-node@v4
         with:
           node-version: 24
 
-      - name: Install Wrangler CLI
-        run: npm install -g wrangler@latest
-
-      - name: Sync Data Directory to Cloudflare R2
+      - name: Sync Edited Markdown Data to R2
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          R2_BUCKET: ${{ github.ref == 'refs/heads/develop' && 'codingdatafy-content-dev' || 'codingdatafy-content' }}
+          BEFORE_SHA: ${{ github.event.before }}
+          CURRENT_SHA: ${{ github.sha }}
         run: |
-          BUCKET_NAME=${{ github.ref == 'refs/heads/develop' && 'codingdatafy-content-dev' || 'codingdatafy-content' }}
-          npx wrangler r2 object sync ./data r2://$BUCKET_NAME
+          node -e '
+          const fs = require("fs");
+          const path = require("path");
+          const { execSync } = require("child_process");
 
           const beforeSha = process.env.BEFORE_SHA || "";
           const currentSha = process.env.CURRENT_SHA || "HEAD";
@@ -64,7 +67,7 @@ jobs:
             try {
               diffOutput = execSync(`git diff --name-status "${baseCommit}" "${currentSha}"`).toString();
             } catch (e) {
-              console.warn("Git diff failed, falling back to scanning all data files.");
+              console.warn("Git diff failed, falling back to full folder scan.");
             }
           }
 
@@ -103,51 +106,29 @@ jobs:
             walkDir("data");
           }
 
-          console.log(`Syncing ${addedOrModified.size} edited/added file(s) and ${deleted.size} deleted file(s) to R2 bucket [${r2Bucket}]...`);
+          console.log(`Syncing ${addedOrModified.size} edited/added file(s) and ${deleted.size} deleted file(s) to bucket: ${r2Bucket}`);
 
-          // 1. Upload edited and newly added files
-          for (const filePath of addedOrModified) {
-            if (!fs.existsSync(filePath)) continue;
-
-            let commitDate = "";
-            try {
-              commitDate = execSync(`git log -1 --format="%cd" --date=format:"%Y-%m-%d" -- "${filePath}"`).toString().trim();
-            } catch (e) {}
-
-            if (!commitDate) {
-              commitDate = new Date().toISOString().split("T")[0];
-            }
-
-            let content = fs.readFileSync(filePath, "utf8");
-            const frontmatterRegex = /^---[\r\n]+([\s\S]*?)[\r\n]+---[\r\n]*/;
-            const match = content.match(frontmatterRegex);
-
-            if (match) {
-              let yamlBlock = match[1];
-              if (/^updatedAt:.*/m.test(yamlBlock)) {
-                yamlBlock = yamlBlock.replace(/^updatedAt:.*/m, `updatedAt: "${commitDate}"`);
-              } else {
-                yamlBlock = yamlBlock.trimEnd() + `\nupdatedAt: "${commitDate}"`;
-              }
-              content = content.replace(frontmatterRegex, `---\n${yamlBlock}\n---\n`);
-            } else {
-              content = `---\nupdatedAt: "${commitDate}"\n---\n` + content;
-            }
-            fs.writeFileSync(filePath, content, "utf8");
-
-            const r2Key = filePath.replace(/^data\//, "");
-            console.log(`[UPLOAD] ${filePath} -> ${r2Bucket}/${r2Key}`);
-            execSync(`npx wrangler r2 object put "${r2Bucket}/${r2Key}" --file="${filePath}" --remote`, { stdio: "inherit" });
-          }
-
-          // 2. Remove deleted files from R2
+          // Delete objects removed from repo
           for (const filePath of deleted) {
             const r2Key = filePath.replace(/^data\//, "");
-            console.log(`[DELETE] ${r2Bucket}/${r2Key}`);
+            console.log(`[DELETE] R2 Object: ${r2Key}`);
             try {
-              execSync(`npx wrangler r2 object delete "${r2Bucket}/${r2Key}" --remote`, { stdio: "inherit" });
-            } catch (e) {
-              console.warn(`[DELETE SKIPPED] Could not delete ${r2Key} from R2.`);
+              execSync(`npx wrangler r2 object delete "${r2Bucket}/${r2Key}"`, { stdio: "inherit" });
+            } catch (err) {
+              console.error(`Failed to delete key ${r2Key}:`, err.message);
+            }
+          }
+
+          // Upload new or updated files
+          for (const filePath of addedOrModified) {
+            if (!fs.existsSync(filePath)) continue;
+            const r2Key = filePath.replace(/^data\//, "");
+            console.log(`[UPLOAD] ${filePath} -> ${r2Key}`);
+            try {
+              execSync(`npx wrangler r2 object put "${r2Bucket}/${r2Key}" --file="${filePath}"`, { stdio: "inherit" });
+            } catch (err) {
+              console.error(`Failed to upload ${filePath}:`, err.message);
+              process.exitCode = 1;
             }
           }
           '
