@@ -14,8 +14,6 @@ description: "The definitive 2026 coding and programming languages index. A prod
 
 Engineering modern multi-tier software systems requires selecting the right syntax for the right hardware and network boundary. This system-wide taxonomy maps the full ecosystem of modern coding languages—from high-level web and data syntax to bare-metal hardware description specs—filtering out legacy bloat to give engineers a direct, highly marketable roadmap for production development.
 
----
-
 ## Production Standards & Career Domains
 
 Before diving into the career domains, use this system architecture tracking key to build your personalized learning path:
@@ -23,8 +21,6 @@ Before diving into the career domains, use this system architecture tracking key
 *   **Mandatory (Core):** The absolute foundational layer. You **cannot** operate or find a job in this domain without mastering these. *Beginners must start here.*
 *   **Industry Standard:** The production-grade stack driving mid-to-large scale global enterprise systems. *Essential for Professionals aiming for employment.*
 *   **Specialized / Optional:** High-efficiency, niche, legacy, or bleeding-edge additions. *Perfect for Hobbyists searching for performance, or Senior Engineers optimizing architecture.*
-
----
 
 ### Web Architecture, Full-Stack Frontend/Backend & Modern Formats
 
@@ -230,7 +226,7 @@ Before diving into the career domains, use this system architecture tracking key
 	</tbody>
 </table>
 
-### 5. High-Performance, Kernel & Systems Engineering
+### High-Performance, Kernel & Systems Engineering
 
 <table class="table sortable">
 	<thead>
@@ -299,7 +295,7 @@ Before diving into the career domains, use this system architecture tracking key
 	</tbody>
 </table>
 
-### 6. Distributed Networks, Fault-Tolerance & Functional Systems
+### Distributed Networks, Fault-Tolerance & Functional Systems
 
 <table class="table sortable">
 	<thead>
@@ -350,7 +346,7 @@ Before diving into the career domains, use this system architecture tracking key
 	</tbody>
 </table>
 
-### 7. Native Mobile Application Development
+### Native Mobile Application Development
 
 <table class="table sortable">
 	<thead>
@@ -383,7 +379,7 @@ Before diving into the career domains, use this system architecture tracking key
 	</tbody>
 </table>
 
-### 8. Cloud DevOps, Declarative Infrastructure & System Automation
+### Cloud DevOps, Declarative Infrastructure & System Automation
 
 <table class="table sortable">
 	<thead>
@@ -440,7 +436,7 @@ Before diving into the career domains, use this system architecture tracking key
 	</tbody>
 </table>
 
-### 9. Web3, Blockchain & Decentralized Ledgers
+### Web3, Blockchain & Decentralized Ledgers
 
 <table class="table sortable">
 	<thead>
@@ -461,7 +457,7 @@ Before diving into the career domains, use this system architecture tracking key
 	</tbody>
 </table>
 
-### 10. Hardware Description & Semiconductor Engineering
+### Hardware Description & Semiconductor Engineering
 
 <table class="table sortable">
 	<thead>
@@ -494,7 +490,7 @@ Before diving into the career domains, use this system architecture tracking key
 	</tbody>
 </table>
 
-### 11. Other Languages and Legacy, Mainframe & Enterprise Maintenance Infrastructure
+### Other Languages and Legacy, Mainframe & Enterprise Maintenance Infrastructure
 
 <table class="table sortable">
 	<thead>
@@ -569,19 +565,19 @@ Before diving into the career domains, use this system architecture tracking key
 
 To eliminate the "popularity noise" found in traditional indices (which often rank languages based on search engine spam or homework queries), **CodingDatafy** utilizes a cross-referenced architectural vetting framework. Every language listed is audited against real-world production data and classified into strict **Requirement Levels** using four foundational pillars:
 
-### 1. Open-Source Traction & Ecosystem Velocity (Source: GitHub Octoverse)
+### Open-Source Traction & Ecosystem Velocity (Source: GitHub Octoverse)
 *   **Metric Analyzed:** Active repository volume, annual pull request growth, and code contributor velocity.
 *   **Roadmap Alignment:** Languages with explosive open-source frameworks or standard language tooling (e.g., *<a href="/languages/typescript">TypeScript</a>*, *Rust*) are mapped to ensure developers learn technologies backed by massive community support.
 
-### 2. Industry Employment Demand & Capital Allocation (Sources: LinkedIn Jobs & Indeed)
+### Industry Employment Demand & Capital Allocation (Sources: LinkedIn Jobs & Indeed)
 *   **Metric Analyzed:** Global active job postings, core backend requirement patterns, and enterprise hiring mandates.
 *   **Roadmap Alignment:** Defines the **Mandatory (Core)** and **Industry Standard** badges. If Fortune 500 infrastructures and modern tech stacks require a language for entry-level or senior hiring (e.g., *Java*, *Go*, *SQL*), it is locked into the core roadmap.
 
-### 3. Tier-1 Enterprise Production Footprint (Big Tech Core Stack Auditing)
+### Tier-1 Enterprise Production Footprint (Big Tech Core Stack Auditing)
 *   **Metric Analyzed:** Active production infrastructure deployment patterns verified through official engineering disclosures from global technology leaders, including **Google, Meta, Microsoft, Amazon, Apple, X (formerly Twitter), and Wikimedia**.
 *   **Roadmap Alignment:** Ensures the curation filters out experimental or unstable languages by auditing if a technology is heavily fortified, actively maintained, or natively deployed within multi-billion dollar hyperscale architectures.
 
-### 4. Architectural Isolation: Pure Coding Languages vs. Ecosystem Frameworks
+### Architectural Isolation: Pure Coding Languages vs. Ecosystem Frameworks
 *   **The Vetting Rule:** This roadmap monitors **Pure Coding Languages and Standard Formats only** (Programming, Scripting, Low-Level, Query, Markup, Hardware Description, Binary Formats, and Data Serialization). 
 *   **Framework Integration:** To maintain strict architectural taxonomy, modern frameworks, runtimes, and libraries (e.g., *React, Next.js, Node.js, NestJS, Bun, Spring Boot, .NET, Laravel, Django, Flutter, or FastAPI*) are **not** listed as separate entities. Instead, their market capitalization, job demand, and ecosystem weight are strictly consolidated and credited directly under their foundational mother languages (e.g., *<a href="/languages/javascript">JavaScript</a>, <a href="/languages/typescript">TypeScript</a>, Java, C#, PHP, Python, or Dart*). If a framework is demanded in the market, its weight is inherently reflected in the **Requirement Level** of its native language.
 ---

@@ -16,8 +16,6 @@ description: "On a mission to build the world's largest reference and knowledge 
 ## The Universal Gateway to Architectural Knowledge
 **CodingDatafy** is a production-grounded, open-source reference engine engineered for software architects, systems programmers, cloud developers, and AI engineers. We systematically document the modern software execution stack—from low-level silicon assembly to distributed cloud topologies.
 
----
-
 ## The 2026 Engineering Index
 
 Navigate the complete software development lifecycle through our ten core structural knowledge pillars:
