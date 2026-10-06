@@ -1,4 +1,4 @@
-name: Sync Content to Cloudflare R2
+name: Sync Content to R2 Bucket
 
 on:
   push:
@@ -7,6 +7,7 @@ on:
       - develop
     paths:
       - 'data/**'
+  workflow_dispatch:
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -21,22 +22,23 @@ jobs:
     runs-on: ubuntu-26.04
     steps:
       - name: Checkout Source Code
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+        uses: actions/checkout@v5
 
-      - name: Sync Edited Markdown Data to R2 via Native Wrangler
+      - name: Setup Node.js Environment
+        uses: actions/setup-node@v5
+        with:
+          node-version: 24
+
+      - name: Install Wrangler CLI
+        run: npm install -g wrangler@latest
+
+      - name: Sync Data Directory to Cloudflare R2
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          R2_BUCKET: ${{ github.ref == 'refs/heads/develop' && 'codingdatafy-content-dev' || 'codingdatafy-content' }}
-          BEFORE_SHA: ${{ github.event.before }}
-          CURRENT_SHA: ${{ github.sha }}
         run: |
-          node -e '
-          const fs = require("fs");
-          const path = require("path");
-          const { execSync } = require("child_process");
+          BUCKET_NAME=${{ github.ref == 'refs/heads/develop' && 'codingdatafy-content-dev' || 'codingdatafy-content' }}
+          npx wrangler r2 object sync ./data r2://$BUCKET_NAME
 
           const beforeSha = process.env.BEFORE_SHA || "";
           const currentSha = process.env.CURRENT_SHA || "HEAD";
