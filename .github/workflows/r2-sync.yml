@@ -21,12 +21,12 @@ jobs:
     runs-on: ubuntu-26.04
     steps:
       - name: Checkout Source Code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
       - name: Setup Node.js Environment
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: 24
 
@@ -37,4 +37,4 @@ jobs:
           R2_BUCKET: ${{ github.ref == 'refs/heads/develop' && 'codingdatafy-content-dev' || 'codingdatafy-content' }}
           BEFORE_SHA: ${{ github.event.before }}
           CURRENT_SHA: ${{ github.sha }}
-        run: npx tsx .github/workflows/r2-sync.ts
+        run: npx -y tsx .github/workflows/r2-sync.ts

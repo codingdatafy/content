@@ -10,7 +10,7 @@ id: "languages-rootpage"
 description: "The definitive 2026 coding and programming languages index. A production-grounded architecture roadmap engineered for modern software engineers."
 ---
 
-## Coding Languages Index 2026
+## Coding Languages Index
 
 Engineering modern multi-tier software systems requires selecting the right syntax for the right hardware and network boundary. This system-wide taxonomy maps the full ecosystem of modern coding languages—from high-level web and data syntax to bare-metal hardware description specs—filtering out legacy bloat to give engineers a direct, highly marketable roadmap for production development.
 
