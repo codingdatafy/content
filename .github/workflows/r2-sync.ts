@@ -7,10 +7,11 @@ import { execSync } from 'node:child_process';
  */
 function runCommand(command: string, inheritStdio = false): string {
   try {
-    return execSync(command, {
+    const result = execSync(command, {
       encoding: 'utf8',
       stdio: inheritStdio ? 'inherit' : 'pipe',
-    })?.toString() ?? '';
+    });
+    return result ? result.toString() : '';
   } catch (error: unknown) {
     if (inheritStdio) {
       throw error;
@@ -20,7 +21,7 @@ function runCommand(command: string, inheritStdio = false): string {
 }
 
 /**
- * Recursively scans directory for all .md files as a fallback when git diff is unavailable.
+ * Recursively scans directory for all .md files.
  */
 function walkDirectory(dirPath: string, fileSet: Set<string>): void {
   if (!fs.existsSync(dirPath)) return;
@@ -39,81 +40,94 @@ function walkDirectory(dirPath: string, fileSet: Set<string>): void {
 async function syncR2Content(): Promise<void> {
   const beforeSha = process.env['BEFORE_SHA'] || '';
   const currentSha = process.env['CURRENT_SHA'] || 'HEAD';
-  
   const refName = process.env['GITHUB_REF_NAME'] || '';
   const ref = process.env['GITHUB_REF'] || '';
+  const eventName = process.env['GITHUB_EVENT_NAME'] || '';
+  const forceFullSyncEnv = process.env['FORCE_FULL_SYNC'] || '';
+  const accountId = process.env['CLOUDFLARE_ACCOUNT_ID'] || '';
+
   const isDevBranch = refName === 'develop' || ref === 'refs/heads/develop';
-
   const r2Bucket = process.env['R2_BUCKET'] || (isDevBranch ? 'codingdatafy-content-dev' : 'codingdatafy-content');
+  const forceFullSync = forceFullSyncEnv === 'true' || eventName === 'workflow_dispatch';
 
-  console.log(`[INFO] Branch: ${refName || ref} | Targeting R2 Bucket: ${r2Bucket}`);
+  const accountFlag = accountId ? `--account-id="${accountId}"` : '';
 
-  // 1. Resolve base commit for git diff comparison
-  let baseCommit = '';
-  if (beforeSha && beforeSha !== '0000000000000000000000000000000000000000') {
-    const verifyBefore = runCommand(`git rev-parse --verify "${beforeSha}"`);
-    if (verifyBefore) {
-      baseCommit = beforeSha;
-    }
-  }
-
-  if (!baseCommit) {
-    const verifyHeadPrev = runCommand('git rev-parse --verify HEAD~1');
-    if (verifyHeadPrev) {
-      baseCommit = 'HEAD~1';
-    }
-  }
-
-  // 2. Perform git diff
-  let diffOutput = '';
-  if (baseCommit) {
-    diffOutput = runCommand(`git diff --name-status "${baseCommit}" "${currentSha}"`);
-  }
+  console.log(`[INFO] Event: ${eventName} | Branch: ${refName || ref}`);
+  console.log(`[INFO] Target R2 Bucket: ${r2Bucket}`);
+  console.log(`[INFO] Force Full Sync Mode: ${forceFullSync}`);
 
   const addedOrModified = new Set<string>();
   const deleted = new Set<string>();
 
-  if (diffOutput.trim()) {
-    const lines = diffOutput.trim().split('\n');
-    for (const line of lines) {
-      const parts = line.trim().split(/\s+/);
-      if (parts.length < 2) continue;
+  if (forceFullSync) {
+    console.log('[INFO] Performing full directory scan of data/...');
+    walkDirectory('data', addedOrModified);
+  } else {
+    // 1. Resolve base commit for git diff comparison
+    let baseCommit = '';
+    if (beforeSha && beforeSha !== '0000000000000000000000000000000000000000') {
+      const verifyBefore = runCommand(`git rev-parse --verify "${beforeSha}"`);
+      if (verifyBefore) {
+        baseCommit = beforeSha;
+      }
+    }
 
-      const status = parts[0] || '';
+    if (!baseCommit) {
+      const verifyHeadPrev = runCommand('git rev-parse --verify HEAD~1');
+      if (verifyHeadPrev) {
+        baseCommit = 'HEAD~1';
+      }
+    }
 
-      if (status.startsWith('R') && parts.length >= 3) {
-        // Handle file rename (R): delete old path, add new path
-        const oldPath = (parts[1] || '').replace(/\\/g, '/');
-        const newPath = (parts[2] || '').replace(/\\/g, '/');
-        if (oldPath.startsWith('data/') && oldPath.endsWith('.md')) {
-          deleted.add(oldPath);
-        }
-        if (newPath.startsWith('data/') && newPath.endsWith('.md')) {
-          addedOrModified.add(newPath);
-        }
-      } else {
-        const rawFilePath = parts[parts.length - 1] || '';
-        const filePath = rawFilePath.replace(/\\/g, '/');
+    // 2. Perform git diff
+    let diffOutput = '';
+    if (baseCommit) {
+      diffOutput = runCommand(`git diff --name-status "${baseCommit}" "${currentSha}"`);
+    }
 
-        if (filePath.startsWith('data/') && filePath.endsWith('.md')) {
-          if (status.startsWith('D')) {
-            deleted.add(filePath);
-          } else {
-            addedOrModified.add(filePath);
+    if (diffOutput.trim()) {
+      const lines = diffOutput.trim().split('\n');
+      for (const line of lines) {
+        const parts = line.trim().split(/\s+/);
+        if (parts.length < 2) continue;
+
+        const status = parts[0] || '';
+
+        if (status.startsWith('R') && parts.length >= 3) {
+          // File rename (R): delete old path, add new path
+          const oldPath = (parts[1] || '').replace(/\\/g, '/');
+          const newPath = (parts[2] || '').replace(/\\/g, '/');
+          if (oldPath.startsWith('data/') && oldPath.endsWith('.md')) {
+            deleted.add(oldPath);
+          }
+          if (newPath.startsWith('data/') && newPath.endsWith('.md')) {
+            addedOrModified.add(newPath);
+          }
+        } else {
+          const rawFilePath = parts[parts.length - 1] || '';
+          const filePath = rawFilePath.replace(/\\/g, '/');
+
+          if (filePath.startsWith('data/') && filePath.endsWith('.md')) {
+            if (status.startsWith('D')) {
+              deleted.add(filePath);
+            } else {
+              addedOrModified.add(filePath);
+            }
           }
         }
       }
+    } else {
+      console.warn('[WARN] Git diff returned no changes or failed. Falling back to full scan of data/ directory.');
+      walkDirectory('data', addedOrModified);
     }
-  } else {
-    console.warn('Git diff empty or failed. Falling back to scanning all markdown files in data/.');
-    walkDirectory('data', addedOrModified);
   }
 
   console.log(
-    `Syncing ${addedOrModified.size} edited/added file(s) and ${deleted.size} deleted file(s) to R2 bucket [${r2Bucket}]...`
+    `[SUMMARY] Syncing ${addedOrModified.size} file(s) to upload and ${deleted.size} file(s) to delete in [${r2Bucket}]...`
   );
 
   // 3. Process and Upload Added / Modified Files
+  let uploadCount = 0;
   for (const filePath of addedOrModified) {
     if (!fs.existsSync(filePath)) continue;
 
@@ -145,19 +159,26 @@ async function syncR2Content(): Promise<void> {
 
     const r2Key = filePath.replace(/^data\//, '');
     console.log(`[UPLOAD] ${filePath} -> ${r2Bucket}/${r2Key}`);
-    runCommand(`npx wrangler r2 object put "${r2Bucket}/${r2Key}" --file="${filePath}"`, true);
+    const uploadCmd = `npx wrangler r2 object put "${r2Bucket}/${r2Key}" --file="${filePath}" ${accountFlag}`.trim();
+    runCommand(uploadCmd, true);
+    uploadCount++;
   }
 
   // 4. Delete Removed Files from R2 Bucket
+  let deleteCount = 0;
   for (const filePath of deleted) {
     const r2Key = filePath.replace(/^data\//, '');
     console.log(`[DELETE] ${r2Bucket}/${r2Key}`);
+    const deleteCmd = `npx wrangler r2 object delete "${r2Bucket}/${r2Key}" ${accountFlag}`.trim();
     try {
-      runCommand(`npx wrangler r2 object delete "${r2Bucket}/${r2Key}"`, true);
+      runCommand(deleteCmd, true);
+      deleteCount++;
     } catch {
-      console.warn(`[DELETE SKIPPED] Could not delete ${r2Key} from R2.`);
+      console.warn(`[DELETE SKIPPED] Could not delete ${r2Key} from ${r2Bucket}.`);
     }
   }
+
+  console.log(`[COMPLETE] Successfully uploaded ${uploadCount} file(s) and deleted ${deleteCount} file(s) in bucket [${r2Bucket}].`);
 }
 
 syncR2Content().catch((error: unknown) => {
