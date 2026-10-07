@@ -10,6 +10,7 @@ function runCommand(command: string, inheritStdio = false): string {
     const result = execSync(command, {
       encoding: 'utf8',
       stdio: inheritStdio ? 'inherit' : 'pipe',
+      env: process.env,
     });
     return result ? result.toString() : '';
   } catch (error: unknown) {
@@ -44,13 +45,10 @@ async function syncR2Content(): Promise<void> {
   const ref = process.env['GITHUB_REF'] || '';
   const eventName = process.env['GITHUB_EVENT_NAME'] || '';
   const forceFullSyncEnv = process.env['FORCE_FULL_SYNC'] || '';
-  const accountId = process.env['CLOUDFLARE_ACCOUNT_ID'] || '';
 
   const isDevBranch = refName === 'develop' || ref === 'refs/heads/develop';
   const r2Bucket = process.env['R2_BUCKET'] || (isDevBranch ? 'codingdatafy-content-dev' : 'codingdatafy-content');
   const forceFullSync = forceFullSyncEnv === 'true' || eventName === 'workflow_dispatch';
-
-  const accountFlag = accountId ? `--account-id="${accountId}"` : '';
 
   console.log(`[INFO] Event: ${eventName} | Branch: ${refName || ref}`);
   console.log(`[INFO] Target R2 Bucket: ${r2Bucket}`);
@@ -159,7 +157,7 @@ async function syncR2Content(): Promise<void> {
 
     const r2Key = filePath.replace(/^data\//, '');
     console.log(`[UPLOAD] ${filePath} -> ${r2Bucket}/${r2Key}`);
-    const uploadCmd = `npx wrangler r2 object put "${r2Bucket}/${r2Key}" --file="${filePath}" ${accountFlag}`.trim();
+    const uploadCmd = `npx wrangler r2 object put "${r2Bucket}/${r2Key}" --file="${filePath}"`;
     runCommand(uploadCmd, true);
     uploadCount++;
   }
@@ -169,7 +167,7 @@ async function syncR2Content(): Promise<void> {
   for (const filePath of deleted) {
     const r2Key = filePath.replace(/^data\//, '');
     console.log(`[DELETE] ${r2Bucket}/${r2Key}`);
-    const deleteCmd = `npx wrangler r2 object delete "${r2Bucket}/${r2Key}" ${accountFlag}`.trim();
+    const deleteCmd = `npx wrangler r2 object delete "${r2Bucket}/${r2Key}"`;
     try {
       runCommand(deleteCmd, true);
       deleteCount++;
