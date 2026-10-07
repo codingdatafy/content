@@ -10,7 +10,7 @@ id: "apis-rootpage"
 description: "The definitive 2026 application programming interfaces and system execution spec index. A production-grounded architecture roadmap engineered for modern software engineers."
 ---
 
-## Execution Interfaces & System APIs Index 2026
+## Execution Interfaces & System APIs Index
 
 Modern software applications rely on low-level system call boundaries, native platform capabilities, specialized rendering interfaces, and accelerated cloud runtime environments. This system-wide taxonomy maps the core API execution surfaces—from browser-native and operating system host APIs to low-overhead graphics pipelines and hardware parallel acceleration layers—audited for execution safety, hardware abstraction, and cross-platform interoperability.
 
