@@ -10,7 +10,7 @@ id: "protocols-rootpage"
 description: "The definitive 2026 communication protocols, network transport, security standards, and IPC specifications index. A production-grounded architecture roadmap engineered for modern software engineers."
 ---
 
-## Communication Protocols & Network Standards Index 2026
+## Communication Protocols & Network Standards Index
 
 Modern software applications rely on standardized rules governing transport efficiency, data serialization, cryptographic integrity, and hardware-level packet delivery. This system-wide taxonomy maps the communication standards driving internet infrastructure, security baselines, embedded IoT systems, and high-speed inter-process channels—audited for packet overhead, execution latency, and network throughput.
 
