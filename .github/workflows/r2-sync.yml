@@ -30,105 +30,11 @@ jobs:
         with:
           node-version: 24
 
-      - name: Sync Edited Markdown Data to R2
+      - name: Sync Edited Markdown Data to R2 via Native Wrangler
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           R2_BUCKET: ${{ github.ref == 'refs/heads/develop' && 'codingdatafy-content-dev' || 'codingdatafy-content' }}
           BEFORE_SHA: ${{ github.event.before }}
           CURRENT_SHA: ${{ github.sha }}
-        run: |
-          node -e '
-          const fs = require("fs");
-          const path = require("path");
-          const { execSync } = require("child_process");
-
-          const beforeSha = process.env.BEFORE_SHA || "";
-          const currentSha = process.env.CURRENT_SHA || "HEAD";
-          const r2Bucket = process.env.R2_BUCKET;
-
-          let baseCommit = "";
-          if (beforeSha && beforeSha !== "0000000000000000000000000000000000000000") {
-            try {
-              execSync(`git rev-parse --verify "${beforeSha}"`);
-              baseCommit = beforeSha;
-            } catch (e) {}
-          }
-
-          if (!baseCommit) {
-            try {
-              execSync("git rev-parse --verify HEAD~1");
-              baseCommit = "HEAD~1";
-            } catch (e) {}
-          }
-
-          let diffOutput = "";
-          if (baseCommit) {
-            try {
-              diffOutput = execSync(`git diff --name-status "${baseCommit}" "${currentSha}"`).toString();
-            } catch (e) {
-              console.warn("Git diff failed, falling back to full folder scan.");
-            }
-          }
-
-          const addedOrModified = new Set();
-          const deleted = new Set();
-
-          if (diffOutput.trim()) {
-            const lines = diffOutput.trim().split("\n");
-            for (const line of lines) {
-              const parts = line.trim().split(/\s+/);
-              if (parts.length < 2) continue;
-              const status = parts[0];
-              const filePath = parts[parts.length - 1];
-
-              if (filePath.startsWith("data/") && filePath.endsWith(".md")) {
-                if (status.startsWith("D")) {
-                  deleted.add(filePath);
-                } else {
-                  addedOrModified.add(filePath);
-                }
-              }
-            }
-          } else {
-            function walkDir(dir) {
-              if (!fs.existsSync(dir)) return;
-              const files = fs.readdirSync(dir);
-              for (const file of files) {
-                const fullPath = path.join(dir, file);
-                if (fs.statSync(fullPath).isDirectory()) {
-                  walkDir(fullPath);
-                } else if (file.endsWith(".md")) {
-                  addedOrModified.add(fullPath);
-                }
-              }
-            }
-            walkDir("data");
-          }
-
-          console.log(`Syncing ${addedOrModified.size} edited/added file(s) and ${deleted.size} deleted file(s) to bucket: ${r2Bucket}`);
-
-          // Delete objects removed from repo
-          for (const filePath of deleted) {
-            const r2Key = filePath.replace(/^data\//, "");
-            console.log(`[DELETE] R2 Object: ${r2Key}`);
-            try {
-              execSync(`npx wrangler r2 object delete "${r2Bucket}/${r2Key}"`, { stdio: "inherit" });
-            } catch (err) {
-              console.error(`Failed to delete key ${r2Key}:`, err.message);
-            }
-          }
-
-          // Upload new or updated files
-          for (const filePath of addedOrModified) {
-            if (!fs.existsSync(filePath)) continue;
-            const r2Key = filePath.replace(/^data\//, "");
-            console.log(`[UPLOAD] ${filePath} -> ${r2Key}`);
-            try {
-              execSync(`npx wrangler r2 object put "${r2Bucket}/${r2Key}" --file="${filePath}"`, { stdio: "inherit" });
-            } catch (err) {
-              console.error(`Failed to upload ${filePath}:`, err.message);
-              process.exitCode = 1;
-            }
-          }
-          '
+        run: npx tsx .github/workflows/r2-sync.ts
