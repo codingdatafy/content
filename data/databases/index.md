@@ -98,7 +98,7 @@ Before designing data persistence models or implementing distributed consensus, 
 	</tbody>
 </table>
 
-### 3. Vector Databases & AI Similarity Search Engines
+### Vector Databases & AI Similarity Search Engines
 
 <table class="table sortable">
 	<thead>
