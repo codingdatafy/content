@@ -26,7 +26,7 @@ Before designing data persistence models or implementing distributed consensus, 
 
 ---
 
-### 1. Relational Database Management Systems (RDBMS / ACID)
+### Relational Database Management Systems (RDBMS / ACID)
 
 <table class="table sortable">
 	<thead>
