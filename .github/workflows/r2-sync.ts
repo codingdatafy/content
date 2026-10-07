@@ -130,7 +130,7 @@ async function syncR2Content(): Promise<void> {
 
     const r2Key = filePath.replace(/^data\//, '');
     console.log(`[UPLOAD] ${filePath} -> ${r2Bucket}/${r2Key}`);
-    runCommand(`npx wrangler r2 object put "${r2Bucket}/${r2Key}" --file="${filePath}" --remote`, true);
+    runCommand(`npx wrangler r2 object put "${r2Bucket}/${r2Key}" --file="${filePath}"`, true);
   }
 
   // 4. Delete Removed Files from R2 Bucket
@@ -138,7 +138,7 @@ async function syncR2Content(): Promise<void> {
     const r2Key = filePath.replace(/^data\//, '');
     console.log(`[DELETE] ${r2Bucket}/${r2Key}`);
     try {
-      runCommand(`npx wrangler r2 object delete "${r2Bucket}/${r2Key}" --remote`, true);
+      runCommand(`npx wrangler r2 object delete "${r2Bucket}/${r2Key}"`, true);
     } catch {
       console.warn(`[DELETE SKIPPED] Could not delete ${r2Key} from R2.`);
     }

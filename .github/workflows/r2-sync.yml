@@ -7,6 +7,7 @@ on:
       - develop
     paths:
       - 'data/**'
+  workflow_dispatch:
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -18,7 +19,7 @@ permissions:
 jobs:
   sync:
     name: Sync R2 Bucket
-    runs-on: ubuntu-26.04
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout Source Code
         uses: actions/checkout@v5
@@ -34,7 +35,7 @@ jobs:
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          R2_BUCKET: ${{ github.ref == 'refs/heads/develop' && 'codingdatafy-content-dev' || 'codingdatafy-content' }}
+          R2_BUCKET: ${{ github.ref_name == 'develop' && 'codingdatafy-content-dev' || 'codingdatafy-content' }}
           BEFORE_SHA: ${{ github.event.before }}
           CURRENT_SHA: ${{ github.sha }}
         run: npx -y tsx .github/workflows/r2-sync.ts
