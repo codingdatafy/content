@@ -137,7 +137,7 @@ Before designing data persistence models or implementing distributed consensus, 
 	</tbody>
 </table>
 
-### 4. In-Memory Stores & High-Speed Cache Engines
+### In-Memory Stores & High-Speed Cache Engines
 
 <table class="table sortable">
 	<thead>
