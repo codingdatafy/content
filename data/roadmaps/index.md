@@ -12,7 +12,7 @@ description: "The definitive 2026 engineering career roadmaps, skill trees, and 
 
 ## Technical Career Roadmaps & Skill Trees Index 2026
 
-Modern software engineering demands structured learning progressions across rapidly evolving domains. This comprehensive index provides production-grounded, step-by-step roadmaps mapping out the exact skills, tools, frameworks, and theoretical foundations required to achieve mastery across every major software engineering discipline in 2026.
+Modern software engineering demands structured learning progressions across rapidly evolving domains. This comprehensive index provides production-grounded, step-by-step roadmaps mapping out the exact skills, tools, frameworks, and theoretical foundations required to achieve mastery across every major software engineering discipline.
 
 ---
 
