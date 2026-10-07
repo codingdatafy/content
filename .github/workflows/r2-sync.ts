@@ -78,14 +78,27 @@ async function syncR2Content(): Promise<void> {
       if (parts.length < 2) continue;
 
       const status = parts[0] || '';
-      const rawFilePath = parts[parts.length - 1] || '';
-      const filePath = rawFilePath.replace(/\\/g, '/');
 
-      if (filePath.startsWith('data/') && filePath.endsWith('.md')) {
-        if (status.startsWith('D')) {
-          deleted.add(filePath);
-        } else {
-          addedOrModified.add(filePath);
+      if (status.startsWith('R') && parts.length >= 3) {
+        // Handle file rename (R): delete old path, add new path
+        const oldPath = (parts[1] || '').replace(/\\/g, '/');
+        const newPath = (parts[2] || '').replace(/\\/g, '/');
+        if (oldPath.startsWith('data/') && oldPath.endsWith('.md')) {
+          deleted.add(oldPath);
+        }
+        if (newPath.startsWith('data/') && newPath.endsWith('.md')) {
+          addedOrModified.add(newPath);
+        }
+      } else {
+        const rawFilePath = parts[parts.length - 1] || '';
+        const filePath = rawFilePath.replace(/\\/g, '/');
+
+        if (filePath.startsWith('data/') && filePath.endsWith('.md')) {
+          if (status.startsWith('D')) {
+            deleted.add(filePath);
+          } else {
+            addedOrModified.add(filePath);
+          }
         }
       }
     }

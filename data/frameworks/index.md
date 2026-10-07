@@ -10,7 +10,7 @@ id: "frameworks-rootpage"
 description: "The definitive 2026 software frameworks and runtime index. A production-grounded architecture roadmap engineered for modern software engineers."
 ---
 
-## Frameworks & Runtimes Index 2026
+## Frameworks & Runtimes Index
 
 Navigating modern application ecosystems requires balancing developer velocity, runtime performance, and long-term architectural stability. This comprehensive index details the essential full-stack frameworks, asynchronous runtimes, UI libraries, and specialized engines driving 2026 software engineering—categorized by career domain and audited against real-world production data.
 
