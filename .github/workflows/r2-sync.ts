@@ -39,12 +39,14 @@ function walkDirectory(dirPath: string, fileSet: Set<string>): void {
 async function syncR2Content(): Promise<void> {
   const beforeSha = process.env['BEFORE_SHA'] || '';
   const currentSha = process.env['CURRENT_SHA'] || 'HEAD';
-  const r2Bucket = process.env['R2_BUCKET'];
+  
+  const refName = process.env['GITHUB_REF_NAME'] || '';
+  const ref = process.env['GITHUB_REF'] || '';
+  const isDevBranch = refName === 'develop' || ref === 'refs/heads/develop';
 
-  if (!r2Bucket) {
-    console.error('Error: R2_BUCKET environment variable is not defined.');
-    process.exit(1);
-  }
+  const r2Bucket = process.env['R2_BUCKET'] || (isDevBranch ? 'codingdatafy-content-dev' : 'codingdatafy-content');
+
+  console.log(`[INFO] Branch: ${refName || ref} | Targeting R2 Bucket: ${r2Bucket}`);
 
   // 1. Resolve base commit for git diff comparison
   let baseCommit = '';
