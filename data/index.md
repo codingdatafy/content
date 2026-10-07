@@ -19,7 +19,6 @@ description: "On a mission to build the world's largest reference and knowledge 
 ## The Engineering Index
 
 Navigate the complete software development lifecycle through our ten core structural knowledge pillars:
-
 <table class="table sortable">
 	<thead>
 		<tr>
