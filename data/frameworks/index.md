@@ -7,7 +7,7 @@ title: "Frameworks"
 style: "rootpage.css"
 breadcrumb: Frameworks
 id: "frameworks-rootpage"
-description: "The definitive 2026 software frameworks and runtime index. A production-grounded architecture roadmap engineered for modern software engineers."
+description: "The definitive software frameworks and runtime index. A production-grounded architecture roadmap engineered for modern software engineers."
 ---
 
 ## Frameworks & Runtimes Index
