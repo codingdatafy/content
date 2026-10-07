@@ -137,10 +137,16 @@ async function syncR2Content(): Promise<void> {
       commitDate = new Date().toISOString().split('T')[0] ?? '';
     }
 
-    let content = fs.readFileSync(filePath, 'utf8');
-    const frontmatterRegex = /^---[\r\n]+([\s\S]*?)[\r\n]+---[\r\n]*/;
-    const match = content.match(frontmatterRegex);
+    let rawContent = fs.readFileSync(filePath, 'utf8');
+    // Strip UTF-8 BOM if present
+    if (rawContent.charCodeAt(0) === 0xfeff) {
+      rawContent = rawContent.slice(1);
+    }
 
+    const frontmatterRegex = /^---[\r\n]+([\s\S]*?)[\r\n]+---[\r\n]*/;
+    const match = rawContent.match(frontmatterRegex);
+
+    let content: string;
     if (match) {
       let yamlBlock = match[1] ?? '';
       if (/^updatedAt:.*/m.test(yamlBlock)) {
@@ -148,9 +154,9 @@ async function syncR2Content(): Promise<void> {
       } else {
         yamlBlock = `${yamlBlock.trimEnd()}\nupdatedAt: "${commitDate}"`;
       }
-      content = content.replace(frontmatterRegex, `---\n${yamlBlock}\n---\n`);
+      content = rawContent.replace(frontmatterRegex, `---\n${yamlBlock}\n---\n`);
     } else {
-      content = `---\nupdatedAt: "${commitDate}"\n---\n${content}`;
+      content = `---\nupdatedAt: "${commitDate}"\n---\n${rawContent.trimStart()}`;
     }
 
     fs.writeFileSync(filePath, content, 'utf8');
