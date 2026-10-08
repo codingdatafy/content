@@ -26,7 +26,7 @@ To navigate these engineering roadmaps effectively, technical competencies are c
 
 ---
 
-### 1. Web & Application Development Roadmaps
+### Web & Application Development Roadmaps
 
 *Structured progressions for building client interfaces, scalable server backends, and full-stack solutions.*
 
@@ -67,7 +67,7 @@ To navigate these engineering roadmaps effectively, technical competencies are c
 	</tbody>
 </table>
 
-### 2. Infrastructure, Cloud & Data Engineering Roadmaps
+### Infrastructure, Cloud & Data Engineering Roadmaps
 
 *Pathways for managing cloud workloads, continuous delivery pipelines, and large-scale data infrastructure.*
 
@@ -108,7 +108,7 @@ To navigate these engineering roadmaps effectively, technical competencies are c
 	</tbody>
 </table>
 
-### 3. Artificial Intelligence & Systems Engineering Roadmaps
+### Artificial Intelligence & Systems Engineering Roadmaps
 
 *Mastering low-level hardware control, security perimeters, and modern AI model pipelines.*
 
