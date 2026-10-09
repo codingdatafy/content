@@ -155,15 +155,15 @@ To navigate these engineering roadmaps effectively, technical competencies are c
 
 To ensure learning paths remain aligned with real-world production expectations, **CodingDatafy** maintains these roadmaps through a rigorous evaluation process:
 
-### 1. Industry Demand & Tech Stack Currency
+### Industry Demand & Tech Stack Currency
 *   **Metric Analyzed:** Enterprise adoption rates, hiring statistics, and production technology shifts for 2026.
 *   **Roadmap Alignment:** Prioritizes modern standards (*<a href="/languages/typescript">TypeScript</a>, Rust, Kubernetes, PyTorch*) over deprecated tools to keep learning focused on high-impact skills.
 
-### 2. Practical Sequence & Prerequisite Verification
+### Practical Sequence & Prerequisite Verification
 *   **Metric Analyzed:** Cognitive dependency ordering, ensuring complex topics builds logically on foundational prerequisites.
 *   **Roadmap Alignment:** Enforces learning order—for example, mastering core data structures and operating system fundamentals before diving into complex distributed systems design.
 
-### 3. Taxonomy Boundaries: Learning Paths vs. Reference Documents
+### Taxonomy Boundaries: Learning Paths vs. Reference Documents
 *   **The Vetting Rule:** This index defines **Career Progression Paths, Skill Sequences, and Learning Roadmaps**.
 *   **Taxonomy Policy:** Language syntax resides in the **Languages Index**, architectural concepts reside in the **Development Index**, and software tools reside in the **Tools Index**.
 ---
