@@ -26,7 +26,7 @@ Before interacting with platform kernel boundaries or configuring parallel hardw
 
 ---
 
-### 1. Web & Browser Runtimes (Web APIs)
+### Web & Browser Runtimes (Web APIs)
 
 <table class="table sortable">
 	<thead>
@@ -71,7 +71,7 @@ Before interacting with platform kernel boundaries or configuring parallel hardw
 	</tbody>
 </table>
 
-### 2. Operating System & Kernel Interfaces (System APIs)
+### Operating System & Kernel Interfaces (System APIs)
 
 <table class="table sortable">
 	<thead>
@@ -104,7 +104,7 @@ Before interacting with platform kernel boundaries or configuring parallel hardw
 	</tbody>
 </table>
 
-### 3. Cloud Platforms & Managed Runtimes (Cloud APIs)
+### Cloud Platforms & Managed Runtimes (Cloud APIs)
 
 <table class="table sortable">
 	<thead>
@@ -143,7 +143,7 @@ Before interacting with platform kernel boundaries or configuring parallel hardw
 	</tbody>
 </table>
 
-### 4. Low-Level Graphics Pipelines & Rendering Engines
+### Low-Level Graphics Pipelines & Rendering Engines
 
 <table class="table sortable">
 	<thead>
@@ -188,7 +188,7 @@ Before interacting with platform kernel boundaries or configuring parallel hardw
 	</tbody>
 </table>
 
-### 5. Hardware Acceleration & Parallel Compute APIs
+### Hardware Acceleration & Parallel Compute APIs
 
 <table class="table sortable">
 	<thead>
@@ -227,19 +227,19 @@ Before interacting with platform kernel boundaries or configuring parallel hardw
 
 To maintain architectural precision and clear execution boundaries, **CodingDatafy** audits application interfaces using a four-pillar interface classification model:
 
-### 1. Execution Boundary & Overhead
+### Execution Boundary & Overhead
 *   **Metric Analyzed:** Context switching overhead, memory isolation barriers, user-to-kernel transit costs, and hardware driver directness.
 *   **Roadmap Alignment:** Low-overhead explicit APIs (*Vulkan*, *CUDA*, *Linux Syscalls*) are categorized under high-performance hardware and systems engineering paths.
 
-### 2. Industry Adoption & Enterprise Deployment
+### Industry Adoption & Enterprise Deployment
 *   **Metric Analyzed:** Ecosystem dominance, active vendor backing, SDK maintainability, and production deployment across Fortune 500 tech stacks.
 *   **Roadmap Alignment:** Classifies foundational interface frameworks (*POSIX*, *AWS SDK*, *DOM*) as **Mandatory (Core)** requirements for modern engineers.
 
-### 3. Cross-Platform Portability vs. Hardware Specificity
+### Cross-Platform Portability vs. Hardware Specificity
 *   **Metric Analyzed:** Portability across heterogeneous architectures versus target-specific hardware optimizations (e.g., *OpenCL* portability vs. *CUDA* hardware-level throughput).
 *   **Roadmap Alignment:** Clearly separates vendor-locked acceleration frameworks from standard cross-platform specifications.
 
-### 4. Taxonomy Boundaries: System APIs vs. Software Libraries
+### Taxonomy Boundaries: System APIs vs. Software Libraries
 *   **The Vetting Rule:** This index governs **Hardware, Operating System, Cloud SDK, and Engine Execution Boundaries**.
 *   **Taxonomy Policy:** Framework abstractions (e.g., *React*, *Spring Boot*, *PyTorch*) belong strictly in the **Frameworks Index**, while high-level domain languages reside in the **Languages Index**.
 ---
