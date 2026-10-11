@@ -26,7 +26,7 @@ Before exploring the technology stacks, use this system architecture tracking ke
 
 ---
 
-### 1. Web Frontend, UI & Meta-Frameworks
+### Web Frontend, UI & Meta-Frameworks
 
 <table class="table sortable">
 	<thead>
@@ -89,7 +89,7 @@ Before exploring the technology stacks, use this system architecture tracking ke
 	</tbody>
 </table>
 
-### 2. JavaScript / TypeScript Runtimes & Server-Side Frameworks
+### JavaScript / TypeScript Runtimes & Server-Side Frameworks
 
 <table class="table sortable">
 	<thead>
@@ -146,7 +146,7 @@ Before exploring the technology stacks, use this system architecture tracking ke
 	</tbody>
 </table>
 
-### 3. Enterprise Backends, Microservices & Monoliths
+### Enterprise Backends, Microservices & Monoliths
 
 <table class="table sortable">
 	<thead>
@@ -209,7 +209,7 @@ Before exploring the technology stacks, use this system architecture tracking ke
 	</tbody>
 </table>
 
-### 4. Artificial Intelligence, Machine Learning & Data Processing
+### Artificial Intelligence, Machine Learning & Data Processing
 
 <table class="table sortable">
 	<thead>
@@ -266,7 +266,7 @@ Before exploring the technology stacks, use this system architecture tracking ke
 	</tbody>
 </table>
 
-### 5. Native & Cross-Platform Mobile Application Engines
+### Native & Cross-Platform Mobile Application Engines
 
 <table class="table sortable">
 	<thead>
@@ -311,7 +311,7 @@ Before exploring the technology stacks, use this system architecture tracking ke
 	</tbody>
 </table>
 
-### 6. Desktop Application Systems & Bare-Metal Graphics
+### Desktop Application Systems & Bare-Metal Graphics
 
 <table class="table sortable">
 	<thead>
@@ -362,7 +362,7 @@ Before exploring the technology stacks, use this system architecture tracking ke
 	</tbody>
 </table>
 
-### 7. Systems, High-Performance & Cloud-Native Tools
+### Systems, High-Performance & Cloud-Native Tools
 
 <table class="table sortable">
 	<thead>
