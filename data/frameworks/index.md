@@ -413,19 +413,19 @@ Before exploring the technology stacks, use this system architecture tracking ke
 
 To eliminate market noise, **CodingDatafy** utilizes a cross-referenced architectural vetting framework to evaluate frameworks, libraries, and runtimes. Every technology listed is audited against real-world production metrics and categorized into strict **Requirement Levels** using four foundational pillars:
 
-### 1. Developer Ecosystem & Maintainer Traction
+### Developer Ecosystem & Maintainer Traction
 *   **Metric Analyzed:** Community contribution volume, issue-resolution speed, and active release cycles on platforms like GitHub.
 *   **Roadmap Alignment:** Frameworks backed by active engineering bodies or resilient open-source communities (e.g., *React*, *Spring Boot*, *PyTorch*) receive higher priority for production stability.
 
-### 2. Global Hiring Demand & Enterprise Integration
+### Global Hiring Demand & Enterprise Integration
 *   **Metric Analyzed:** Enterprise job description requirements across corporate hiring channels (LinkedIn, Indeed, specialized boards).
 *   **Roadmap Alignment:** Dictates the **Mandatory (Core)** and **Industry Standard** classifications based on real jobs in modern corporate technical stacks.
 
-### 3. Hyperscale Infrastructure Footprint
+### Hyperscale Infrastructure Footprint
 *   **Metric Analyzed:** Official tech stack deployments reported by industry leaders including **Google, Meta, Microsoft, Amazon, Uber, and Cloudflare**.
 *   **Roadmap Alignment:** Ensures that recommended frameworks are capable of handling high load, fault-tolerant execution, and scalable deployments.
 
-### 4. Ecosystem Boundaries: Mother Languages vs. Layered Tooling
+### Ecosystem Boundaries: Mother Languages vs. Layered Tooling
 *   **The Vetting Rule:** This index focuses exclusively on **Frameworks, Runtimes, and Engines**.
 *   **Taxonomy Policy:** Foundational programming syntax (e.g., *<a href="/languages/javascript">JavaScript</a>, Java, Python, C#*) is listed on the **Languages Index**. The **Frameworks Index** maps the powerful execution layers built on top of those underlying languages.
 ---
