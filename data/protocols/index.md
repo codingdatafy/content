@@ -26,7 +26,7 @@ Before designing network boundaries or configuring security layers, use this sys
 
 ---
 
-### 1. Network Transport & Web Application Protocols
+### Network Transport & Web Application Protocols
 
 <table class="table sortable">
 	<thead>
@@ -71,7 +71,7 @@ Before designing network boundaries or configuring security layers, use this sys
 	</tbody>
 </table>
 
-### 2. Security Protocols, Encryption & Federated Authentication
+### Security Protocols, Encryption & Federated Authentication
 
 <table class="table sortable">
 	<thead>
@@ -116,7 +116,7 @@ Before designing network boundaries or configuring security layers, use this sys
 	</tbody>
 </table>
 
-### 3. Internet of Things (IoT) & Hardware Networks
+### Internet of Things (IoT) & Hardware Networks
 
 <table class="table sortable">
 	<thead>
@@ -155,7 +155,7 @@ Before designing network boundaries or configuring security layers, use this sys
 	</tbody>
 </table>
 
-### 4. Inter-Process Communication (IPC) & Low-Latency Channels
+### Inter-Process Communication (IPC) & Low-Latency Channels
 
 <table class="table sortable">
 	<thead>
