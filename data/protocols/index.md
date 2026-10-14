@@ -200,19 +200,19 @@ Before designing network boundaries or configuring security layers, use this sys
 
 To ensure structural clarity and eliminate transport layer ambiguity, **CodingDatafy** audits communication standards using a four-pillar network evaluation framework:
 
-### 1. Packet Efficiency & Network Overhead
+### Packet Efficiency & Network Overhead
 *   **Metric Analyzed:** Framing headers, connection establishment latency, byte-level serialization cost, and CPU compute demands during packet processing.
 *   **Roadmap Alignment:** Protocols optimized for zero-copy efficiency or low header footprint (e.g., *QUIC*, *UDP*, *Unix Sockets*) are prioritized for high-frequency or resource-constrained applications.
 
-### 2. Infrastructure Security & Zero-Trust Verification
+### Infrastructure Security & Zero-Trust Verification
 *   **Metric Analyzed:** Default encryption standards, handshake mechanisms, and vulnerability surfaces across cloud and hardware perimeters.
 *   **Roadmap Alignment:** Assigns **Mandatory (Core)** status to foundational cryptographic and identity standards (*TLS*, *OAuth 2.0*, *SSH*) governing corporate data security.
 
-### 3. Hyperscale Production Footprint
+### Hyperscale Production Footprint
 *   **Metric Analyzed:** Deployment scale across global edge nodes, internet backbones, and microservice topologies used by leaders like **Cloudflare, AWS, Google, and Telecom Operators**.
 *   **Roadmap Alignment:** Filters out unmaintained network drafts, prioritizing battle-tested, IETF-standardized protocols.
 
-### 4. Taxonomy Boundaries: Network Protocols vs. Execution Code
+### Taxonomy Boundaries: Network Protocols vs. Execution Code
 *   **The Vetting Rule:** This index focuses on **Network Layer Specifications, Security Standards, IoT Protocols, and OS IPC Specs**.
 *   **Taxonomy Policy:** Language-specific client libraries (e.g., *Go `net/http`*, *Python `socket`*) are detailed in their respective **Languages** and **Frameworks Indexes**. The **Protocols Index** governs the wire formats, packet dynamics, and network rules framing those tools.
 ---
