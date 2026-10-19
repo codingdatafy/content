@@ -37,8 +37,13 @@ Whether you are an individual developer or an organization sharing our commitmen
 1. **Direct Donations:** One-time or recurring contributions from individual developers and privacy advocates.
 2. **Direct Sponsorships:** For privacy-conscious organizations wishing to align with our mission without compromising user privacy.
 
-To discuss direct sponsorship opportunities or partnerships, please contact us directly at: **contact@codingdatafy.com**
+To discuss direct sponsorship opportunities or partnerships, please contact us directly at: **sponsors@codingdatafy.com**
 
 ---
 
 > **Summary:** CodingDatafy is 100% free, neutral, and independent, funded exclusively through privacy-first direct sponsorships and community donations. This ensures zero ads, zero trackers, and allows full-time dedication to maintaining the world's largest coding reference.
+
+## Back the Project
+CodingDatafy is completely free and open-source. You can help cover our cloud infrastructure and domain costs by supporting us on Ko-fi:
+
+[Support CodingDatafy on Ko-fi](https://ko-fi.com/codingdatafy)
