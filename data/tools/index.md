@@ -26,7 +26,7 @@ Before automating infrastructure pipelines or configuring local build environmen
 
 ---
 
-### 1. Version Control Systems (VCS)
+### Version Control Systems (VCS)
 
 <table class="table sortable">
 	<thead>
@@ -59,7 +59,7 @@ Before automating infrastructure pipelines or configuring local build environmen
 	</tbody>
 </table>
 
-### 2. Containerization & Container Orchestration
+### Containerization & Container Orchestration
 
 <table class="table sortable">
 	<thead>
@@ -98,7 +98,7 @@ Before automating infrastructure pipelines or configuring local build environmen
 	</tbody>
 </table>
 
-### 3. Command Line Interfaces & Shell Runtimes (CLI & OS)
+### Command Line Interfaces & Shell Runtimes (CLI & OS)
 
 <table class="table sortable">
 	<thead>
@@ -137,7 +137,7 @@ Before automating infrastructure pipelines or configuring local build environmen
 	</tbody>
 </table>
 
-### 4. Continuous Integration & Continuous Delivery (CI/CD)
+### Continuous Integration & Continuous Delivery (CI/CD)
 
 <table class="table sortable">
 	<thead>
@@ -170,7 +170,7 @@ Before automating infrastructure pipelines or configuring local build environmen
 	</tbody>
 </table>
 
-### 5. Data Engineering & Streaming Utilities
+### Data Engineering & Streaming Utilities
 
 <table class="table sortable">
 	<thead>
@@ -209,7 +209,7 @@ Before automating infrastructure pipelines or configuring local build environmen
 	</tbody>
 </table>
 
-### 6. Cloud Infrastructure as Code (IaC) & Configuration
+### Cloud Infrastructure as Code (IaC) & Configuration
 
 <table class="table sortable">
 	<thead>
@@ -248,7 +248,7 @@ Before automating infrastructure pipelines or configuring local build environmen
 	</tbody>
 </table>
 
-### 7. Build Systems, Compilers Drivers & Asset Bundlers
+### Build Systems, Compilers Drivers & Asset Bundlers
 
 <table class="table sortable">
 	<thead>
