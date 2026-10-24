@@ -305,19 +305,19 @@ Before automating infrastructure pipelines or configuring local build environmen
 
 To ensure maximum operational efficiency and clarity, **CodingDatafy** audits DevOps and system automation utilities using a four-pillar assessment model:
 
-### 1. Developer Velocity & Reproducibility
+### Developer Velocity & Reproducibility
 *   **Metric Analyzed:** Configuration overhead, deterministic execution, environmental isolation, and local-to-production parity.
 *   **Roadmap Alignment:** Categorizes core isolation tools (*Docker*, *Git*, *Terraform*) as **Mandatory (Core)** primitives for reliable modern deployment.
 
-### 2. Ecosystem Interoperability & Multi-Cloud Support
+### Ecosystem Interoperability & Multi-Cloud Support
 *   **Metric Analyzed:** Native API bindings, multi-cloud compatibility, plugin architecture maturity, and community provider support.
 *   **Roadmap Alignment:** Prioritizes platform-agnostic automation utilities over vendor-locked proprietary tools.
 
-### 3. Hyperscale Automation & Pipeline Reliability
+### Hyperscale Automation & Pipeline Reliability
 *   **Metric Analyzed:** Scale handling in high-throughput enterprise pipelines, cluster management resilience, and failure recovery.
 *   **Roadmap Alignment:** Focuses on production-grade infrastructure engines backing global cloud topologies (*Kubernetes*, *GitHub Actions*, *Kafka*).
 
-### 4. Taxonomy Boundaries: Infrastructure Tools vs. Code Libraries
+### Taxonomy Boundaries: Infrastructure Tools vs. Code Libraries
 *   **The Vetting Rule:** This index governs **Development Environments, Automation Engines, Build Managers, and Cloud Infrastructure Orchestrators**.
 *   **Taxonomy Policy:** Language-level libraries, web frameworks, and application runtime APIs belong strictly to their respective **Languages**, **Frameworks**, or **APIs** indexes.
 ---
