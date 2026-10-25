@@ -26,7 +26,7 @@ Before targeting a specific platform build or compiling binaries, use this archi
 
 ---
 
-### 1. Browser Engines & Client Runtimes
+### Browser Engines & Client Runtimes
 
 *Navigating the rendering and JavaScript execution layers defining the modern web platform.*
 
@@ -67,7 +67,7 @@ Before targeting a specific platform build or compiling binaries, use this archi
 	</tbody>
 </table>
 
-### 2. Compilers, Linkers & Toolchains
+### Compilers, Linkers & Toolchains
 
 *Translating high-level logic into optimized bare-metal instructions across distinct hardware bounds.*
 
@@ -114,7 +114,7 @@ Before targeting a specific platform build or compiling binaries, use this archi
 	</tbody>
 </table>
 
-### 3. Operating Systems & Host Kernels
+### Operating Systems & Host Kernels
 
 *The foundational resource managers handling memory allocation, I/O, and process scheduling.*
 
@@ -167,7 +167,7 @@ Before targeting a specific platform build or compiling binaries, use this archi
 	</tbody>
 </table>
 
-### 4. Hardware Instruction Set Architectures (ISA)
+### Hardware Instruction Set Architectures (ISA)
 
 *The physical CPU instruction pipelines executing compiled machine code.*
 
