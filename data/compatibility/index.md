@@ -220,19 +220,19 @@ Before targeting a specific platform build or compiling binaries, use this archi
 
 To ensure absolute cross-platform reliability, **CodingDatafy** audits execution compatibility using a rigorous four-pillar evaluation model:
 
-### 1. Market Penetration & Hardware Obsolescence
+### Market Penetration & Hardware Obsolescence
 *   **Metric Analyzed:** Active global user base, silicon production volumes, and hardware lifecycle depreciation rates.
 *   **Roadmap Alignment:** Categorizes rapidly expanding architectures (*ARM64, Apple Silicon*) alongside entrenched legacy systems (*x86_64*) as **Mandatory (Core)** targets to ensure full market coverage.
 
-### 2. Web Standard Compliance & Vendor Monopolies
+### Web Standard Compliance & Vendor Monopolies
 *   **Metric Analyzed:** ECMAScript conformance, W3C specification support, and rendering engine vendor policies (e.g., Apple's iOS WebKit mandate).
 *   **Roadmap Alignment:** Developers must validate web logic against both *Blink (V8)* for market majority and *WebKit* to penetrate the lucrative iOS ecosystem.
 
-### 3. Compiler Output & Optimization Efficacy
+### Compiler Output & Optimization Efficacy
 *   **Metric Analyzed:** Link-Time Optimization (LTO), auto-vectorization capabilities (SIMD), and target-specific flag support.
 *   **Roadmap Alignment:** Identifies *LLVM/Clang* and *GCC* as the absolute pillars of high-performance system delivery.
 
-### 4. Taxonomy Boundaries: Runtimes vs. Application Frameworks
+### Taxonomy Boundaries: Runtimes vs. Application Frameworks
 *   **The Vetting Rule:** This index maps **Hardware ISAs, Host Operating Systems, Core Compilers, and Base Browser Engines**.
 *   **Taxonomy Policy:** Cross-platform software frameworks (e.g., *React Native*, *Flutter*, *Electron*, *Tauri*) belong strictly in the **Frameworks Index**. The **Compatibility Index** defines the physical and low-level software boundaries those frameworks ultimately compile down to.
 ---
