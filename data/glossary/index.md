@@ -26,7 +26,7 @@ Terms are systematically organized by primary engineering domain and listed alph
 
 ---
 
-### 1. Computer Science Primitives & Memory Concepts
+### Computer Science Primitives & Memory Concepts
 
 *Foundational terms governing data representation, algorithm analysis, and memory structures.*
 
@@ -79,7 +79,7 @@ Terms are systematically organized by primary engineering domain and listed alph
 	</tbody>
 </table>
 
-### 2. Software Architecture & API Paradigms
+### Software Architecture & API Paradigms
 
 *Structural terminology defining distributed systems, service interactions, and system design.*
 
@@ -132,7 +132,7 @@ Terms are systematically organized by primary engineering domain and listed alph
 	</tbody>
 </table>
 
-### 3. DevOps, Cloud Infrastructure & Networks
+### DevOps, Cloud Infrastructure & Networks
 
 *Glossary covering cloud deployment, virtualization, containerization, and networking protocols.*
 
@@ -185,7 +185,7 @@ Terms are systematically organized by primary engineering domain and listed alph
 	</tbody>
 </table>
 
-### 4. Cybersecurity & Cryptographic Standards
+### Cybersecurity & Cryptographic Standards
 
 *Key concepts safeguarding digital assets, identity, and network perimeters.*
 
@@ -232,7 +232,7 @@ Terms are systematically organized by primary engineering domain and listed alph
 	</tbody>
 </table>
 
-### 5. Artificial Intelligence & Machine Learning Terminology
+### Artificial Intelligence & Machine Learning Terminology
 
 *Essential vocabulary driving model development, vector search, and LLM deployments.*
 
@@ -291,15 +291,15 @@ Terms are systematically organized by primary engineering domain and listed alph
 
 To maintain absolute precision and usability across **CodingDatafy**, the terminology index is managed according to strict editorial guidelines:
 
-### 1. Contextual Precision & Standardized Terminology
+### Contextual Precision & Standardized Terminology
 *   **Metric Analyzed:** Industry consensus among official standards bodies (ISO, IETF, W3C, IEEE) and major production vendors.
 *   **Glossary Alignment:** Eliminates ambiguous slang, focusing exclusively on standardized engineering definitions used in real-world technical specifications.
 
-### 2. Up-to-Date Technical Relevance
+### Up-to-Date Technical Relevance
 *   **Metric Analyzed:** Active usage across 2026 production technology stacks and academic computer science research.
 *   **Glossary Alignment:** Integrates modern infrastructure and AI terminology (*Vector DBs, RAG, Service Mesh*) alongside classic computer science primitives (*ACID, Big-O*).
 
-### 3. Taxonomy Policy: Definitions vs. Deep Guides
+### Taxonomy Policy: Definitions vs. Deep Guides
 *   **The Vetting Rule:** This index provides **Concise Technical Definitions and Production Summaries**.
 *   **Taxonomy Policy:** Deep technical guides, code syntax, and hardware implementation details reside within the respective domain root pages (**Languages**, **Frameworks**, **Development**, **Compatibility**).
 ---
