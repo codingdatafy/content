@@ -65,7 +65,7 @@ Before designing data persistence models or implementing distributed consensus, 
 	</tbody>
 </table>
 
-### 2. NoSQL & Distributed Document/Key-Value Stores
+### NoSQL & Distributed Document/Key-Value Stores
 
 <table class="table sortable">
 	<thead>
@@ -170,7 +170,7 @@ Before designing data persistence models or implementing distributed consensus, 
 	</tbody>
 </table>
 
-### 5. Graph Databases & Relationship Processing
+### Graph Databases & Relationship Processing
 
 <table class="table sortable">
 	<thead>
@@ -203,7 +203,7 @@ Before designing data persistence models or implementing distributed consensus, 
 	</tbody>
 </table>
 
-### 6. Time-Series Databases (IoT & Telemetry)
+### Time-Series Databases (IoT & Telemetry)
 
 <table class="table sortable">
 	<thead>
@@ -230,7 +230,7 @@ Before designing data persistence models or implementing distributed consensus, 
 	</tbody>
 </table>
 
-### 7. Search Engines & Distributed Full-Text Indexing
+### Search Engines & Distributed Full-Text Indexing
 
 <table class="table sortable">
 	<thead>
