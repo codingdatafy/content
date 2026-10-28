@@ -269,19 +269,19 @@ Before designing data persistence models or implementing distributed consensus, 
 
 To maintain structural consistency and eliminate persistence layer confusion, **CodingDatafy** audits storage systems using a four-pillar evaluation model:
 
-### 1. Storage Mechanics & Access Patterns
+### Storage Mechanics & Access Patterns
 *   **Metric Analyzed:** Read vs. write amplification, indexing overhead (B-Trees, LSM-Trees, Inverted Indexes, Vector HNSW), and latency profiles under load.
 *   **Roadmap Alignment:** Distinguishes high-throughput write engines (*Cassandra*, *TimescaleDB*) from ultra-low-latency read caches (*Redis*, *Memcached*).
 
-### 2. Consistency, Availability & Partition Tolerance (CAP Theorem)
+### Consistency, Availability & Partition Tolerance (CAP Theorem)
 *   **Metric Analyzed:** Strict ACID vs. BASE compliance, raft/paxos consensus implementations, multi-region replication capabilities, and data durability guarantees.
 *   **Roadmap Alignment:** Categorizes core relational engines (*PostgreSQL*, *MySQL*) as **Mandatory (Core)** backend requirements.
 
-### 3. Hyperscale Deployment Footprint
+### Hyperscale Deployment Footprint
 *   **Metric Analyzed:** Active deployment scale across enterprise cloud environments, data lakehouses, and real-time streaming architectures.
 *   **Roadmap Alignment:** Focuses on production-tested engines while identifying emerging technology trends (e.g., AI Vector Databases).
 
-### 4. Taxonomy Boundaries: Storage Engines vs. Data Pipelines
+### Taxonomy Boundaries: Storage Engines vs. Data Pipelines
 *   **The Vetting Rule:** This index covers **Storage Engines, Database Management Systems, Caches, and Search Indexes**.
 *   **Taxonomy Policy:** Data orchestration and pipeline tools (e.g., *Apache Kafka*, *Spark*, *Airflow*) are assigned to the **Tools Index**, while language-specific ORMs (e.g., *Hibernate*, *Prisma*) belong in the **Frameworks Index**.
 ---
