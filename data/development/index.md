@@ -26,7 +26,7 @@ Before designing distributed architectures or training machine learning models, 
 
 ---
 
-### 1. Data Structures & Memory Organization
+### Data Structures & Memory Organization
 
 *Essential memory layouts and organizational primitives governing time and space complexity.*
 
@@ -79,7 +79,7 @@ Before designing distributed architectures or training machine learning models, 
 	</tbody>
 </table>
 
-### 2. Algorithms & Computational Complexity
+### Algorithms & Computational Complexity
 
 *Procedural solutions for searching, sorting, graph traversal, and optimization problems.*
 
@@ -126,7 +126,7 @@ Before designing distributed architectures or training machine learning models, 
 	</tbody>
 </table>
 
-### 3. System Architecture & Distributed Systems
+### System Architecture & Distributed Systems
 
 *Structural topologies for building fault-tolerant, scalable, and resilient platforms.*
 
@@ -173,7 +173,7 @@ Before designing distributed architectures or training machine learning models, 
 	</tbody>
 </table>
 
-### 4. Design Patterns & Software Engineering Principles
+### Design Patterns & Software Engineering Principles
 
 *Reusable, battle-tested solutions to recurring object-oriented and structural code challenges.*
 
@@ -220,7 +220,7 @@ Before designing distributed architectures or training machine learning models, 
 	</tbody>
 </table>
 
-### 5. Web Engineering & Client/Server Delivery Strategies
+### Web Engineering & Client/Server Delivery Strategies
 
 *Techniques governing web client performance, asset compilation, and server rendering paradigms.*
 
@@ -255,7 +255,7 @@ Before designing distributed architectures or training machine learning models, 
 	</tbody>
 </table>
 
-### 6. Mobile Systems Architecture
+### Mobile Systems Architecture
 
 *Constructing native and multi-platform mobile client applications under tight resource constraints.*
 
@@ -290,7 +290,7 @@ Before designing distributed architectures or training machine learning models, 
 	</tbody>
 </table>
 
-### 7. Systems Software & Operating System Concepts
+### Systems Software & Operating System Concepts
 
 *Core abstractions governing hardware resource allocation, threading, and system calls.*
 
@@ -325,7 +325,7 @@ Before designing distributed architectures or training machine learning models, 
 	</tbody>
 </table>
 
-### 8. Cybersecurity, Cryptography & Defensive Engineering
+### Cybersecurity, Cryptography & Defensive Engineering
 
 *Securing software perimeters, ensuring data privacy, and mitigating exploit vectors.*
 
@@ -360,7 +360,7 @@ Before designing distributed architectures or training machine learning models, 
 	</tbody>
 </table>
 
-### 9. Software Testing, Quality Assurance & Profiling
+### Software Testing, Quality Assurance & Profiling
 
 *Ensuring code correctness, preventing regressions, and benchmarking performance under load.*
 
@@ -395,7 +395,7 @@ Before designing distributed architectures or training machine learning models, 
 	</tbody>
 </table>
 
-### 10. Artificial Intelligence & Machine Learning Engineering
+### Artificial Intelligence & Machine Learning Engineering
 
 *Designing, training, optimizing, and deploying intelligent model pipelines into production.*
 
